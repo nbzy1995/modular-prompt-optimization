@@ -1,0 +1,26 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.0.1+cu118; platform_system == "Linux"
+# For non-Linux (macOS/Windows), pick a Py3.12-compatible torch when needed
+torch==2.0.1; platform_system != "Linux" and python_version < "3.12"
+torch==2.4.1; platform_system != "Linux" and python_version >= "3.12"
+transformers==4.34.1
+# bitsandbytes is supported on Linux with NVIDIA GPUs; skip elsewhere
+bitsandbytes; platform_system == "Linux"
+datasets
+accelerate
+trl
+safetensors
+wandb
+sparqlwrapper
+openai
+python-dotenv
+jsonlines
+langchain
+langchain-openai
+langchain-community
+huggingface_hub
+
+jupyter
+matplotlib
+seaborn
+google-generativeai
