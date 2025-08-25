@@ -1,0 +1,302 @@
+[
+  {
+    "question": "For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?",
+    "ground_truth": "39.0",
+    "reasoning": "Debby and her sister had a combined total of 32 + 42 = 74 pieces of candy.\nAfter eating 35 pieces, they have 74 - 35 = 39 pieces left.\nAnswer: 39",
+    "prediction": "39"
+  },
+  {
+    "question": "A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left?",
+    "ground_truth": "8.0",
+    "reasoning": "The pet store had 13 siamese cats and 5 house cats.\nThe total number of cats is 13 + 5 = 18 cats.\nDuring the sale, they sold 10 cats.\nThe number of cats left is 18 - 10 = 8.\nAnswer: 8",
+    "prediction": "8"
+  },
+  {
+    "question": "Luke was trying to expand his game collection. He bought 2 games from a friend and bought 2 more at a garage sale. If 2 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "2.0",
+    "reasoning": "Luke bought 2 games from a friend and 2 games at a garage sale, so he bought a total of 2 + 2 = 4 games.\nOut of these 4 games, 2 didn't work.\nTherefore, the number of good games he ended up with is 4 - 2 = 2.\n\nAnswer: 2",
+    "prediction": "2"
+  },
+  {
+    "question": "The school cafeteria ordered 42 red apples and 7 green apples for students lunches. But, if only 9 students wanted fruit, how many extra did the cafeteria end up with?",
+    "ground_truth": "40.0",
+    "reasoning": "The cafeteria ordered a total of 42 red apples + 7 green apples = 49 apples.\nSince only 9 students wanted fruit, the cafeteria had 49 apples - 9 apples = 40 extra apples.\n\nAnswer: 40",
+    "prediction": "40"
+  },
+  {
+    "question": "Lana picked 36 tulips and 37 roses to make flower bouquets. If she only used 70 of the flowers though, how many extra flowers did Lana pick?",
+    "ground_truth": "3.0",
+    "reasoning": "Lana picked 36 tulips and 37 roses.\nThe total number of flowers Lana picked is 36 + 37 = 73 flowers.\nLana used 70 of the flowers.\nThe number of extra flowers is the total number of flowers picked minus the number of flowers used.\nSo, the number of extra flowers is 73 - 70 = 3.\n\nAnswer: 3",
+    "prediction": "3"
+  },
+  {
+    "question": "Carol and her mom were picking carrots from their garden. Carol picked 29 and her mother picked 16. If only 38 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "7.0",
+    "reasoning": "Carol picked 29 carrots and her mother picked 16 carrots.\nThe total number of carrots they picked is 29 + 16 = 45.\nOut of these 45 carrots, 38 were good.\nSo, the number of bad carrots is the total number of carrots minus the number of good carrots.\nThe number of bad carrots is 45 - 38 = 7.\n\nAnswer: 7",
+    "prediction": "7"
+  },
+  {
+    "question": "Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now?",
+    "ground_truth": "19.0",
+    "reasoning": "Roger initially had $16. He received $28 more, so he had $16 + $28 = $44. He then spent $25, so he has $44 - $25 = $19 left.\n\nAnswer: 19",
+    "prediction": "19"
+  },
+  {
+    "question": "While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. If she later deleted 31 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "2.0",
+    "reasoning": "Megan took 15 pictures at the zoo and 18 pictures at the museum.\nThe total number of pictures she took is 15 + 18 = 33.\nShe deleted 31 pictures.\nThe number of pictures she still has is 33 - 31 = 2.\n\nAnswer: 2",
+    "prediction": "2"
+  },
+  {
+    "question": "Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?",
+    "ground_truth": "11.0",
+    "reasoning": "Rachel had a total of 23 + 32 = 55 pictures to color.\nShe colored 44 pictures.\nSo she still has to color 55 - 44 = 11 pictures.\n\nAnswer: 11",
+    "prediction": "11"
+  },
+  {
+    "question": "Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",
+    "ground_truth": "1.0",
+    "reasoning": "Ned had a total of 9 + 21 = 30 shirts to wash.\nHe washed 29 shirts.\nThe number of shirts he did not wash is 30 - 29 = 1.\nAnswer: 1",
+    "prediction": "1"
+  },
+  {
+    "question": "Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",
+    "ground_truth": "66.0",
+    "reasoning": "First find the total number of shirts Oliver had to wash: 39 short sleeve shirts + 47 long sleeve shirts = 86 shirts.\nThen subtract the number of shirts he washed from the total number of shirts to find the number he didn't wash: 86 shirts - 20 shirts = 66 shirts.\n\nAnswer: 66",
+    "prediction": "66"
+  },
+  {
+    "question": "For the school bake sale Wendy made pastries. She baked 4 cupcakes and 29 cookies. After the sale she had 24 to take back home. How many pastries did she sell?",
+    "ground_truth": "9.0",
+    "reasoning": "Wendy baked a total of 4 + 29 = 33 pastries.\nAfter the sale, she had 24 pastries left.\nTherefore, she sold 33 - 24 = 9 pastries.\n\nAnswer: 9",
+    "prediction": "9"
+  },
+  {
+    "question": "While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "22.0",
+    "reasoning": "Debby took 24 pictures at the zoo and 12 at the museum. So she took a total of 24 + 12 = 36 pictures.\nShe deleted 14 pictures, so she had 36 - 14 = 22 pictures left.\n\nAnswer: 22",
+    "prediction": "22"
+  },
+  {
+    "question": "Katie picked 3 tulips and 9 roses to make flower bouquets. If she only used 10 of the flowers though, how many extra flowers did Katie pick?",
+    "ground_truth": "2.0",
+    "reasoning": "Katie picked 3 tulips and 9 roses.\nTotal flowers picked = 3 + 9 = 12 flowers.\nShe used 10 flowers.\nExtra flowers = Total flowers picked - Number of flowers used = 12 - 10 = 2\nAnswer: 2",
+    "prediction": "2"
+  },
+  {
+    "question": "Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, how many problems did she have to do for homework?",
+    "ground_truth": "15.0",
+    "reasoning": "Faye had a total of 46 math problems + 9 science problems = 55 problems.\nShe finished 40 problems at school.\nTherefore, she had 55 - 40 = 15 problems left for homework.\n\nAnswer: 15",
+    "prediction": "15"
+  },
+  {
+    "question": "Amy had 4 music files and 21 video files on her flash drive. If she deleted 23 of the files, how many files were still on her flash drive?",
+    "ground_truth": "2.0",
+    "reasoning": "Amy started with 4 music files + 21 video files = 25 files.\nShe deleted 23 files, so she had 25 files - 23 files = 2 files.\n\nAnswer: 2",
+    "prediction": "2"
+  },
+  {
+    "question": "Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "14.0",
+    "reasoning": "Ned bought 11 games from a friend and 22 games at a garage sale. So, the total number of games he bought is 11 + 22 = 33.\nOut of these 33 games, 19 didn't work.\nThe number of good games is the total number of games minus the number of games that didn't work, which is 33 - 19 = 14.\n\nAnswer: 14",
+    "prediction": "14"
+  },
+  {
+    "question": "Chloe was playing a trivia game. In the first round she scored 40 points and in the second round she scored 50 points. In the last round she lost 4 points. How many points did she have at the end of the game?",
+    "ground_truth": "86.0",
+    "reasoning": "Chloe started with 40 points. Then she got 50 points, so she had 40 + 50 = 90 points. After that, she lost 4 points, so she had 90 - 4 = 86 points.\n\nAnswer: 86",
+    "prediction": "86"
+  },
+  {
+    "question": "At the arcade, Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. If he spent 7 of his tickets on a hat, how many tickets does Tom have left?",
+    "ground_truth": "50.0",
+    "reasoning": "Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. So, in total he won 32 + 25 = 57 tickets.\nHe spent 7 tickets on a hat.\nTherefore, the number of tickets he has left is 57 - 7 = 50.\nAnswer: 50",
+    "prediction": "50"
+  },
+  {
+    "question": "Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "25.0",
+    "reasoning": "Bianca picked 26 carrots and her mother picked 15 carrots.\nThe total number of carrots they picked is 26 + 15 = 41.\nOnly 16 of the carrots were good.\nThe number of bad carrots is the total number of carrots minus the number of good carrots.\nSo, the number of bad carrots is 41 - 16 = 25.\n\nAnswer: 25",
+    "prediction": "25"
+  },
+  {
+    "question": "For the school bake sale Katie made pastries. She baked 7 cupcakes and 5 cookies. After the sale she had 8 to take back home. How many pastries did she sell?",
+    "ground_truth": "4.0",
+    "reasoning": "Katie baked a total of 7 cupcakes + 5 cookies = 12 pastries.\nShe took 8 pastries home, so she sold 12 pastries - 8 pastries = 4 pastries.\n\nAnswer: 4",
+    "prediction": "4"
+  },
+  {
+    "question": "Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color?",
+    "ground_truth": "68.0",
+    "reasoning": "Zoe bought two coloring books with 44 pictures each, so she had a total of 44 + 44 = 88 pictures.\nShe colored 20 pictures, so she still has 88 - 20 = 68 pictures to color.\nAnswer: 68",
+    "prediction": "68"
+  },
+  {
+    "question": "John was trying to expand his game collection. He bought 21 games from a friend and bought 8 more at a garage sale. If 23 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "6.0",
+    "reasoning": "John bought 21 games from a friend and 8 games at a garage sale. So, he bought a total of 21 + 8 = 29 games.\nOut of these 29 games, 23 didn't work. Therefore, the number of good games is 29 - 23 = 6.\n\nAnswer: 6",
+    "prediction": "6"
+  },
+  {
+    "question": "Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now?",
+    "ground_truth": "19.0",
+    "reasoning": "Henry starts with 11 dollars.\nHe gets 18 more dollars, so he has 11 + 18 = 29 dollars.\nHe spends 10 dollars, so he has 29 - 10 = 19 dollars.\n\nAnswer: 19",
+    "prediction": "19"
+  },
+  {
+    "question": "While on vacation, Gwen took 41 pictures at the zoo and 29 at the museum. If she later deleted 15 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "55.0",
+    "reasoning": "First, we need to find the total number of pictures Gwen took on vacation.\nTotal pictures = pictures at the zoo + pictures at the museum\nTotal pictures = 41 + 29 = 70\n\nNext, we need to subtract the number of deleted pictures from the total number of pictures.\nPictures remaining = Total pictures - deleted pictures\nPictures remaining = 70 - 15 = 55\n\nAnswer: 55",
+    "prediction": "55"
+  },
+  {
+    "question": "Sam had to wash 40 short sleeve shirts and 23 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",
+    "ground_truth": "34.0",
+    "reasoning": "Sam had a total of 40 + 23 = 63 shirts to wash.\nHe washed 29 shirts.\nTherefore, he did not wash 63 - 29 = 34 shirts.\n\nAnswer: 34",
+    "prediction": "34"
+  },
+  {
+    "question": "A pet store had 12 siamese cats and 20 house cats. During a sale they sold 20 cats. How many cats do they have left?",
+    "ground_truth": "12.0",
+    "reasoning": "The pet store had a total of 12 + 20 = 32 cats.\nThey sold 20 cats, so they have 32 - 20 = 12 cats left.\nAnswer: 12",
+    "prediction": "12"
+  },
+  {
+    "question": "Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "16.0",
+    "reasoning": "Faye and her mom picked a total of 23 + 5 = 28 carrots.\nOut of these, 12 were good, so the number of bad carrots is 28 - 12 = 16.\nAnswer: 16",
+    "prediction": "16"
+  },
+  {
+    "question": "The school cafeteria ordered 43 red apples and 32 green apples for students lunches. But, if only 2 students wanted fruit, how many extra did the cafeteria end up with?",
+    "ground_truth": "73.0",
+    "reasoning": "The cafeteria ordered 43 red apples + 32 green apples = 75 apples in total.\nOnly 2 students wanted fruit, so the cafeteria used 2 apples.\nThe cafeteria had 75 apples - 2 apples = 73 extra apples.\n\nAnswer: 73",
+    "prediction": "73"
+  },
+  {
+    "question": "There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut?",
+    "ground_truth": "17.0",
+    "reasoning": "First, find the total number of students trying out: 39 girls + 4 boys = 43 students.\nNext, subtract the number of students called back from the total number of students: 43 students - 26 students = 17 students.\nAnswer: 17",
+    "prediction": "17"
+  },
+  {
+    "question": "A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left?",
+    "ground_truth": "18.0",
+    "reasoning": "The pet store had a total of 38 + 25 = 63 cats.\nAfter selling 45 cats, they have 63 - 45 = 18 cats left.\n\nAnswer: 18",
+    "prediction": "18"
+  },
+  {
+    "question": "For the school bake sale Paige made pastries. She baked 36 cupcakes and 9 cookies. After the sale she had 4 to take back home. How many pastries did she sell?",
+    "ground_truth": "41.0",
+    "reasoning": "Paige baked a total of 36 cupcakes + 9 cookies = 45 pastries.\nShe had 4 pastries left.\nSo she sold 45 pastries - 4 pastries = 41 pastries.\n\nAnswer: 41",
+    "prediction": "41"
+  },
+  {
+    "question": "Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game?",
+    "ground_truth": "7.0",
+    "reasoning": "Carol started with 17 points. In the second round, she gained 6 points, so her total became 17 + 6 = 23 points. In the last round, she lost 16 points, so her final score is 23 - 16 = 7 points.\n\nAnswer: 7",
+    "prediction": "7"
+  },
+  {
+    "question": "Gwen bought two coloring books. One had 10 pictures and the other had 39. After one week she had already colored 13 of the pictures. How many pictures does she still have to color?",
+    "ground_truth": "36.0",
+    "reasoning": "First find the total number of pictures in both coloring books: 10 + 39 = 49\nThen subtract the number of pictures she has already colored to find the number of pictures she still has to color: 49 - 13 = 36\nAnswer: 36",
+    "prediction": "36"
+  },
+  {
+    "question": "For Halloween Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33. If they ate 4 pieces the first night, how many pieces do they have left?",
+    "ground_truth": "63.0",
+    "reasoning": "Janet had 34 pieces of candy.\nHer sister had 33 pieces of candy.\nTogether they had 34 + 33 = 67 pieces of candy.\nThey ate 4 pieces.\nThey have 67 - 4 = 63 pieces left.\nAnswer: 63",
+    "prediction": "63"
+  },
+  {
+    "question": "Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. If only 64 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "13.0",
+    "reasoning": "Haley picked 39 carrots and her mom picked 38 carrots.\nTotal carrots picked = 39 + 38 = 77\nNumber of good carrots = 64\nNumber of bad carrots = Total carrots - Number of good carrots\nNumber of bad carrots = 77 - 64 = 13\n\nAnswer: 13",
+    "prediction": "13"
+  },
+  {
+    "question": "There were 30 girls and 36 boys trying out for the schools basketball team. If only 10 of them got called back, how many students didn't make the cut?",
+    "ground_truth": "56.0",
+    "reasoning": "First, find the total number of students trying out: 30 girls + 36 boys = 66 students.\nNext, subtract the number of students who got called back from the total number of students: 66 students - 10 students = 56 students.\nAnswer: 56",
+    "prediction": "56"
+  },
+  {
+    "question": "Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now?",
+    "ground_truth": "15.0",
+    "reasoning": "Roger started with 29 dollars. He got 20 more, so he had 29 + 20 = 49 dollars. He spent 34 dollars, so he now has 49 - 34 = 15 dollars.\nAnswer: 15",
+    "prediction": "15"
+  },
+  {
+    "question": "Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?",
+    "ground_truth": "5.0",
+    "reasoning": "Dave had a total of 29 short sleeve shirts + 11 long sleeve shirts = 40 shirts to wash.\nHe washed 35 shirts.\nSo, he did not wash 40 shirts - 35 shirts = 5 shirts.\nAnswer: 5",
+    "prediction": "5"
+  },
+  {
+    "question": "Edward was trying to expand his game collection. He bought 41 games from a friend and bought 14 more at a garage sale. If 31 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "24.0",
+    "reasoning": "Edward bought 41 games from a friend and 14 games at a garage sale.\nTotal games bought = 41 + 14 = 55 games.\n31 of the games didn't work.\nThe number of good games = Total games - Non-working games = 55 - 31 = 24 games.\n\nAnswer: 24",
+    "prediction": "24"
+  },
+  {
+    "question": "At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",
+    "ground_truth": "15.0",
+    "reasoning": "Sam bought 13 adventure books and 17 mystery books.\nTotal books = 13 + 17 = 30\n15 of the books were used.\nNew books = Total books - Used books = 30 - 15 = 15\n\nAnswer: 15",
+    "prediction": "15"
+  },
+  {
+    "question": "Amy had 26 music files and 36 video files on her flash drive. If she deleted 48 of the files, how many files were still on her flash drive?",
+    "ground_truth": "14.0",
+    "reasoning": "Amy initially had 26 music files and 36 video files. The total number of files on her flash drive was 26 + 36 = 62 files.\nShe deleted 48 files.\nThe number of files remaining on her flash drive is 62 - 48 = 14 files.\n\nAnswer: 14",
+    "prediction": "14"
+  },
+  {
+    "question": "Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now?",
+    "ground_truth": "1.0",
+    "reasoning": "Oliver started with $35. He received $50, so he had $35 + $50 = $85. He then spent $84, so he has $85 - $84 = $1 left.\nAnswer: 1",
+    "prediction": "1"
+  },
+  {
+    "question": "Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game?",
+    "ground_truth": "1.0",
+    "reasoning": "Emily starts with 16 points in the first round.\nIn the second round, she gains 33 points, so her total score is 16 + 33 = 49 points.\nIn the last round, she loses 48 points, so her final score is 49 - 48 = 1 point.\n\nAnswer: 1",
+    "prediction": "1"
+  },
+  {
+    "question": "Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework?",
+    "ground_truth": "11.0",
+    "reasoning": "Paige had a total of 43 math problems + 12 science problems = 55 problems.\nShe finished 44 problems at school.\nTherefore, she had 55 problems - 44 problems = 11 problems left for homework.\n\nAnswer: 11",
+    "prediction": "11"
+  },
+  {
+    "question": "The school cafeteria ordered 33 red apples and 23 green apples for students lunches. But, if only 21 students wanted fruit, how many extra did the cafeteria end up with?",
+    "ground_truth": "35.0",
+    "reasoning": "The cafeteria ordered 33 red apples + 23 green apples = 56 apples in total.\nOnly 21 students wanted fruit, so the cafeteria had 56 apples - 21 apples = 35 extra apples.\n\nAnswer: 35",
+    "prediction": "35"
+  },
+  {
+    "question": "Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",
+    "ground_truth": "16.0",
+    "reasoning": "Dave had a total of 9 + 27 = 36 shirts to wash. He washed 20 shirts. Therefore, he did not wash 36 - 20 = 16 shirts.\n\nAnswer: 16",
+    "prediction": "16"
+  },
+  {
+    "question": "While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "4.0",
+    "reasoning": "Rachel took 6 pictures at the zoo and 9 at the museum, so she took a total of 6 + 9 = 15 pictures.\nShe then deleted 11 of the pictures, so she had 15 - 11 = 4 pictures left.\nAnswer: 4",
+    "prediction": "4"
+  },
+  {
+    "question": "Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "7.0",
+    "reasoning": "",
+    "prediction": ""
+  },
+  {
+    "question": "A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?",
+    "ground_truth": "54.0",
+    "reasoning": "",
+    "prediction": ""
+  }
+]
