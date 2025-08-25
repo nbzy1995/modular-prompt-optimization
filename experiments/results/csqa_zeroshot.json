@@ -1,0 +1,302 @@
+[
+  {
+    "question": "If you have leftover cake, where would you put it?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The best place to store leftover cake to keep it fresh is in the **(B) refrigerator**."
+  },
+  {
+    "question": "Where is one likely to find poker chips?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(D) bar**.\n\nHere's why:\n\n*   **Bars** often have poker nights or other gambling-related activities.\n*   **Supermarkets** sell food and household items, not typically poker chips.\n*   **Pantries** store food.\n*"
+  },
+  {
+    "question": "Where in your home would you keep a ballpoint pen when not in use?",
+    "ground_truth": "C",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(C) desk drawer** or **(E) office desk**.\n\nHere's why:\n\n*   **Desk drawer:** A common and logical place to store pens for easy access.\n*   **Office desk:** If you have a desk, keeping a pen on it is also"
+  },
+  {
+    "question": "Where might you see a green field while driving?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "All of the answer choices are places where you might see a green field while driving. However, some are more specific than others.\n\n*   **Kansas:** While parts of Kansas are farmland, it's a large state and not *everywhere* will have green fields.\n*   **Meadow:** A"
+  },
+  {
+    "question": "What can eating hamburger cause immediately after eating it?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(D) indigestion**. Here's why:\n\n*   **Indigestion:** Hamburgers, especially if they are high in fat or eaten quickly, can commonly cause indigestion.\n*   **Tasty:** While many people find hamburgers tasty, this is a subjective experience and not a direct"
+  },
+  {
+    "question": "What do airplanes do as they are arriving at the gate?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(A) slow down**. Here's why:\n\n*   **Slow down:** Airplanes need to reduce their speed significantly to safely taxi to the gate.\n*   **Crash:** This is obviously not the intended action.\n*   **Speed up:** This is the opposite of"
+  },
+  {
+    "question": "Sean was leaving work and took the roadway that led to his what?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The most logical answer is **(A) neighborhood**.\n\nThe roadway would lead Sean to his neighborhood after leaving work. The other options are less likely:\n\n*   **City:** While technically true, it's less specific than neighborhood.\n*   **Fate:** This is metaphorical and doesn't relate to"
+  },
+  {
+    "question": "Jan tested the current, and noticed that it was high.  He thought that the wires might have too much what?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The correct answer is (D) resistance.\n\nHigh current in a circuit can be caused by low resistance. If the wires have too much resistance, the current would be low, not high. However, the question is asking what Jan *thought* might be the problem. It's a bit of a trick question"
+  },
+  {
+    "question": "The family wanted to adopt for enviro-ethical reasons, what did they abhor?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The answer is **(B) biological child**.\n\nHere's why:\n\n*   The family's motivation is \"enviro-ethical reasons.\" This suggests they are concerned about the environmental impact of having children.\n*   Having a biological child increases the population and resource consumption, which can be seen"
+  },
+  {
+    "question": "In what Spanish speaking North American country can you get a great cup of coffee?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "(B) Mexico"
+  },
+  {
+    "question": "What has a surface with many sides?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(A) tetrahedron**. Here's why:\n\n*   **Tetrahedron:** A tetrahedron is a polyhedron with four triangular faces, six edges, and four vertices. It has multiple sides (faces).\n*   **Object:** This is too broad. Any physical thing is an object"
+  },
+  {
+    "question": "Where is a likely place to store unused soap?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The most likely place to store unused soap is in a **(A) cabinet**."
+  },
+  {
+    "question": "Why did the heavy metal band need electricity at the stadium?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The most logical answer is **(A) concert**.\n\nHeavy metal bands need electricity to power their instruments, amplifiers, lighting, and other equipment for a concert."
+  },
+  {
+    "question": "Kramer wrote a self-referential book.  What might that book be about?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(B) coffee table**. Here's why:\n\n*   **Self-referential** means the book refers to itself. A coffee table book is often a large, visually appealing book meant to be displayed on a coffee table. A self-referential coffee table book could be about"
+  },
+  {
+    "question": "What would you do to a crime scene before asking a question?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(C) think** and **(E) analyse**.\n\nHere's why:\n\n*   **Think/Analyse:** Before asking questions at a crime scene, it's crucial to observe and analyze the scene. This involves taking in the overall layout, identifying potential evidence, and"
+  },
+  {
+    "question": "Where can one obtain a bass fiddle?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(E) music store**.\n\nHere's why:\n\n*   **Music store:** Music stores are the primary retailers for musical instruments, including bass fiddles (also known as double basses).\n*   **Jazz band, string quartet, group band:** These are ensembles that *use"
+  },
+  {
+    "question": "A creek could be located in the opposite for the city which is called what?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(E) countryside**. Here's why:\n\n*   **City vs. Countryside:** The countryside is generally considered the area outside of a city, often characterized by natural landscapes like creeks, farms, and open spaces.\n\nThe other options are less likely:\n\n*   **(A"
+  },
+  {
+    "question": "If you spend a long time running after a ball how are you likely to feel?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(E) tiredness** and **(D) breathing heavily**.\n\nHere's why:\n\n*   **Tiredness:** Running for a long time uses a lot of energy, leading to fatigue.\n*   **Breathing heavily:** Your body needs more oxygen when you exert yourself"
+  },
+  {
+    "question": "Why do some people get passports and go to different locations?",
+    "ground_truth": "C",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(C) desire to travel**.\n\nPassports are specifically for international travel. The other options are unrelated."
+  },
+  {
+    "question": "When you feel too much heat in your home you can turn on what?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(E) air conditioning**.\n\nHere's why:\n\n*   **Air conditioning** is specifically designed to cool down a room.\n*   **Fan** can help circulate air and provide a cooling effect, but it doesn't actually lower the temperature.\n*   **Cool"
+  },
+  {
+    "question": "Who do professors work with?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(D) school students**.\n\nHere's why:\n\n*   **Professors** primarily work with and teach **students**.\n\nLet's look at why the other options are less suitable:\n\n*   **(A) methods of facts:** This doesn't make sense grammat"
+  },
+  {
+    "question": "What could you get an unsmooth pit from?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The answer is **(E) peach**.\n\nPeaches are known for having pits that are not smooth and have a fibrous, uneven surface. Cherries have smoother pits. Backyards, rocks, and mines don't have pits."
+  },
+  {
+    "question": "If the kitten was going to grow up to be a mouser like it's mother, where should it spend most of it's time?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(D) farmhouse**. Here's why:\n\n*   **Farmhouse:** Farmhouses are known for having rodent problems (mice) due to stored grains and other food sources. If the kitten is going to be a mouser, a farmhouse provides the most opportunity to learn and practice hunting"
+  },
+  {
+    "question": "John didn't mind getting in line.  It was what game after that he hated.  The time, the sore feet. He did not like doing what?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "Based on the prompt, the answer is (B) standing in line.\n\nThe prompt states \"John didn't mind getting in line. It was what game after that he hated. The time, the sore feet.\" This implies that the \"game\" he hated involved time and sore feet, which are common consequences"
+  },
+  {
+    "question": "A person with digestion issues eats a meat-filled breakfast, what does he feel?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(A) heartburn**. Here's why:\n\n*   **Heartburn:** Digestion issues often involve problems with stomach acid or the breakdown of food. Meat is harder to digest than many other foods. This can lead to acid reflux and heartburn.\n*   **Overeating:** While"
+  },
+  {
+    "question": "Turkey only has a small northern part of their country located in part of the what?",
+    "ground_truth": "C",
+    "reasoning": "",
+    "raw_answer": "The correct answer is **(C) balkan peninsula**.\n\nHere's why:\n\n*   **Balkan Peninsula:** A geographic region in Southeast Europe. A small portion of Turkey (specifically, East Thrace) is located on the Balkan Peninsula.\n*   **Middle East:** While Turkey is often considered"
+  },
+  {
+    "question": "Metal is taken from what which is pulled from the ground?",
+    "ground_truth": "C",
+    "reasoning": "",
+    "raw_answer": "The correct answer is **(C) ore**.\n\nOre is a naturally occurring solid material from which a metal or valuable mineral can be extracted profitably."
+  },
+  {
+    "question": "Where could you find a toilet that only friends can use?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The answer is **(D) apartment**.\n\nHere's why:\n\n*   **Apartment:** People often have friends over to their apartments. The toilet in the apartment would primarily be used by the resident and their friends.\n*   **Rest area, school, stadium, hospital:** These are all public"
+  },
+  {
+    "question": "What do you do when you're going to market?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(A) buy food**.\n\nHere's why:\n\n*   **Market Purpose:** The primary purpose of going to a market is to purchase goods, and food is a common and essential item.\n*   **Other Options:**\n    *   (B) see other people:"
+  },
+  {
+    "question": "If you're remembering something, it's because of your what of it to begin with?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The answer is **(B) knowing**.\n\nThe sentence would read: \"If you're remembering something, it's because of your **knowing** of it to begin with.\" This makes logical sense. You can only remember something you knew at some point."
+  },
+  {
+    "question": "There was a long cottage somewhere.  People thought it was haunted.  It was overgrown, there was nothing near it.  It's was far into the what?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(B) countryside**. Here's why:\n\n*   **Countryside:** This fits the description of a remote, overgrown cottage well. Countryside often implies isolation and distance from other settlements.\n*   **Mountains:** While a cottage *could* be in the mountains, the description doesn"
+  },
+  {
+    "question": "Where outside of a city would a squirrel live?",
+    "ground_truth": "C",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(C) forest**. Here's why:\n\n*   **Forest:** Squirrels are naturally adapted to living in forests, where they can find food (nuts, seeds, fruits), shelter (trees, nests), and protection from predators.\n*   **Roof, Inside Home, Yard"
+  },
+  {
+    "question": "What is the main purpose of having a bath?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(E) hygiene**. Here's why:\n\n*   **Hygiene** encompasses overall cleanliness and health maintenance. Bathing is a key part of personal hygiene.\n*   **Cleanness** (A) is a result of bathing, but hygiene is the broader purpose.\n*"
+  },
+  {
+    "question": "What do people do when they think too quickly?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(A) jump to conclusions**.\n\nHere's why:\n\n*   **Jump to conclusions:** Thinking too quickly often leads to making assumptions or decisions without sufficient evidence.\n*   **Hurry home:** While someone might hurry home, it's not a direct consequence of thinking too"
+  },
+  {
+    "question": "Diving into backyard pools can be very dangerous and can lead to serious head and what?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The answer is **(E) spinal injuries**.\n\nDiving into shallow water can cause serious head and spinal injuries."
+  },
+  {
+    "question": "What is a person likely to experience after they stop being married to a mean person?",
+    "ground_truth": "C",
+    "reasoning": "",
+    "raw_answer": "While all the emotions listed could be experienced after leaving a mean spouse, some are more likely and common than others. Here's a breakdown:\n\n*   **(A) Isolation:** This is possible, especially if the mean person controlled their social life. However, it's not the most immediate or universal feeling."
+  },
+  {
+    "question": "What are you getting from you boss at the end of the week?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The most likely answer is **(B) money**. This is because at the end of the week, many people receive their paycheck from their boss."
+  },
+  {
+    "question": "What is a possible outcome for committing murder?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(D) imprisonment**. Here's why:\n\n*   **Imprisonment** is a direct and likely consequence of being found guilty of murder.\n*   **Incarceration** is a synonym for imprisonment, so it is also a good answer.\n*   **Trial"
+  },
+  {
+    "question": "After high tide, where on the coast can you look to find a sea anemone?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(D) tide pool** and **(E) intertidal zone**. Here's why:\n\n*   **Tide pools:** These are pockets of seawater trapped among rocks when the tide goes out. Sea anemones thrive in these environments because they provide shelter and moisture.\n*"
+  },
+  {
+    "question": "Where would you put nails if they are already packaged?",
+    "ground_truth": "C",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(C) cabinet**. Here's why:\n\n*   **Cabinet:** Cabinets are a common place to store hardware and tools, keeping them organized and out of the way.\n*   **Pocket:** A pocket is too small and impractical for storing packaged nails.\n*   **"
+  },
+  {
+    "question": "Where is likely to not just have a kosher restaurant?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The answer is **(C) dining in** and **(E) dining**.\n\nHere's why:\n\n*   **(A) Jerusalem:** Jerusalem is a city with a large Jewish population and a high demand for kosher food. Kosher restaurants are very common.\n*   **(B) Jewish neighborhoods:**"
+  },
+  {
+    "question": "Where would you get some maps that you own?",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The answer is **(D) cabinet**.\n\nHere's why:\n\n*   **Cabinet:** A cabinet is a common place to store maps you own.\n*   **Bookstore:** You would buy maps at a bookstore, not get maps that you already own.\n*   **Library:** You can"
+  },
+  {
+    "question": "Batman bought beer.  There were no bottles available.  He had to settle for what?.",
+    "ground_truth": "D",
+    "reasoning": "",
+    "raw_answer": "The most logical answer is (D) can. Here's why:\n\n*   **The Scenario:** Batman wants beer, but bottles aren't available.\n*   **The Options:**\n    *   (A) shelf: A shelf holds things, but doesn't contain beer.\n    *"
+  },
+  {
+    "question": "Spraining an ankle while playing baseball will cause what?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(C) injury** and **(E) pain**.\n\nA sprained ankle is, by definition, an injury. It will also cause pain. While sore muscles might result later, the immediate and direct consequence is an injury and pain."
+  },
+  {
+    "question": "The man working in the attic swatted away a bee, but soon the single bee was an entire what?",
+    "ground_truth": "A",
+    "reasoning": "",
+    "raw_answer": "The correct answer is (A) swarm.\n\nBees are known to gather in swarms. The other options don't make sense in this context."
+  },
+  {
+    "question": "What is someone who isn't clever, bright, or competent called?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(C) dull** and **(E) stupid**. Here's why:\n\n*   **Dull:** Directly relates to a lack of brightness or mental sharpness.\n*   **Stupid:** A common term for someone lacking intelligence or competence.\n*   **Ineffectual"
+  },
+  {
+    "question": "What kind of cold storage could you find in your house?",
+    "ground_truth": "E",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(E) refrigerator**. Here's why:\n\n*   **Refrigerator:** A standard appliance found in most homes for keeping food cold.\n*   **Freezer:** Also a common household appliance for freezing food.\n*   **Ice pack:** While you might have one, it'"
+  },
+  {
+    "question": "Kissing is normally an activity reserved for your romantic what?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The best answer is **(B) partner**.\n\nHere's why:\n\n*   Kissing is most commonly associated with romantic relationships and is a way to show affection to a romantic partner.\n\nThe other options are not typically associated with kissing:\n\n*   **(A) anus:** Kissing is not typically"
+  },
+  {
+    "question": "What is the animal trying to accomplish?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "You need to provide me with information about the animal and its behavior to answer the question. I need context!\n\nFor example, if you said:\n\n\"Q: A bird is digging a hole in the sand. What is the animal trying to accomplish? Answer Choices: (A) sand trap (B) live"
+  },
+  {
+    "question": "What are you using if there are speakers strapped on your ears?",
+    "ground_truth": "B",
+    "reasoning": "",
+    "raw_answer": "The answer is **(B) headphones**."
+  }
+]

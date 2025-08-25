@@ -1,0 +1,302 @@
+[
+  {
+    "question": "For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?",
+    "ground_truth": "39.0",
+    "reasoning": "",
+    "prediction": "39"
+  },
+  {
+    "question": "A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left?",
+    "ground_truth": "8.0",
+    "reasoning": "",
+    "prediction": "8"
+  },
+  {
+    "question": "Luke was trying to expand his game collection. He bought 2 games from a friend and bought 2 more at a garage sale. If 2 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "2.0",
+    "reasoning": "",
+    "prediction": "2"
+  },
+  {
+    "question": "The school cafeteria ordered 42 red apples and 7 green apples for students lunches. But, if only 9 students wanted fruit, how many extra did the cafeteria end up with?",
+    "ground_truth": "40.0",
+    "reasoning": "",
+    "prediction": "40"
+  },
+  {
+    "question": "Lana picked 36 tulips and 37 roses to make flower bouquets. If she only used 70 of the flowers though, how many extra flowers did Lana pick?",
+    "ground_truth": "3.0",
+    "reasoning": "",
+    "prediction": "3"
+  },
+  {
+    "question": "Carol and her mom were picking carrots from their garden. Carol picked 29 and her mother picked 16. If only 38 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "7.0",
+    "reasoning": "",
+    "prediction": "7"
+  },
+  {
+    "question": "Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now?",
+    "ground_truth": "19.0",
+    "reasoning": "",
+    "prediction": "19"
+  },
+  {
+    "question": "While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. If she later deleted 31 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "2.0",
+    "reasoning": "",
+    "prediction": "2"
+  },
+  {
+    "question": "Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?",
+    "ground_truth": "11.0",
+    "reasoning": "",
+    "prediction": "11"
+  },
+  {
+    "question": "Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",
+    "ground_truth": "1.0",
+    "reasoning": "",
+    "prediction": "1"
+  },
+  {
+    "question": "Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",
+    "ground_truth": "66.0",
+    "reasoning": "",
+    "prediction": "66"
+  },
+  {
+    "question": "For the school bake sale Wendy made pastries. She baked 4 cupcakes and 29 cookies. After the sale she had 24 to take back home. How many pastries did she sell?",
+    "ground_truth": "9.0",
+    "reasoning": "",
+    "prediction": "9"
+  },
+  {
+    "question": "While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "22.0",
+    "reasoning": "",
+    "prediction": "22"
+  },
+  {
+    "question": "Katie picked 3 tulips and 9 roses to make flower bouquets. If she only used 10 of the flowers though, how many extra flowers did Katie pick?",
+    "ground_truth": "2.0",
+    "reasoning": "",
+    "prediction": "2"
+  },
+  {
+    "question": "Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, how many problems did she have to do for homework?",
+    "ground_truth": "15.0",
+    "reasoning": "",
+    "prediction": "15"
+  },
+  {
+    "question": "Amy had 4 music files and 21 video files on her flash drive. If she deleted 23 of the files, how many files were still on her flash drive?",
+    "ground_truth": "2.0",
+    "reasoning": "",
+    "prediction": "2"
+  },
+  {
+    "question": "Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "14.0",
+    "reasoning": "",
+    "prediction": "14"
+  },
+  {
+    "question": "Chloe was playing a trivia game. In the first round she scored 40 points and in the second round she scored 50 points. In the last round she lost 4 points. How many points did she have at the end of the game?",
+    "ground_truth": "86.0",
+    "reasoning": "",
+    "prediction": "86"
+  },
+  {
+    "question": "At the arcade, Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. If he spent 7 of his tickets on a hat, how many tickets does Tom have left?",
+    "ground_truth": "50.0",
+    "reasoning": "",
+    "prediction": "50"
+  },
+  {
+    "question": "Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "25.0",
+    "reasoning": "",
+    "prediction": "25"
+  },
+  {
+    "question": "For the school bake sale Katie made pastries. She baked 7 cupcakes and 5 cookies. After the sale she had 8 to take back home. How many pastries did she sell?",
+    "ground_truth": "4.0",
+    "reasoning": "",
+    "prediction": "4"
+  },
+  {
+    "question": "Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color?",
+    "ground_truth": "68.0",
+    "reasoning": "",
+    "prediction": "68"
+  },
+  {
+    "question": "John was trying to expand his game collection. He bought 21 games from a friend and bought 8 more at a garage sale. If 23 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "6.0",
+    "reasoning": "",
+    "prediction": "6"
+  },
+  {
+    "question": "Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now?",
+    "ground_truth": "19.0",
+    "reasoning": "",
+    "prediction": "19"
+  },
+  {
+    "question": "While on vacation, Gwen took 41 pictures at the zoo and 29 at the museum. If she later deleted 15 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "55.0",
+    "reasoning": "",
+    "prediction": "55"
+  },
+  {
+    "question": "Sam had to wash 40 short sleeve shirts and 23 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",
+    "ground_truth": "34.0",
+    "reasoning": "",
+    "prediction": "34"
+  },
+  {
+    "question": "A pet store had 12 siamese cats and 20 house cats. During a sale they sold 20 cats. How many cats do they have left?",
+    "ground_truth": "12.0",
+    "reasoning": "",
+    "prediction": "12"
+  },
+  {
+    "question": "Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "16.0",
+    "reasoning": "",
+    "prediction": "16"
+  },
+  {
+    "question": "The school cafeteria ordered 43 red apples and 32 green apples for students lunches. But, if only 2 students wanted fruit, how many extra did the cafeteria end up with?",
+    "ground_truth": "73.0",
+    "reasoning": "",
+    "prediction": "73"
+  },
+  {
+    "question": "There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut?",
+    "ground_truth": "17.0",
+    "reasoning": "",
+    "prediction": "17"
+  },
+  {
+    "question": "A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left?",
+    "ground_truth": "18.0",
+    "reasoning": "",
+    "prediction": "18"
+  },
+  {
+    "question": "For the school bake sale Paige made pastries. She baked 36 cupcakes and 9 cookies. After the sale she had 4 to take back home. How many pastries did she sell?",
+    "ground_truth": "41.0",
+    "reasoning": "",
+    "prediction": "41"
+  },
+  {
+    "question": "Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game?",
+    "ground_truth": "7.0",
+    "reasoning": "",
+    "prediction": "7"
+  },
+  {
+    "question": "Gwen bought two coloring books. One had 10 pictures and the other had 39. After one week she had already colored 13 of the pictures. How many pictures does she still have to color?",
+    "ground_truth": "36.0",
+    "reasoning": "",
+    "prediction": "36"
+  },
+  {
+    "question": "For Halloween Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33. If they ate 4 pieces the first night, how many pieces do they have left?",
+    "ground_truth": "63.0",
+    "reasoning": "",
+    "prediction": "63"
+  },
+  {
+    "question": "Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. If only 64 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "13.0",
+    "reasoning": "",
+    "prediction": "13"
+  },
+  {
+    "question": "There were 30 girls and 36 boys trying out for the schools basketball team. If only 10 of them got called back, how many students didn't make the cut?",
+    "ground_truth": "56.0",
+    "reasoning": "",
+    "prediction": "56"
+  },
+  {
+    "question": "Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now?",
+    "ground_truth": "15.0",
+    "reasoning": "",
+    "prediction": "15"
+  },
+  {
+    "question": "Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?",
+    "ground_truth": "5.0",
+    "reasoning": "",
+    "prediction": "5"
+  },
+  {
+    "question": "Edward was trying to expand his game collection. He bought 41 games from a friend and bought 14 more at a garage sale. If 31 of the games didn't work, how many good games did he end up with?",
+    "ground_truth": "24.0",
+    "reasoning": "",
+    "prediction": "24"
+  },
+  {
+    "question": "At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",
+    "ground_truth": "15.0",
+    "reasoning": "",
+    "prediction": "15"
+  },
+  {
+    "question": "Amy had 26 music files and 36 video files on her flash drive. If she deleted 48 of the files, how many files were still on her flash drive?",
+    "ground_truth": "14.0",
+    "reasoning": "",
+    "prediction": "14"
+  },
+  {
+    "question": "Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now?",
+    "ground_truth": "1.0",
+    "reasoning": "",
+    "prediction": "1"
+  },
+  {
+    "question": "Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game?",
+    "ground_truth": "1.0",
+    "reasoning": "",
+    "prediction": "1"
+  },
+  {
+    "question": "Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework?",
+    "ground_truth": "11.0",
+    "reasoning": "",
+    "prediction": "11"
+  },
+  {
+    "question": "The school cafeteria ordered 33 red apples and 23 green apples for students lunches. But, if only 21 students wanted fruit, how many extra did the cafeteria end up with?",
+    "ground_truth": "35.0",
+    "reasoning": "",
+    "prediction": "35"
+  },
+  {
+    "question": "Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",
+    "ground_truth": "16.0",
+    "reasoning": "",
+    "prediction": "16"
+  },
+  {
+    "question": "While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have?",
+    "ground_truth": "4.0",
+    "reasoning": "",
+    "prediction": "4"
+  },
+  {
+    "question": "Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have?",
+    "ground_truth": "7.0",
+    "reasoning": "",
+    "prediction": "7"
+  },
+  {
+    "question": "A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?",
+    "ground_truth": "54.0",
+    "reasoning": "",
+    "prediction": "54"
+  }
+]
