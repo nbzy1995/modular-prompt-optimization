@@ -3,7 +3,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from huggingface_hub import login
 
-from src.prompts import (
+from src.prompt_optim.cove.prompts import (
     BASELINE_PROMPT_WIKI,
     PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI,
     EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI,

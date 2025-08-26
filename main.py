@@ -3,6 +3,9 @@ import os
 import sys
 from dotenv import dotenv_values
 
+
+from src.llms import LLMProviderFactory
+
 from src.utils import get_absolute_path
 from src.data.data_processor import (
     read_json,
@@ -11,7 +14,7 @@ from src.data.data_processor import (
 )
 
 
-CONFIG = dotenv_values(get_absolute_path(".env"))
+CONFIG = dotenv_values(".env")
 google_access_token = CONFIG.get("GOOGLE_API_KEY")
 scaledown_api_key = CONFIG.get("SCALEDOWN_API_KEY")
 
@@ -19,6 +22,7 @@ file_path_mapping = {
     "wikidata": get_absolute_path("dataset/wikidata_questions.json"),
     "multispanqa": get_absolute_path("dataset/multispanqa_dataset.json"),
     "wikidata_category": get_absolute_path("dataset/wikidata_category_dataset.json"),
+    "test": get_absolute_path("temp_one_question.json"),  # For testing
 }
 
 if __name__ == "__main__":
@@ -29,7 +33,7 @@ if __name__ == "__main__":
         type=str,
         help="LLM to use for predictions.",
         default="scaledown-gpt-4o",
-        choices=["llama2", "llama2_70b", "llama-65b", "gpt3", "gemini2.5_flash_lite"],
+        choices=["llama2", "llama2_70b", "llama-65b", "gpt3", "gemini2.5_flash_lite", "scaledown-gpt-4o"],
     )
     argParser.add_argument(
         "-t",
@@ -44,7 +48,7 @@ if __name__ == "__main__":
         "--optimization_mode",
         type=str,
         help="The prompt optimization method to use.",
-        default="joint",
+        default="cove",
         choices=["cove",'cot'],
     )
     argParser.add_argument(
@@ -87,15 +91,41 @@ if __name__ == "__main__":
     # --------------------------------------------------
     # 2. Setup LLM model
     # --------------------------------------------------
-
-    if args.model == "gemini2.5_flash_lite":
-        from src.prompt_optim.cove.cove_chains_google import ChainOfVerificationGoogle
-        chain_google = ChainOfVerificationGoogle(
+    try:
+        llm = LLMProviderFactory.create_provider(
             model_id=args.model,
             temperature=args.temperature,
-            task=args.task,
-            setting=args.setting,
-            questions=questions,
-            google_access_token=google_access_token,
+            configuration=CONFIG
         )
-        chain_google.run_chain()
+        print(f"🤖 Created {llm.get_model_info()['provider']} for model {args.model}")
+    except ValueError as e:
+        print(f"❌ Error creating LLM provider: {e}")
+
+
+    # --------------------------------------------------
+    # 3. Get LLM response using optimized prompt. (May involve multipl intermediate invokes)
+    # --------------------------------------------------
+    if args.optimization_mode == "cove": # cove joint by default. 
+        from src.prompt_optim.cove.cove_chains import ChainOfVerification   
+
+        # Create and run CoVe chain
+        chain = ChainOfVerification(
+            llm=llm,
+            task=args.task,
+            questions=questions
+        )
+
+        chain.run_chain()
+        
+    elif args.optimization_mode == "cot":
+        print("❌ CoT optimization not yet implemented")
+        sys.exit(1)
+    
+    else:
+        print(f"❌ Unknown optimization mode: {args.optimization_mode}")
+        sys.exit(1)
+
+
+    # --------------------------------------------------
+    # 4. Evaluate response on dataset labels
+    # --------------------------------------------------

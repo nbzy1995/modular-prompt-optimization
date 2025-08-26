@@ -1,213 +1,163 @@
+import os
 import json
+import time
 import sys
-from typing import Dict
-from ...data.data_processor import get_items_from_answer
-from ...utils import (
-    TaskConfig,
-    MODEL_MAPPING,
-    ModelConfig,
-    TASK_MAPPING,
-    SETTINGS,
-)
+from typing import Dict, List, Any
 
 
 class ChainOfVerification:
-    def __init__(self, model_id, task, setting, questions):
-        self.model_id = model_id
-        self.model_config: ModelConfig = MODEL_MAPPING.get(model_id, None)
-        if self.model_config is None:
-            print(f"Invalid model. Valid models are: {', '.join(MODEL_MAPPING.keys())}")
-            sys.exit()
-
+    """Chain of Verification that uses simple LLM interface."""
+    
+    def __init__(self, llm, task: str, questions: List[str]):
+        # Store LLM and configuration
+        self.llm = llm
+        self.model_id = llm.model_id
         self.task = task
-        self.task_config: TaskConfig = TASK_MAPPING.get(task, None)
-        if self.task_config is None:
-            print(f"Invalid task. Valid taks are: {', '.join(TASK_MAPPING.keys())}")
-            sys.exit()
-
-        self.setting = setting
-        if self.setting not in SETTINGS:
-            print(f"Invalid setting. Valid settings are: {', '.join(SETTINGS)}")
-            sys.exit()
-        if self.task_config.__dict__[self.setting] is None:
-            print(
-                f"Invalid combination. Settings {self.setting} was not implemented for task {self.task}"
-            )
-            sys.exit()
-
+        self.setting = "joint"  # Always use joint setting
         self.questions = questions
+        
+        # Get task config (use wikidata config for test task)
+        from ...utils import TASK_MAPPING
+        actual_task = "wikidata" if task == "test" else task
+        self.task_config = TASK_MAPPING.get(actual_task, None)
+        if self.task_config is None:
+            print(f"Invalid task. Valid tasks are: {', '.join(TASK_MAPPING.keys())}")
+            sys.exit()
+        
+        # Checkpoint setup - use current working directory  
+        self.checkpoint_dir = os.path.join(os.getcwd(), "checkpoints")
+        os.makedirs(self.checkpoint_dir, exist_ok=True)
+        self.checkpoint_file = os.path.join(
+            self.checkpoint_dir,
+            f"{self.model_id}_{self.task}_{self.setting}_checkpoint.json"
+        )
+        
+        # Load checkpoint if exists
+        self.checkpoint_data = self.load_checkpoint()
+        self.start_question_index = self.checkpoint_data.get("last_completed_index", -1) + 1
+        
+        if self.start_question_index > 0:
+            print(f"🔄 Resuming from question {self.start_question_index + 1}/{len(questions)}")
+            print(f"   Checkpoint: {self.checkpoint_file}")
+        else:
+            print(f"🆕 Starting fresh experiment with {len(questions)} questions")
+
+    def load_checkpoint(self) -> Dict[str, Any]:
+        """Load checkpoint data if exists."""
+        if os.path.exists(self.checkpoint_file):
+            try:
+                with open(self.checkpoint_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            except Exception as e:
+                print(f"⚠️ Error loading checkpoint: {e}")
+                return {}
+        return {}
+
+    def save_checkpoint(self, question_index: int, results: List[Dict[str, str]]):
+        """Save current progress to checkpoint file."""
+        try:
+            checkpoint_data = {
+                "model_id": self.model_id,
+                "task": self.task,
+                "setting": self.setting,
+                "last_completed_index": question_index,
+                "total_questions": len(self.questions),
+                "completed_results": results,
+                "timestamp": time.time()
+            }
+            with open(self.checkpoint_file, 'w', encoding='utf-8') as f:
+                json.dump(checkpoint_data, f, indent=2, ensure_ascii=False)
+            print(f"✅ Checkpoint saved ({question_index + 1}/{len(self.questions)} completed)")
+        except Exception as e:
+            print(f"⚠️ Error saving checkpoint: {e}")
+
+    def cleanup_checkpoint(self):
+        """Remove checkpoint file after successful completion."""
+        try:
+            if os.path.exists(self.checkpoint_file):
+                os.remove(self.checkpoint_file)
+                print("🧹 Checkpoint cleaned up")
+        except Exception as e:
+            print(f"⚠️ Error cleaning up checkpoint: {e}")
 
     def call_llm(self, prompt: str, max_tokens: int) -> str:
-        raise NotImplementedError("Subclasses must implement this method.")
+        """Call LLM using the simple interface."""
+        return self.llm.call_llm(prompt, max_tokens)
 
-    def process_prompt(self, prompt, command) -> str:
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def generate_response(self, prompt: str, max_tokens: int, command) -> str:
-        processed_prompt = self.process_prompt(prompt, command)
-        return self.call_llm(processed_prompt, max_tokens)
+    def process_prompt(self, prompt: str, command: str = "") -> str:
+        """Process prompt (no special formatting needed)."""
+        return prompt
 
     def get_baseline_response(self, question: str) -> str:
+        """Get baseline response for a question."""
         baseline_prompt = self.task_config.baseline_prompt.format(
             original_question=question
         )
-        return self.generate_response(
-            prompt=baseline_prompt,
-            max_tokens=self.task_config.max_tokens,
-            command=self.task_config.baseline_command,
+        processed_prompt = self.process_prompt(
+            baseline_prompt, 
+            self.task_config.baseline_command
         )
-
-    def run_two_step_chain(self, question: str, baseline_response: str):
-        # Create Plan
-        plan_prompt = self.task_config.two_step.plan_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
-        )
-
-        plan_response = self.generate_response(
-            prompt=plan_prompt,
-            max_tokens=self.task_config.two_step.max_tokens_plan,
-            command=self.task_config.two_step.plan_command,
-        )
-
-        ## Execute Plan
-        execute_prompt = self.task_config.two_step.execute_prompt.format(
-            verification_questions=plan_response
-        )
-
-        execute_response = self.generate_response(
-            prompt=execute_prompt,
-            max_tokens=self.task_config.two_step.max_tokens_execute,
-            command=self.task_config.two_step.execute_command,
-        )
-
-        ## Verify
-        verify_prompt = self.task_config.two_step.verify_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
-            verification_questions=plan_response,
-            verification_answers=execute_response,
-        )
-
-        verify_response = self.generate_response(
-            prompt=verify_prompt,
-            max_tokens=self.task_config.two_step.max_tokens_verify,
-            command=self.task_config.two_step.verify_command,
-        )
-
-        return (
-            plan_response,
-            execute_response,
-            verify_response,
-        )
+        return self.call_llm(processed_prompt, self.task_config.max_tokens)
 
     def run_joint_chain(self, question: str, baseline_response: str):
-        ## Create and Execute Plan
-        plan_and_execution_prompt = (
-            self.task_config.joint.plan_and_execute_prompt.format(
-                original_question=question,
-                baseline_response=baseline_response,
-            )
+        """Run joint CoVe chain."""
+        # Create and Execute Plan
+        plan_and_execution_prompt = self.task_config.joint.plan_and_execute_prompt.format(
+            original_question=question,
+            baseline_response=baseline_response,
         )
 
-        plan_and_execution_response = self.generate_response(
-            prompt=plan_and_execution_prompt,
-            max_tokens=self.task_config.joint.max_tokens_plan_and_execute,
-            command=self.task_config.joint.plan_and_execute_command,
+        plan_and_execution_response = self.call_llm(
+            self.process_prompt(plan_and_execution_prompt, self.task_config.joint.plan_and_execute_command),
+            self.task_config.joint.max_tokens_plan_and_execute
         )
 
-        ## Verify
+        # Verify
         verify_prompt = self.task_config.joint.verify_prompt.format(
             original_question=question,
             baseline_response=baseline_response,
             verification_questions_and_answers=plan_and_execution_response,
         )
 
-        verify_response = self.generate_response(
-            prompt=verify_prompt,
-            max_tokens=self.task_config.joint.max_tokens_verify,
-            command=self.task_config.joint.verify_command,
+        verify_response = self.call_llm(
+            self.process_prompt(verify_prompt, self.task_config.joint.verify_command),
+            self.task_config.joint.max_tokens_verify
         )
 
         return plan_and_execution_response, verify_response
 
-    def run_factored_chain(self, question: str, baseline_response: str):
-        ## Create Plan
-        plan_prompt = self.task_config.factored.plan_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
-        )
-        plan_response = self.generate_response(
-            prompt=plan_prompt,
-            max_tokens=self.task_config.factored.max_tokens_plan,
-            command=self.task_config.factored.plan_command,
-        )
-
-        ## Execute Plan
-        planned_questions = get_items_from_answer(plan_response)
-        execute_responses = []
-        for planned_question in planned_questions:
-            execute_prompt = self.task_config.factored.execute_prompt.format(
-                verification_question=planned_question
-            )
-            execute_response = self.generate_response(
-                prompt=execute_prompt,
-                max_tokens=self.task_config.factored.max_tokens_execute,
-                command=self.task_config.factored.execute_command,
-            )
-            execute_responses.append(execute_response)
-        execute_response = "\n".join(
-            [
-                f"{i+1}. {execute_response}"
-                for i, execute_response in enumerate(execute_responses)
-            ]
-        )
-
-        ## Verify
-        verify_prompt = self.task_config.factored.verify_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
-            verification_questions=plan_response,
-            verification_answers=execute_response,
-        )
-        verify_response = self.generate_response(
-            prompt=verify_prompt,
-            max_tokens=self.task_config.factored.max_tokens_verify,
-            command=self.task_config.factored.verify_command,
-        )
-
-        return (
-            plan_response,
-            execute_response,
-            verify_response,
-        )
-
     def print_result(self, result: Dict[str, str]):
+        """Print result."""
         for key, value in result.items():
             print(f"{key}: {value}")
             print("----------------------\n")
         print("=========================================\n")
 
+    def print_progress(self, current_index: int, total: int, question: str):
+        """Print progress information."""
+        progress = ((current_index + 1) / total) * 100
+        
+        print(f"\n📊 Progress: {current_index + 1}/{total} ({progress:.1f}%)")
+        print(f"🔄 Current question: {question[:60]}...")
+        print(f"🤖 Using: {self.llm.get_model_info()['provider']} ({self.model_id})")
+
     def run_chain(self):
-        all_results = []
-        for question in self.questions:
-            baseline_response = self.get_baseline_response(question)
-            if self.setting == "two_step":
-                (
-                    plan_verification_tokens,
-                    execute_verification_tokens,
-                    final_verified_tokens,
-                ) = self.run_two_step_chain(question, baseline_response)
-                result = {
-                    "Question": question,
-                    "Baseline Answer": baseline_response,
-                    "Verification Questions": plan_verification_tokens,
-                    "Execute Plan": execute_verification_tokens,
-                    "Final Refined Answer": final_verified_tokens,
-                }
-                self.print_result(result)
-                all_results.append(result)
-            elif self.setting == "joint":
+        """Run the chain of verification with checkpointing support."""
+        # Load existing results from checkpoint if resuming
+        all_results = self.checkpoint_data.get("completed_results", [])
+        
+        try:
+            for i in range(self.start_question_index, len(self.questions)):
+                question = self.questions[i]
+                
+                self.print_progress(i, len(self.questions), question)
+                
+                # Get baseline response
+                print("🤖 Generating baseline response...")
+                baseline_response = self.get_baseline_response(question)
+                
+                # Run joint verification (only supported setting)
+                print("🔍 Running joint verification...")
                 (
                     plan_and_execution_tokens,
                     final_verified_tokens,
@@ -218,26 +168,28 @@ class ChainOfVerification:
                     "Plan and Execution": plan_and_execution_tokens,
                     "Final Refined Answer": final_verified_tokens,
                 }
-                self.print_result(result)
+                
                 all_results.append(result)
-            elif self.setting == "factored":
-                (
-                    plan_verification_tokens,
-                    execute_verification_tokens,
-                    final_verified_tokens,
-                ) = self.run_factored_chain(question, baseline_response)
-                result = {
-                    "Question": question,
-                    "Baseline Answer": baseline_response,
-                    "Verification Questions": plan_verification_tokens,
-                    "Execute Plan": execute_verification_tokens,
-                    "Final Refined Answer": final_verified_tokens,
-                }
                 self.print_result(result)
-                all_results.append(result)
-
-        result_file_path = (
-            f"./result/{self.model_id}_{self.task}_{self.setting}_results.json"
-        )
-        with open(result_file_path, "w", encoding="utf-8") as json_file:
-            json.dump(all_results, json_file, indent=2, ensure_ascii=False)
+                
+                # Save checkpoint after each question
+                self.save_checkpoint(i, all_results)
+            
+            # Save final results
+            result_file_path = f"result/{self.model_id}_{self.task}_{self.setting}_results.json"
+            os.makedirs('result', exist_ok=True)
+            with open(result_file_path, "w", encoding="utf-8") as json_file:
+                json.dump(all_results, json_file, indent=2, ensure_ascii=False)
+            
+            print(f"\n🎉 Experiment completed successfully!")
+            print(f"📁 Results saved to: {result_file_path}")
+            
+        except KeyboardInterrupt:
+            print(f"\n\n⏹️ Experiment interrupted by user")
+            print(f"💾 Progress saved to checkpoint: {self.checkpoint_file}")
+            print(f"🔄 Resume with the same command later")
+            sys.exit(0)
+        except Exception as e:
+            print(f"\n❌ Unexpected error: {e}")
+            print(f"💾 Progress saved to checkpoint: {self.checkpoint_file}")
+            raise e
