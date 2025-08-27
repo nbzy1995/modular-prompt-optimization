@@ -3,6 +3,9 @@ import os
 import sys
 from dotenv import dotenv_values
 
+
+from src.llms import LLMProviderFactory
+
 from src.utils import get_absolute_path
 from src.data.data_processor import (
     read_json,
@@ -11,15 +14,15 @@ from src.data.data_processor import (
 )
 
 
-CONFIG = dotenv_values(get_absolute_path(".env"))
-hf_access_token = CONFIG.get("HF_API_KEY")
-openai_access_token = CONFIG.get("OPENAI_API_KEY")
+CONFIG = dotenv_values(".env")
 google_access_token = CONFIG.get("GOOGLE_API_KEY")
+scaledown_api_key = CONFIG.get("SCALEDOWN_API_KEY")
 
 file_path_mapping = {
     "wikidata": get_absolute_path("dataset/wikidata_questions.json"),
     "multispanqa": get_absolute_path("dataset/multispanqa_dataset.json"),
     "wikidata_category": get_absolute_path("dataset/wikidata_category_dataset.json"),
+    "test": get_absolute_path("temp_one_question.json"),  # For testing
 }
 
 if __name__ == "__main__":
@@ -29,76 +32,100 @@ if __name__ == "__main__":
         "--model",
         type=str,
         help="LLM to use for predictions.",
-        default="llama2",
-        choices=["llama2", "llama2_70b", "llama-65b", "gpt3", "gemini2.5_flash_lite"],
+        default="scaledown-gpt-4o",
+        choices=["llama2", "llama2_70b", "llama-65b", "gpt3", "gemini2.5_flash_lite", "scaledown-gpt-4o"],
     )
     argParser.add_argument(
         "-t",
         "--task",
         type=str,
-        help="Task.",
+        help="Task to evaluate on.",
         default="wikidata",
-        choices=["wikidata", "wikidata_category", "multispanqa"],
+        choices=["wikidata", "wikidata_category", "multispanqa","simpleqa"],
     )
     argParser.add_argument(
-        "-s",
-        "--setting",
+        "-mode",
+        "--optimization_mode",
         type=str,
-        help="Setting.",
-        default="joint",
-        choices=["joint", "two_step", "factored"],
+        help="The prompt optimization method to use.",
+        default="cove",
+        choices=["cove",'cot'],
     )
     argParser.add_argument(
-        "-temp", "--temperature", type=float, help="Temperature.", default=0.07
+        "-temp", "--temperature", type=float, help="Temperature.", default=0.0
     )
     argParser.add_argument("-p", "--top-p", type=float, help="Top-p.", default=0.9)
     argParser.add_argument(
         "--fresh-start",
-        action="store_true",
-        help="Force start fresh experiment, ignoring any existing checkpoint.",
+        type=bool, 
+        default=False,
+        help="1 if force start fresh experiment, ignoring any existing checkpoint.",
     )
     args = argParser.parse_args()
 
+    # --------------------------------------------------
+
+    # Handle fresh start flag
+    if args.fresh_start:
+        # Remove existing checkpoint for fresh start - use current working directory
+        checkpoint_dir = os.path.join(os.getcwd(), "checkpoints")
+        checkpoint_file = os.path.join(
+            checkpoint_dir, f"{args.model}_{args.task}_{args.optimization_mode}_checkpoint.json"
+        )
+        if os.path.exists(checkpoint_file):
+            os.remove(checkpoint_file)
+            print(f"🗑️ Removed existing checkpoint for fresh start")
+
+
+    # --------------------------------------------------
+    # 1. Load task and dataset
+    # --------------------------------------------------
     data = read_json(file_path_mapping[args.task])
     if args.task == "wikidata":
         questions = get_questions_from_dict(data)
     else:
         questions = get_questions_from_list(data)
 
-    # Handle fresh start flag for Google models
-    if args.model == "gemini2.5_flash_lite" and args.fresh_start:
-        # Remove existing checkpoint for fresh start - use current working directory
-        checkpoint_dir = os.path.join(os.getcwd(), "checkpoints")
-        checkpoint_file = os.path.join(
-            checkpoint_dir, f"{args.model}_{args.task}_{args.setting}_checkpoint.json"
-        )
-        if os.path.exists(checkpoint_file):
-            os.remove(checkpoint_file)
-            print(f"🗑️ Removed existing checkpoint for fresh start")
 
-    if args.model == "gpt3":
-        print("❌ OpenAI implementation not available")
+
+    # --------------------------------------------------
+    # 2. Setup LLM model
+    # --------------------------------------------------
+    try:
+        llm = LLMProviderFactory.create_provider(
+            model_id=args.model,
+            temperature=args.temperature,
+            configuration=CONFIG
+        )
+        print(f"🤖 Created {llm.get_model_info()['provider']} for model {args.model}")
+    except ValueError as e:
+        print(f"❌ Error creating LLM provider: {e}")
+
+
+    # --------------------------------------------------
+    # 3. Get LLM response using optimized prompt. (May involve multipl intermediate invokes)
+    # --------------------------------------------------
+    if args.optimization_mode == "cove": # cove joint by default. 
+        from src.prompt_optim.cove.cove_chains import ChainOfVerification   
+
+        # Create and run CoVe chain
+        chain = ChainOfVerification(
+            llm=llm,
+            task=args.task,
+            questions=questions
+        )
+
+        chain.run_chain()
+        
+    elif args.optimization_mode == "cot":
+        print("❌ CoT optimization not yet implemented")
         sys.exit(1)
-    elif args.model == "gemini2.5_flash_lite":
-        from src.prompt_optim.cove.cove_chains_google import ChainOfVerificationGoogle
-        chain_google = ChainOfVerificationGoogle(
-            model_id=args.model,
-            temperature=args.temperature,
-            task=args.task,
-            setting=args.setting,
-            questions=questions,
-            google_access_token=google_access_token,
-        )
-        chain_google.run_chain()
+    
     else:
-        from src.prompt_optim.cove.cove_chains_hf import ChainOfVerificationHuggingFace
-        chain_hf = ChainOfVerificationHuggingFace(
-            model_id=args.model,
-            top_p=args.top_p,
-            temperature=args.temperature,
-            task=args.task,
-            setting=args.setting,
-            questions=questions,
-            hf_access_token=hf_access_token,
-        )
-        chain_hf.run_chain()
+        print(f"❌ Unknown optimization mode: {args.optimization_mode}")
+        sys.exit(1)
+
+
+    # --------------------------------------------------
+    # 4. Evaluate response on dataset labels
+    # --------------------------------------------------
