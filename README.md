@@ -37,7 +37,7 @@ python3 main.py --model=MODEL --task=TASK --setting=SETTING [--temperature=0.07]
     - Persona: `expert persona`, `Persona+Uncertainty`
     - Uncertainty: `simple`
 
-- **LLM Models**: `llama2`, `gpt3`, `gemini2.5`
+- **LLM Models**: `llama2`, `gpt3`, `gemini2.5`, `gpt4o`
 - **Tasks**: `wikidata`, `wikidata_category`, `multispanqa`
 
 
