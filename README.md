@@ -33,8 +33,9 @@ python3 main.py --model=MODEL --task=TASK --setting=SETTING [--temperature=0.07]
 ### Available Options
 - **Prompt Optimization Techniques**: 
     - Cove: `joint`, `two_step`, `factored`
-    - CoT:
-    - Expert Persona: 
+    - CoT: `simple`, `CoT+Uncertainty`,`Persona+CoT`
+    - Persona: `expert persona`, `Persona+Uncertainty`
+    - Uncertainty: `simple`
 
 - **LLM Models**: `llama2`, `gpt3`, `gemini2.5`
 - **Tasks**: `wikidata`, `wikidata_category`, `multispanqa`
