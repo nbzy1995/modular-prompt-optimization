@@ -4,20 +4,23 @@ import time
 import sys
 from typing import Dict, List, Any
 
+from .prompt_optimizer import optimize_prompt, parse_optimizers
 
-class ChainOfVerification:
-    """Chain of Verification that uses simple LLM interface."""
+
+class TaskRunner:
+    """Task runner with checkpointing and progress tracking for prompt optimization experiments."""
     
-    def __init__(self, llm, task: str, questions: List[str]):
+    def __init__(self, llm, task: str, questions: List[str], optimizers: str):
         # Store LLM and configuration
         self.llm = llm
         self.model_id = llm.model_id
         self.task = task
-        self.setting = "joint"  # Always use joint setting
+        self.optimizers_string = optimizers
+        self.optimizers_list = parse_optimizers(optimizers)
         self.questions = questions
         
         # Get task config (use wikidata config for test task)
-        from ...utils import TASK_MAPPING
+        from .utils import TASK_MAPPING
         actual_task = "wikidata" if task == "test" else task
         self.task_config = TASK_MAPPING.get(actual_task, None)
         if self.task_config is None:
@@ -29,7 +32,7 @@ class ChainOfVerification:
         os.makedirs(self.checkpoint_dir, exist_ok=True)
         self.checkpoint_file = os.path.join(
             self.checkpoint_dir,
-            f"{self.model_id}_{self.task}_{self.setting}_checkpoint.json"
+            f"{self.model_id}_{self.task}_{optimizers.replace(',', '_')}_checkpoint.json"
         )
         
         # Load checkpoint if exists
@@ -59,7 +62,7 @@ class ChainOfVerification:
             checkpoint_data = {
                 "model_id": self.model_id,
                 "task": self.task,
-                "setting": self.setting,
+                "optimizers": self.optimizers_string,
                 "last_completed_index": question_index,
                 "total_questions": len(self.questions),
                 "completed_results": results,
@@ -84,47 +87,22 @@ class ChainOfVerification:
         """Call LLM using the simple interface."""
         return self.llm.call_llm(prompt, max_tokens)
 
-    def process_prompt(self, prompt: str, command: str = "") -> str:
-        """Process prompt (no special formatting needed)."""
-        return prompt
-
     def get_baseline_response(self, question: str) -> str:
         """Get baseline response for a question."""
         baseline_prompt = self.task_config.baseline_prompt.format(
-            original_question=question
+            question=question
         )
-        processed_prompt = self.process_prompt(
-            baseline_prompt, 
-            self.task_config.baseline_command
-        )
-        return self.call_llm(processed_prompt, self.task_config.max_tokens)
+        return self.call_llm(baseline_prompt, self.task_config.max_tokens)
 
-    def run_joint_chain(self, question: str, baseline_response: str):
-        """Run joint CoVe chain."""
-        # Create and Execute Plan
-        plan_and_execution_prompt = self.task_config.joint.plan_and_execute_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
+    def get_optimized_response(self, question: str) -> str:
+        """Get optimized response for a question using the specified optimizers."""
+        # Get baseline prompt and optimize it
+        baseline_prompt = self.task_config.baseline_prompt.format(
+            question=question
         )
-
-        plan_and_execution_response = self.call_llm(
-            self.process_prompt(plan_and_execution_prompt, self.task_config.joint.plan_and_execute_command),
-            self.task_config.joint.max_tokens_plan_and_execute
-        )
-
-        # Verify
-        verify_prompt = self.task_config.joint.verify_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
-            verification_questions_and_answers=plan_and_execution_response,
-        )
-
-        verify_response = self.call_llm(
-            self.process_prompt(verify_prompt, self.task_config.joint.verify_command),
-            self.task_config.joint.max_tokens_verify
-        )
-
-        return plan_and_execution_response, verify_response
+        optimized_prompt = optimize_prompt(baseline_prompt, self.optimizers_list)
+        
+        return self.call_llm(optimized_prompt, self.task_config.max_tokens)
 
     def print_result(self, result: Dict[str, str]):
         """Print result."""
@@ -140,9 +118,10 @@ class ChainOfVerification:
         print(f"\n📊 Progress: {current_index + 1}/{total} ({progress:.1f}%)")
         print(f"🔄 Current question: {question[:60]}...")
         print(f"🤖 Using: {self.llm.get_model_info()['provider']} ({self.model_id})")
+        print(f"🔧 Optimizers: {self.optimizers_string}")
 
-    def run_chain(self):
-        """Run the chain of verification with checkpointing support."""
+    def run_experiments(self):
+        """Run the prompt optimization experiments with checkpointing support."""
         # Load existing results from checkpoint if resuming
         all_results = self.checkpoint_data.get("completed_results", [])
         
@@ -156,17 +135,15 @@ class ChainOfVerification:
                 print("🤖 Generating baseline response...")
                 baseline_response = self.get_baseline_response(question)
                 
-                # Run joint verification (only supported setting)
-                print("🔍 Running joint verification...")
-                (
-                    plan_and_execution_tokens,
-                    final_verified_tokens,
-                ) = self.run_joint_chain(question, baseline_response)
+                # Get optimized response
+                print("🔧 Generating optimized response...")
+                optimized_response = self.get_optimized_response(question)
+                
                 result = {
                     "Question": question,
                     "Baseline Answer": baseline_response,
-                    "Plan and Execution": plan_and_execution_tokens,
-                    "Final Refined Answer": final_verified_tokens,
+                    "Optimized Answer": optimized_response,
+                    "Optimizers Used": self.optimizers_string,
                 }
                 
                 all_results.append(result)
@@ -176,13 +153,17 @@ class ChainOfVerification:
                 self.save_checkpoint(i, all_results)
             
             # Save final results
-            result_file_path = f"result/{self.model_id}_{self.task}_{self.setting}_results.json"
+            optimizers_name = self.optimizers_string.replace(',', '_')
+            result_file_path = f"result/{self.model_id}_{self.task}_{optimizers_name}_results.json"
             os.makedirs('result', exist_ok=True)
             with open(result_file_path, "w", encoding="utf-8") as json_file:
                 json.dump(all_results, json_file, indent=2, ensure_ascii=False)
             
             print(f"\n🎉 Experiment completed successfully!")
             print(f"📁 Results saved to: {result_file_path}")
+            
+            # Clean up checkpoint after successful completion
+            self.cleanup_checkpoint()
             
         except KeyboardInterrupt:
             print(f"\n\n⏹️ Experiment interrupted by user")

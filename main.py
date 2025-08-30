@@ -41,15 +41,14 @@ if __name__ == "__main__":
         type=str,
         help="Task to evaluate on.",
         default="wikidata",
-        choices=["wikidata", "wikidata_category", "multispanqa","simpleqa"],
+        choices=["wikidata", "wikidata_category", "multispanqa", "simpleqa", "test"],
     )
     argParser.add_argument(
-        "-mode",
-        "--optimization_mode",
+        "-o",
+        "--optimizers",
         type=str,
-        help="The prompt optimization method to use.",
+        help="Comma-separated list of prompt optimizers to apply (e.g., 'expert_persona,cot,uncertainty').",
         default="cove",
-        choices=["cove",'cot'],
     )
     argParser.add_argument(
         "-temp", "--temperature", type=float, help="Temperature.", default=0.0
@@ -70,7 +69,7 @@ if __name__ == "__main__":
         # Remove existing checkpoint for fresh start - use current working directory
         checkpoint_dir = os.path.join(os.getcwd(), "checkpoints")
         checkpoint_file = os.path.join(
-            checkpoint_dir, f"{args.model}_{args.task}_{args.optimization_mode}_checkpoint.json"
+            checkpoint_dir, f"{args.model}_{args.task}_{args.optimizers.replace(',', '_')}_checkpoint.json"
         )
         if os.path.exists(checkpoint_file):
             os.remove(checkpoint_file)
@@ -91,39 +90,29 @@ if __name__ == "__main__":
     # --------------------------------------------------
     # 2. Setup LLM model
     # --------------------------------------------------
-    try:
-        llm = LLMProviderFactory.create_provider(
-            model_id=args.model,
-            temperature=args.temperature,
-            configuration=CONFIG
-        )
-        print(f"🤖 Created {llm.get_model_info()['provider']} for model {args.model}")
-    except ValueError as e:
-        print(f"❌ Error creating LLM provider: {e}")
+
+    llm = LLMProviderFactory.create_provider(
+        model_id=args.model,
+        temperature=args.temperature,
+        configuration=CONFIG
+    )
+    print(f"🤖 Created {llm.get_model_info()['provider']} for model {args.model}")
 
 
     # --------------------------------------------------
-    # 3. Get LLM response using optimized prompt. (May involve multipl intermediate invokes)
+    # 3. Run prompt optimization experiments
     # --------------------------------------------------
-    if args.optimization_mode == "cove": # cove joint by default. 
-        from src.prompt_optim.cove.cove_chains import ChainOfVerification   
+    from src.task_runner import TaskRunner
 
-        # Create and run CoVe chain
-        chain = ChainOfVerification(
-            llm=llm,
-            task=args.task,
-            questions=questions
-        )
+    # Create and run task with optimizers
+    task_runner = TaskRunner(
+        llm=llm,
+        task=args.task,
+        questions=questions,
+        optimizers=args.optimizers
+    )
 
-        chain.run_chain()
-        
-    elif args.optimization_mode == "cot":
-        print("❌ CoT optimization not yet implemented")
-        sys.exit(1)
-    
-    else:
-        print(f"❌ Unknown optimization mode: {args.optimization_mode}")
-        sys.exit(1)
+    task_runner.run_experiments()
 
 
     # --------------------------------------------------
