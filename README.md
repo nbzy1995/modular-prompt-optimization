@@ -5,6 +5,8 @@ This is a LLM prompt optimization library containing a variety of LLM prompt opt
 
 ## :fire: Quickstart
 
+Option 1:
+
 First, create a python virtual environment and install the requirements:
 ```bash
 python -m venv .venv
@@ -13,11 +15,20 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+Option 2:
+
+In order to install dependencies with uv
+```bash
+uv venv
+.venv\scripts\activate
+uv sync
+```
 
 Then, create a file named `.env` to store API keys. This file should look like:
 ```
 OPENAI_API_KEY=sk-abc.....
-HF_API_KEY=hf_abc.......
+GOOGLE_API_KEY = AIz......
+HF_API_KEY=hf_abc....... or SCALEDOWN_API_KEY = 07u2q......
 ```
 
 An example full experiment that apply CoVe technique on wiki-qa dataset using Gemini is in `experiment/cove_experiment.ipynb`
