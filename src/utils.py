@@ -63,6 +63,14 @@ TASK_MAPPING = {
         examples_prompt=SIMPLEQA_EXAMPLES_PROMPT,
         question_prompt=SIMPLEQA_QUESTION_PROMPT,
     ),
+    "simpleqa_small": TaskConfig(
+        id="simpleqa_small",
+        max_tokens=100,
+        task_prompt=SIMPLEQA_TASK_PROMPT,
+        final_answer_format=SIMPLEQA_FINAL_ANSWER_FORMAT,
+        examples_prompt=SIMPLEQA_EXAMPLES_PROMPT,
+        question_prompt=SIMPLEQA_QUESTION_PROMPT,
+    ),
 }
 
 

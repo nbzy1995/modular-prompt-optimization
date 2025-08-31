@@ -114,14 +114,14 @@ def evaluate(result_path: str, dataset_path: str, dataset_type: str):
         true_answers = get_answers_from_dict(dataset)
     elif dataset_type == "wikidata_category" or dataset_type == "multispan_qa":
         true_answers = get_answers_from_list(dataset)
-    elif dataset_type == "simpleqa":
+    elif dataset_type in ["simpleqa", "simpleqa_small"]:
         true_answers = get_simpleqa_answers(dataset)
 
     # Predictions
     if dataset_type == "multispan_qa":
         answers = [result["Final Answer Section"] for result in results]
         metrics = compute_metrics_for_open_answer(answers, true_answers)
-    elif dataset_type == "simpleqa":
+    elif dataset_type in ["simpleqa", "simpleqa_small"]:
         answers = [result["Final Answer Section"] for result in results]
         metrics = compute_metrics_for_simpleqa(answers, true_answers)
     else:
@@ -145,7 +145,7 @@ if __name__ == "__main__":
         "--dataset-type",
         type=str,
         help="Type of the dataet.",
-        choices=["wikidata", "wikidata_category", "multispan_qa", "simpleqa"],
+        choices=["wikidata", "wikidata_category", "multispan_qa", "simpleqa","simpleqa_small"],
     )
 
     args = argParser.parse_args()

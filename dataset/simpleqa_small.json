@@ -1,0 +1,502 @@
+[
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/IEEE_Frank_Rosenblatt_Award', 'https://ieeexplore.ieee.org/author/37271220500', 'https://en.wikipedia.org/wiki/IEEE_Frank_Rosenblatt_Award', 'https://www.nxtbook.com/nxtbooks/ieee/awards_2010/index.php?startid=21#/p/20']}",
+    "problem": "Who received the IEEE Frank Rosenblatt Award in 2010?",
+    "answer": "Michio Sugeno"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/The_Oceanography_Society', 'https://en.wikipedia.org/wiki/The_Oceanography_Society', 'https://tos.org/jerlov-medal', 'https://www.eurekalert.org/news-releases/490504']}",
+    "problem": "Who was awarded the Oceanography Society's Jerlov Award in 2018?",
+    "answer": "Annick Bricaud"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Place', 'urls': ['https://en.wikipedia.org/wiki/Radcliffe_College', 'https://en.wikipedia.org/wiki/Radcliffe_College', 'https://www.braingainmag.com/7-historic-liberal-arts-colleges-in-the-us.htm', 'https://thepeoplesarchive.dclibrary.org/repositories/2/resources/2228']}",
+    "problem": "What's the name of the women's liberal arts college in Cambridge, Massachusetts?",
+    "answer": "Radcliffe College"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Adolf_Anderssen', 'https://www.chessgames.com/perl/chess.pl?tid=79429', 'https://en.wikipedia.org/wiki/Adolf_Anderssen']}",
+    "problem": "In whose honor was the Leipzig 1877 tournament organized?",
+    "answer": "Adolf Anderssen"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Person', 'urls': ['https://www.gutenberg.org/files/60408/60408-h/60408-h.htm\\nhttps://en.wikipedia.org/wiki/Achilleion_(Corfu)', 'https://www.gutenberg.org/cache/epub/60408/pg60408-images.html', 'https://archive.org/stream/elizabethempres01burggoog/elizabethempres01burggoog_djvu.txt', 'https://www.habsburger.net/en/chapter/achilleion-corfu-elisabeths-flight-antiquity']}",
+    "problem": "According to Karl K\u00fcchler, what did Empress Elizabeth of Austria's favorite sculpture depict, which was made for her villa Achilleion at Corfu?",
+    "answer": "Poet Henrich Heine."
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Number', 'urls': ['https://en.wikipedia.org/wiki/Stella_Obasanjo#Death', 'https://en.wikipedia.org/wiki/Stella_Obasanjo', 'https://www.independent.co.uk/news/world/africa/surgeon-jailed-over-death-of-first-lady-1791712.html)', 'https://www.abc.net.au/news/2009-09-22/doctor-jailed-over-former-first-ladys-lipo-death/1437416)']}",
+    "problem": "How much money, in euros, was the surgeon held responsible for Stella Obasanjo's death ordered to pay her son?",
+    "answer": "120,000"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Barack_Obama', 'https://will-lover-32-wikia.fandom.com/wiki/Barack_obama', 'https://people.wikimedia.org/~ori/mod_pagespeed_tests/obama-modpagespeed.html', 'https://www.dreame.com/story/2723094784-beyond-the-crust/0196694272-a-new-passenger.html']}",
+    "problem": "What were the month and year when Obama told Christianity Today, \"I am a Christian, and I am a devout Christian. I believe in the redemptive death and resurrection of Jesus Christ\"?",
+    "answer": "January 2008"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Mirza_Hameedullah_Beg', 'https://en.wikipedia.org/wiki/Mirza_Hameedullah_Beg', 'https://www.tutorialspoint.com/mirza-hameedullah-beg-former-chief-justice-of-india', 'https://en.wikipedia.org/wiki/List_of_chief_justices_of_India']}",
+    "problem": "Who appointed the Chief Justice of India, Mirza Hameedullah Beg, in 1977?",
+    "answer": "Fakhruddin Ali Ahmed"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/J%C3%B3hanna_Sigur%C3%B0ard%C3%B3ttir', 'https://en.wikipedia.org/wiki/J%C3%B3hanna_Sigur%C3%B0ard%C3%B3ttir', 'https://www.britannica.com/biography/Johanna-Sigurdardottir', 'https://kids.kiddle.co/J%C3%B3hanna_Sigur%C3%B0ard%C3%B3ttir']}",
+    "problem": "What is the name of the former Prime Minister of Iceland who worked as a cabin crew member until 1971?",
+    "answer": "J\u00f3hanna Sigur\u00f0ard\u00f3ttir"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Mehbooba_Mufti#References', 'https://www.indiatoday.in/elections/lok-sabha-2019/story/j-k-lok-sabha-results-2019-pdp-chief-mehbooba-mufti-loses-anantnag-seat-to-nc-hasnain-masoodi-1533245-2019-05-23', 'https://en.wikipedia.org/wiki/Mehbooba_Mufti#Political_career', 'https://timesofindia.indiatimes.com/elections/lok-sabha-constituencies/jammu-kashmir/anantnag']}",
+    "problem": "To whom did Mehbooba Mufti Sayed contest the 2019 Lok Sabha elections and lose?",
+    "answer": "Hasnain Masoodi"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Number', 'urls': ['https://www.uefa.com/uefachampionsleague/match/2000488--bayern-vs-inter/', 'https://en.wikipedia.org/wiki/2010_UEFA_Champions_League_final', 'https://www.uefa.com/uefachampionsleague/match/2000488--bayern-vs-inter/', 'https://uk.soccerway.com/matches/2010/05/22/europe/uefa-champions-league/fc-bayern-munchen/fc-internazionale-milano/932705/']}",
+    "problem": "How many fouls did Inter commit in the Champions League final match between Bayern and Inter on May 23, 2010?",
+    "answer": "13"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Date', 'urls': ['https://www.bricklink.com/v2/catalog/catalogitem.page?P=gal56#T=C&C=17', 'https://www.brickowl.com/catalog/lego-galidor-staff']}",
+    "problem": "What year did the Lego part with ID gal56 first release?",
+    "answer": "2002"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Koichi_Mizushima_(scientist)', 'https://www.amprox.com/oxide/koichi-mizushima-scientist/', 'https://en.wikipedia.org/wiki/Koichi_Mizushima_(scientist)']}",
+    "problem": "In which year did the Japanese scientist Koichi Mizushima receive the Kato Memorial Prize?",
+    "answer": "1999"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Date', 'urls': ['https://www.australianphotography.com/news/monash-gallery-of-art-to-rebrand-as-museum-of-australian-photography', 'https://maph.org.au/about/#:~:text=In%20March%202023%2C%20MGA%20rebranded,how%20you%20can%20be%20involved.', 'https://www.australianphotography.com/news/monash-gallery-of-art-to-rebrand-as-museum-of-australian-photography', 'https://www.monash.vic.gov.au/About-Us/News/Monash-Gallery-of-Art-rebrands-as-MAPh-Museum-of-Australian-Photography']}",
+    "problem": "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+    "answer": "2023"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill', 'https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill#:~:text=During%20the%20spill%20response%20operations,zone%20over%20the%20operations%20area.', 'https://www.coursehero.com/file/p5j9pch4/169-On-18-May-2010-BP-was-designated-the-lead-Responsible-Party-under-the-Oil/', 'https://www.ensynox.com/the-true-story-of-deepwater-horizon']}",
+    "problem": "Who requested the Federal Aviation Administration (FAA) implement a 900 sq mi (2,300 km2) temporary flight restriction zone over the operations areas of the Deepwater Horizon?",
+    "answer": "The Coast Guard"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/Museum_of_Bad_Art', 'https://en.wikipedia.org/wiki/Museum_of_Bad_Art', 'https://museumofbadart.org/poor-traits/', 'https://pagesweturned.medium.com/a-post-so-bad-it-cant-be-ignored-c879abfa08a6']}",
+    "problem": "What signature piece of the MOBA did Scott Wilson discover on the curb between two trash cans?",
+    "answer": "Lucy in the Field with Flowers"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/2022_Rugby_Europe_Championship#Week_3', 'https://all.rugby/match/16767/rugby-europe-championship-2022/spain-romania', 'https://en.wikipedia.org/wiki/2022_Rugby_Europe_Championship']}",
+    "problem": "What player scored all the conversions for Spain in the rugby match between Spain and Romania that was part of the 2022 Rugby Europe Championship on February 27, 2022?",
+    "answer": "Manuel Ordas"
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Person', 'urls': ['https://allymcbeal.fandom.com/wiki/The_Inmates', 'https://allymcbeal.fandom.com/wiki/The_Inmates#:~:text=Hanson.,Peters%2C%20had%20prescribed%20her%20medication.', 'https://www.imdb.com/title/tt0510352/']}",
+    "problem": "What is the surname of the psychiatrist who prescribes medication for Marie Hanson for her periodic blackouts in Season 1, Episode 20 of Ally McBeal?",
+    "answer": "Peters"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/Andrew_Tate', \"https://en.wikipedia.org/wiki/Andrew_Tate#:~:text=Tate's%20kickboxing%20nickname%20was%20%22King%20Cobra%22.\", 'https://www.sportskeeda.com/mma/news-what-andrew-tate-s-kickboxing-record-take-look-internet-superstar-s-combat-sports-history', 'https://www.sherdog.com/fighter/Andrew-Tate-62149']}",
+    "problem": "What is the British-American kickboxer Andrew Tate's kickboxing name?",
+    "answer": "King cobra"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/Jack_Layton', 'https://en.wikipedia.org/wiki/Jack_Layton#:~:text=In%201969%2C%20he%20was%20appointed,of%20the%20Sigma%20Chi%20fraternity.', 'https://www.laytonlegacy.ca/jack', 'https://www.cbc.ca/news/canada/jack-layton-a-timeline-of-his-accomplishments-1.1118520']}",
+    "problem": "What position was John Gilbert Layton appointed to in Quebec from 1969 until 1970?",
+    "answer": " Quebec Youth Parliament prime minister"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Gerard_P._Kuiper_Prize', 'https://dps.aas.org/prizes/2001/', 'https://pubs.aip.org/physicstoday/article/54/12/68/411566/AAS-Division-Awards-Announced', 'https://www.geology.pitt.edu/sites/default/files/Newsletter/Alumni%20Newsletter%202000-2001.pdf']}",
+    "problem": "Who won the Gerard P. Kuiper Prize in 2001?",
+    "answer": "Bruce W. Hapke"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/CodeMiko\\nhttps://thestreamerawards.com/winners', 'https://thestreamerawards.com/winners', 'https://dotesports.com/streaming/news/all-2022-streamer-award-winners', 'https://www.invenglobal.com/articles/16733/all-the-award-winners-at-the-streamer-awards-2022']}",
+    "problem": "Which streamer won the \"Best VTuber Streamer\" award at The Streamer Awards in 2022?",
+    "answer": "CodeMiko"
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Other', 'urls': ['https://gameofthrones.fandom.com/wiki/Daemon_Targaryen', 'https://www.vanityfair.com/hollywood/2022/09/house-of-the-dragon-episode-4-recap', 'https://screenrant.com/house-of-the-dragon-season-one-best-quotes/', 'https://helpforum.sky.com/t5/House-of-the-Dragon-Characters/Daemon-Targaryen/ba-p/4649090']}",
+    "problem": "What did Daemon Targaryen say to Rhaenyra about living life in fear in Episode 4, Season 1 of House of the Dragon?",
+    "answer": "You cannot live your life in fear, or you will forsake the best parts of it."
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/To_Serve_and_Protect', 'https://play.google.com/store/tv/show/To_Serve_and_Protect?id=2D702407ED20EE6ASH&hl=ur&gl=US&pli=1', 'https://en.wikipedia.org/wiki/To_Serve_and_Protect#:~:text=The%20program%20was%20created%20by,%2DTV%20in%20Bellingham%2C%20Washington.', 'https://en.wikipedia.org/wiki/KVOS-TV']}",
+    "problem": "On which U.S. TV station did the Canadian reality series *To Serve and Protect* debut?",
+    "answer": "KVOS-TV"
+  },
+  {
+    "metadata": "{'topic': 'Music', 'answer_type': 'Other', 'urls': ['https://mathshistory.st-andrews.ac.uk/Biographies/Aitken/', 'https://mathshistory.st-andrews.ac.uk/Biographies/Aitken/', 'https://thesavantsyndrome.blogspot.com/2013/07/alexander-craig-aitken.html', 'https://nzmathsoc.org.nz/downloads/profiles/NZMSprofile63_Alexander_Aitken.pdf?t=1262766681']}",
+    "problem": "What instrument did Alec Aitken play well enough for a professional musician to remark, \"Aitken is the most accomplished amateur musician I have ever known\"?",
+    "answer": "Violin"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Tara_Chand_(Jammu-Kashmir_politician)', 'https://en.wikipedia.org/wiki/Tara_Chand_(Jammu-Kashmir_politician)#:~:text=He%20was%20Deputy%20Chief%20Minister,chairperson%20for%20Democratic%20Azad%20Party.', 'https://www.thehindu.com/news/national/other-states/over-50-jammu-and-kashmir-congress-leaders-quit-party-in-support-of-ghulam-nabi-azad/article65829115.ece', 'https://thewire.in/politics/over-50-senior-congress-leaders-from-jammu-resign-in-support-of-ghulam-nabi-azad']}",
+    "problem": "On what day, month, and year did Tara Chand (a politician and a Dalit leader from Jammu and Kashmir) resign from the Indian National Congress in support of Ghulam Nabi Azad?",
+    "answer": "August 30, 2022"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Number', 'urls': ['https://m.cricbuzz.com/live-cricket-scorecard/14653/mi-vs-csk-final-indian-premier-league-2015', 'https://en.wikipedia.org/wiki/2015_Indian_Premier_League_final', 'https://www.espncricinfo.com/series/pepsi-indian-premier-league-2015-791129/chennai-super-kings-vs-mumbai-indians-final-829823/full-scorecard', 'https://www.cricbuzz.com/live-cricket-scorecard/14653/mi-vs-csk-final-indian-premier-league-2015']}",
+    "problem": "What was the strike rate of Harbhajan Singh in the final match of IPL 2015?",
+    "answer": "200.00"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Place', 'urls': ['https://forgottenrealms.fandom.com/wiki/Ashardalon', 'https://forgottenrealms.fandom.com/wiki/Ashardalon#History', 'https://dragons.fandom.com/wiki/Red_Dragon_(Dungeons_%26_Dragons)', 'https://dnd.galumphing.net/lore-of-the-great-wyrms']}",
+    "problem": "In the lore of Dungeons and Dragons, what is the name of the fortress in the Astral Plane used as a lair by the red great wyrm Ashardalon?",
+    "answer": "Bastion of Unborn Souls"
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Other', 'urls': ['https://southpark.fandom.com/wiki/Bill_Cosby_(BSM-471)\\nhttps://southpark.fandom.com/wiki/Trapper_Keeper', 'https://en.wikipedia.org/wiki/Trapper_Keeper_(South_Park)', 'https://southpark.fandom.com/wiki/Bill_Cosby_(BSM-471)', 'https://southpark.cc.com/w/index.php/Bill_Cosby_(android)']}",
+    "problem": "In which episode and season of South Park does Bill Cosby (BSM-471) first appear? Give me the number and title.",
+    "answer": "Season 4 Episode 12: \"Trapper Keeper\""
+  },
+  {
+    "metadata": "{'topic': 'History', 'answer_type': 'Other', 'urls': ['http://www.public-library.uk/dailyebook/Q-ships%20and%20their%20story%20(1922).pdf', 'https://www.gutenberg.org/cache/epub/54338/pg54338-images.html', 'https://navymuseum.co.nz/uncategorised/wybrants-olphert-2/', 'https://reviews.ipmsusa.org/review/q-ship']}",
+    "problem": "The WWI Q-Ship \"Salvia\" was partially reconstructed with a false counter-stern to resemble what kind of ship?",
+    "answer": "tramp"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Place', 'urls': ['https://en.wikipedia.org/wiki/Pulwama', 'https://en.wikipedia.org/wiki/Pulwama#:~:text=Pulwama%20(known%20as%20Panwangam%20in,in%20the%20disputed%20Kashmir%20region.', 'https://pulwama.gov.in/history/#:~:text=According%20to%20the%20revenue%20records,%2C%20Dangerapora%2C%20Chatpora%20and%20Dalipora.', 'https://www.nativeplanet.com/pulwama/']}",
+    "problem": "Which district in Kashmir was originally known as Panwangam?",
+    "answer": "Pulwama"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Number', 'urls': ['https://en.wikipedia.org/wiki/Fran%C3%A7ois_Aim%C3%A9_Louis_Dumoulin', 'https://en.wikipedia.org/wiki/Fran%C3%A7ois_Aim%C3%A9_Louis_Dumoulin#:~:text=In%201810%2C%20Dumoulin%20published%20a,a%20precursor%20to%20modern%20comics.', 'https://www.theseus.fi/bitstream/handle/10024/510799/Payne_Sam.pdf;jsessionid=4E7D0553C98F587885B7F5A1C2BECF59?sequence=4']}",
+    "problem": "In 1810, Fran\u00e7ois Aim\u00e9 Louis Dumoulin published a collection of how many engravings themed on the journey of \"Robinson Crusoe\"?",
+    "answer": "150"
+  },
+  {
+    "metadata": "{'topic': 'Music', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Cry_Pretty', 'https://en.wikipedia.org/wiki/Cry_Pretty#Commercial_performance', 'https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty#search_section']}",
+    "problem": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+    "answer": "October 23, 2018"
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/The_Invisible_Guardian', 'https://www.imdb.com/title/tt4924942/', 'https://en.wikipedia.org/wiki/The_Invisible_Guardian,']}",
+    "problem": "In the series \"El guardi\u00e1n invisible,\" who portrays the character Alfonso \u00c1lvarez de Toledo?",
+    "answer": "Ram\u00f3n Barea"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/David_Sweet', 'https://en.wikipedia.org/wiki/David_Sweet', 'https://dbpedia.org/page/David_Sweet', 'https://xxi.pages.dev/0xLy9lbi53aWtpcGVkaWEub3JnLy9EYXZpZF9Td2VldA']}",
+    "problem": "On what day, month, and year was David Sweet, Canadian politician, born?",
+    "answer": "June 24, 1957"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Place', 'urls': ['https://en.wikipedia.org/wiki/Linda_Lingle', 'https://en.wikipedia.org/wiki/Linda_Lingle', 'https://jwa.org/encyclopedia/article/lingle-linda#pid-1115', 'https://ballotpedia.org/Linda_Lingle']}",
+    "problem": "From which high school did the first female governor of Hawaii, United States, graduate?",
+    "answer": "Birmingham High School"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Pakistan_Business_Council#Former_chief_executives', 'https://www.dawn.com/news/1489714', 'https://www.app.com.pk/national/pak-china-business-council-to-be-formed-to-promote-private-sector-khusro/']}",
+    "problem": "In which month and year did Khusro Bakhtiar (former Federal Minister for Planning, Development, and Reforms, Pakistan) announce that the government was considering establishing a Pak-China business council to promote the private sector's role in the China-Pakistan Economic Corridor (CPEC)?",
+    "answer": "June 2019"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Bernard_Comrie', 'https://en.wikipedia.org/wiki/Bernard_Comrie', 'https://alchetron.com/Bernard-Comrie']}",
+    "problem": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "answer": "Akiko Kumahira"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Person', 'urls': ['https://olympics.com/en/olympic-games/beijing-2022/results/figure-skating/ice-dance', 'https://en.wikipedia.org/wiki/Figure_skating_at_the_2022_Winter_Olympics_%E2%80%93_Ice_dance#Overall', 'https://olympics.com/en/olympic-games/beijing-2022/results/figure-skating/ice-dance']}",
+    "problem": "What are the first names and surnames of the figure skaters who came 21st in the ice dance category at the 2022 Winter Olympics in Beijing?",
+    "answer": "Katharina M\u00fcller and Tim Dieck"
+  },
+  {
+    "metadata": "{'topic': 'Music', 'answer_type': 'Place', 'urls': ['https://www.thejc.com/news/israel/duran-duran-to-perform-in-israel-de4dp28b', 'https://en.wikipedia.org/wiki/Kibbutz_volunteer', 'https://en.wikipedia.org/wiki/Gvulot', 'https://www.grunge.com/1088796/simon-le-bon-facts-about-the-duran-duran-frontman/']}",
+    "problem": "What is the name of the kibbutz that Simon Le Bon lived on in 1978?",
+    "answer": "Gvulot."
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/List_of_Ig_Nobel_Prize_winners', 'https://en.wikipedia.org/wiki/List_of_Ig_Nobel_Prize_winners', 'https://improbable.com/ig/winners/', 'https://web.mit.edu/voodoo/www/recent_issues/is743/ignoble.html']}",
+    "problem": "Who won the 1991 Ig Nobel Prize for Peace?",
+    "answer": "Edward Teller"
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/List_of_The_Young_and_the_Restless_characters_(2000s)#Sabrina_Costelana_Newman', 'https://theyoungandtherestless.fandom.com/wiki/David_Chow', 'https://www.soapcentral.com/young-and-restless/whoswho/david.php', 'https://soaps.sheknows.com/the-young-and-the-restless/characters/david-chow/']}",
+    "problem": "Why did David Chow come to Genoa City on \"The Young and the Restless\"?",
+    "answer": "To avenge the murder of his former fianc\u00e9e, Carmen Mesta."
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Other', 'urls': ['https://archer.fandom.com/wiki/Placebo_Effect', 'https://archer.fandom.com/wiki/Placebo_Effect', 'https://www.vulture.com/article/best-archer-episodes.html', 'https://www.avclub.com/archers-pampage-coasts-to-a-surprisingly-boring-stop-1847685085']}",
+    "problem": "In which season and episode of Archer does Sterling go into a rampage? Give me the season, number, and title of the episode.",
+    "answer": "Season 2, Episode 9 \"Placebo Effect\""
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Mohammed_Racim', 'https://en.wikipedia.org/wiki/Mohammed_Racim', 'https://www.algeria.com/blog/talented-algerian-artist-mohammed-racim/', 'https://www.thenationalnews.com/arts-culture/art/who-is-mohammed-racim-google-doodle-pays-tribute-to-algerian-artist-1.1247864']}",
+    "problem": "On what day, month, and year was Algerian artist Mohammed Racim born?",
+    "answer": "June 24th, 1896."
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Number', 'urls': ['https://societyillustrators.org/about/history-of-the-society/', 'https://societyillustrators.org/about/history-of-the-society/#:~:text=In%201959%2C%20members%20Bob%20Peak,first%20Illustrators%20Annual%20book%20followed.', 'https://www.nyc-arts.org/organizations/museum-of-american-illustration/']}",
+    "problem": "How many original artworks were shown in the Society of Illustrators' first \"Annual Exhibition\"?",
+    "answer": "350"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/E._A._Nisbet', 'https://en.wikipedia.org/wiki/E._A._Nisbet', 'https://www.georgiaencyclopedia.org/articles/history-archaeology/eugenius-a-nisbet-1803-1871/#:~:text=In%201827%20he%20was%20elected,of%20a%20state%20supreme%20court.', 'https://www.findagrave.com/memorial/7116581/eugenius-aristides-nisbet']}",
+    "problem": "In what year was Eugenius Aristides Nisbet elected to the Georgia House of Representatives?",
+    "answer": "1827"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Ibrahim_Rugova', 'https://www.rferl.org/a/1340954.html', 'https://en.wikipedia.org/wiki/Ibrahim_Rugova#:~:text=On%205%20September%202005%2C%20he,from%20the%20post%20of%20president.', 'https://www.rferl.org/a/1061163.html', 'https://www.rte.ie/news/2006/0121/72100-kosovo/']}",
+    "problem": "What day/month/year was it announced that the politician Ibrahim Rugova had been diagnosed with lung cancer?",
+    "answer": "5 September 2005"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Place', 'urls': ['https://en.wikipedia.org/wiki/Honda_Battle_of_the_Bands', 'https://en.wikipedia.org/wiki/Honda_Battle_of_the_Bands', 'https://www.alasu.edu/_migration-2023-08-17-23/news/asu-host-2023-hbotb.php', 'https://www.prnewswire.com/news-releases/six-hbcu-marching-bands-selected-to-perform-in-2023-honda-battle-of-the-bands-301689873.html']}",
+    "problem": "In 2022, which university did Honda Battle of the Bands (HBOB) select to be the first-ever HBCU campus to host the in-person event?",
+    "answer": "Alabama State University"
+  },
+  {
+    "metadata": "{'topic': 'Music', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/The_American_Album_of_Familiar_Music', 'https://en.wikipedia.org/wiki/The_American_Album_of_Familiar_Music#', 'https://www.onesmedia.com/music-c-10_65/american-album-of-familiar-music-p-958.html', 'https://otrworld.com/products/american-album-of-familiar-music-old-time-radio-shows-otrs-mp3-cd-23-episodes']}",
+    "problem": "Who wrote the lyrics to \"Dream Serenade,\" the opening theme song for the radio program \"The American Album of Familiar Music\"?",
+    "answer": "Alfred Bryan"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Date', 'urls': ['https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/cone', 'https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/cone', 'https://jwa.org/encyclopedia/article/cone-etta']}",
+    "problem": "In what year did Etta Cone last visit Europe?",
+    "answer": "1938"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Vladislav_Kaborda', 'https://en.wikipedia.org/wiki/Vladislav_Kaborda', 'https://www.transfermarkt.co.uk/kaborda/nationalmannschaft/spieler/255750', 'https://us.soccerway.com/players/vladislav-kabord/210936/']}",
+    "problem": "What day, month, and year was Vladislav Kaborda born?",
+    "answer": "July 24, 1995"
+  },
+  {
+    "metadata": "{'topic': 'Music', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/American_Classical_Music_Hall_of_Fame_and_Museum#2005', 'https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_John_Williams', 'https://en.wikipedia.org/wiki/American_Classical_Music_Hall_of_Fame_and_Museum', 'https://classicalwalkoffame.org/browse-inductees/?show_group=year']}",
+    "problem": "In what year was John Williams inducted into the Classical Music Hall of Fame?",
+    "answer": "2004."
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://wikiroulette.co/?p=1985_St._Louis_mayoral_election', 'https://en.wikipedia.org/wiki/1985_St._Louis_mayoral_election']}",
+    "problem": "On which month and day was the 1985 St. Louis mayoral election held?",
+    "answer": " April 2"
+  },
+  {
+    "metadata": "{'topic': 'History', 'answer_type': 'Number', 'urls': ['https://en.wikipedia.org/wiki/Infanterikanonvagn_72', 'https://en.wikipedia.org/wiki/Infanterikanonvagn_72', 'https://premium.globalsecurity.org/military/world/europe/ikv-72.htm']}",
+    "problem": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?",
+    "answer": "36."
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Askham_Richard', 'https://her-staging.york.gov.uk/api/LibraryLinkWebServiceProxy/FetchResource/135950/full_135950.pdf', 'https://en.wikipedia.org/wiki/Askham_Richard', 'http://askhamrichard-pc.org.uk/local-info.php?id=6']}",
+    "problem": "In which year did Askham Richard, the village in the North of England, first become a conservation area?",
+    "answer": "1975"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Place', 'urls': ['https://worldpopulationreview.com/countries/malawi/location', 'https://worldpopulationreview.com/countries/malawi/location', 'https://latitude.to/map/mw/malawi']}",
+    "problem": "What are the GPS coordinates of Malawi?",
+    "answer": "13\u00b0 15' 4.38\" S, 34\u00b0 18' 5.50\" E."
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Hubble_Space_Telescope', 'https://en.wikipedia.org/wiki/Hubble_Space_Telescope', 'https://www.nasa.gov/missions/hubble/hubbles-wide-field-camera-3-recovered-collecting-science-data/']}",
+    "problem": "On which day, month, and year did the Hubble Telescope enter a partial safe mode following suspected hardware problems in its most advanced instrument, the Wide Field Camera 3 instrument?",
+    "answer": "January 8, 2019"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Place', 'urls': ['https://en.wikipedia.org/wiki/Gusevsky_District', 'https://en.wikipedia.org/wiki/Gusevsky_District#:~:text=As%20a%20municipal%20division%2C%20the,settlement%20and%20four%20rural%20settlements.', 'https://soft.lk/key/Gusev,_Kaliningrad_Oblast', 'https://en.wikipedia.org/wiki/Gusevskoye_Urban_Settlement']}",
+    "problem": "Before 2013, what was the municipal division of Gusevsky District in Kaliningrad Oblast incorporated as?",
+    "answer": "Gusevsky Municipal District"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Other', 'urls': ['https://www.researchgate.net/publication/304460742_Identifying_semantic_role_clusters_and_alignment_types_via_microrole_coexpression_tendencies', 'https://www.academia.edu/2246098/Identifying_semantic_role_clusters_and_alignment_types_via_microrole_coexpression_tendencies', 'https://www.jbe-platform.com/content/journals/10.1075/sl.38.3.02har', 'https://www.researchgate.net/publication/304460742_Identifying_semantic_role_clusters_and_alignment_types_via_microrole_coexpression_tendencies/link/5a6c41aaaca2722c947c0893/download?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJwcm9maWxlIn19']}",
+    "problem": "What were Martin Haspelmath's and Michael Cysouw's respective affiliations when they authored \"Identifying Semantic Role Clusters and Alignment Types via Microrole Coexpression Tendencies\"?",
+    "answer": "Max Planck Institute for Evolutionary Anthropology and Philipps-Universit\u00e4t Marburg"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Person', 'urls': ['https://www.livefutbol.com/goleadores/copa-libertadores-1967/\\nhttps://en.wikipedia.org/wiki/Norberto_Raffo', 'https://en.wikipedia.org/wiki/List_of_Copa_Libertadores_top_scorers']}",
+    "problem": "Who was Racing's top scorer in the Copa Libertadores 1967?",
+    "answer": "Norberto Raffo"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Mehr_Chand_Mahajan#:~:text=Mehr%20Chand%20Mahajan%20(23%20December,the%20Supreme%20Court%20of%20India.', 'https://en.wikipedia.org/wiki/Mehr_Chand_Mahajan', 'https://kalnet.kshec.kerala.gov.in/vufind/Author/Home?author=Mahajan%2C+Mehr+Chand', 'https://www.tutorialspoint.com/mehr-chand-mahajan-the-former-chief-justice-of-india']}",
+    "problem": "What were the date, month, and year of death of the former PM of J&K, Mehr Chand Mahajan?",
+    "answer": "11 December 1967."
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/Beloit_College', 'https://www.beloit.edu/live/news/155-naming-the-science-center#:~:text=In%20October%2C%20the%20executive%20committee,Sanger%20Center%20for%20the%20Sciences.%E2%80%9D', 'https://www.beloit.edu/live/news/1080-science-center-named-for-sangers', 'https://en.wikipedia.org/wiki/Beloit_College']}",
+    "problem": "What was Beloit College's Center for the Sciences renamed in 2017?",
+    "answer": "Marjorie and James Sanger Center for the Sciences."
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Pitti_Tondo', 'https://italianreflections.wordpress.com/2023/11/19/the-michelangelo-room-florence/', 'https://en.wikipedia.org/wiki/Pitti_Tondo', 'https://www.florence-tickets.com/blog/florence/the-tondo-pitti-by-michelangelo']}",
+    "problem": "From which dealer's shop did the Florentine authorities buy the \"Pitti Tondo\" in 1823?",
+    "answer": "Fedele Acciai"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Lebedev_Physical_Institute', 'https://en.wikipedia.org/wiki/Lebedev_Physical_Institute', 'https://academickids.com/encyclopedia/index.php/Lebedev_Physical_Institute', 'https://lebedev.ru/en/history-lpi/123.html']}",
+    "problem": "Who was the director of the Lebedev Physical Institute of the Russian Academy of Sciences between 1951 and 1972?",
+    "answer": "Dmitri Skobeltsyn"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Alain_Stank%C3%A9', 'https://en.wikipedia.org/wiki/Alain_Stank%C3%A9', 'https://www.thecanadianencyclopedia.ca/en/article/alain-stanke#:~:text=Stank%C3%A9%20has%20been%20decorated%20with,National%20Du%20Qu%C3%A9bec%20(2003).', 'https://prabook.com/web/alain.stanke/2553426']}",
+    "problem": "In what year was Alain Stank\u00e9 made a member of the Order of Canada?",
+    "answer": "1998"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Vincent_Schaefer', 'https://patents.google.com/patent/US2437963', 'https://en.wikipedia.org/wiki/Vincent_Schaefer']}",
+    "problem": "What are the first and last names of the scientist who collaborated with Vincent Joseph Schaefer to issue the U.S. patent for \"Method and Apparatus for Producing Aerosols\" in 1943?",
+    "answer": "Langmuir Irving"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Frank_Jacobsson', 'https://en.wikipedia.org/wiki/Frank_Jacobsson', 'https://www.national-football-teams.com/player/41778/Frank_Sanny_Jacobsson.html']}",
+    "problem": "Who was the Swedish footballer who spent his entire career as a winger for the club GAIS in the Swedish Allsvenskan from 1949 to 1960 and passed away on February 26, 2017?",
+    "answer": "Frank Jacobsson"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Other', 'urls': ['In 1994, Trockel created the Frankfurter Engel monument for the city of Frankfurt.[6] For Documenta in 1997, she and Carsten H\u00f6ller collaborated on an installation in one of the exhibition\\'s outbuildings.[7] Since the late 1990s, she has worked extensively with clay and has also continued to produce both hand and machine knitted \"paintings\". Several of these paintings were exhibited in a retrospective, Post-Menopause, at the Museum Ludwig in Cologne in 2005.[5]:\\u200a252', 'https://en.wikipedia.org/wiki/Rosemarie_Trockel', 'https://www.nsdoku.de/en/exhibitions/archive/tell-me-about-yesterday-tomorrow/rosemarie-trockel#:', 'https://www.wikiart.org/en/rosemarie-trockel']}",
+    "problem": "What is the name of the statue that Rosemarie Trockel made for the city of Frankfurt in 1994?",
+    "answer": "Frankfurter Engel"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League#League_table', 'https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League#:~:text=Manchester%20City%20successfully%20defended%20their,in%20the%20last%20five%20seasons. ', 'https://www.eurosport.com/football/premier-league/2021-2022/standings.shtml']}",
+    "problem": "What team finished with 38 points at the end of the 2021-2022 Premier League season?",
+    "answer": "Leeds United"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/2021%E2%80%9322_Premier_League#Awards', 'https://en.wikipedia.org/wiki/Rafael_Ben%C3%ADtez#:~:text=After%20a%202%E2%80%931%20defeat,of%20their%20previous%20thirteen%20games.', 'https://www.espn.com/soccer/story/_/id/37624476/rafa-benitez-everton-six-months-charge']}",
+    "problem": "What position was Everton in when Rafael Ben\u00edtez was sacked in the 2021-22 Premier League season?",
+    "answer": "15th place"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Sons%C3%B3n', 'https://en.wikipedia.org/wiki/Sons%C3%B3n', 'https://www.sonson-antioquia.gov.co/MiMunicipio/Paginas/Pasado-Presente-y-Futuro.aspx', 'https://www.puebliandoporantioquia.com.co/subregion-oriente/municipio-sonson/']}",
+    "problem": "In which year was the municipality of Sons\u00f3n, Antioquia, Colombia, founded?",
+    "answer": "1800"
+  },
+  {
+    "metadata": "{'topic': 'Music', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/IMx', 'https://en.wikipedia.org/wiki/IMx', 'https://www.last.fm/music/Immature/+wiki', 'https://www.discogs.com/artist/108944-Immature']}",
+    "problem": "Who replaced Don Santos in the band group Immature?",
+    "answer": "Kelton \"LDB\" Kessee"
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/The_Circle_(American_TV_series)_season_3', 'https://en.wikipedia.org/wiki/The_Circle_(American_TV_series)_season_3', 'https://www.tvguide.com/tvshows/the-circle/episodes-season-3/1000625409/']}",
+    "problem": "In Season 3 of the American version of \"The Circle,\" in which episode did Vince enter the game?",
+    "answer": "7"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Number', 'urls': ['https://en.wikipedia.org/wiki/Abdullah_Bridge', 'https://en.wikipedia.org/wiki/Abdullah_Bridge', 'https://alchetron.com/Abdullah-Bridge']}",
+    "problem": "What is the length in meters of Abdullah Bridge in Srinagar?",
+    "answer": "390 metres"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Number', 'urls': ['https://en.wikipedia.org/wiki/University_of_Alabama', 'https://en.wikipedia.org/wiki/University_of_Alabama', 'https://thecrimsonwhite.com/22595/top-stories/bryce-revisited-168-acre-acquisition-will-serve-ua-student-growth/', 'https://universitylands.ua.edu/bryce-hospital']}",
+    "problem": "How many acres did the University of Alabama purchase to expand its campus in 2010?",
+    "answer": "168"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Number', 'urls': ['https://en.wikipedia.org/wiki/Vampire_number', 'https://en.wikipedia.org/wiki/Vampire_number', 'https://rosettacode.org/wiki/Vampire_number', 'https://medium.com/@bhaskaravsupraja/ever-heard-of-vampire-numbers-ac45830315a1']}",
+    "problem": "What is the first vampire number in recreational mathematics obtained by a 3x3-digit multiplication?",
+    "answer": "102510"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Place', 'urls': ['https://en.wikipedia.org/wiki/Ila_Pant', 'https://en.wikipedia.org/wiki/Ila_Pant#:~:text=Ila%20Pant%20was%20born%20in,Shobha%20and%20Govind%20Ballabh%20Pande.', 'https://prabook.com/web/ila.pant/2361780', 'https://abhipedia.abhimanu.com/Article/State/MTIzNjA3/Women-in-Uttarakhand-politics-Uttarakhand-State']}",
+    "problem": "In which district of Uttarakhand was Ila Pant (an Indian politician) born?",
+    "answer": "Nainital district"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Place', 'urls': ['https://en.wikipedia.org/wiki/Gang_Chen_(engineer)', 'https://meche.mit.edu/people/faculty/gchen2%40mit.edu#:~:text=1993%2D1997%2C%20Assistant%20Professor%2C,of%20Science%20and%20Technology%2C%20China.', 'https://en.wikipedia.org/wiki/Gang_Chen_(engineer)', 'https://www.wikiwand.com/en/Gang_Chen_(engineer)']}",
+    "problem": "At which university was the mechanical engineer Gang Chen an assistant professor from 1993 to 1997?",
+    "answer": "Duke University"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Number', 'urls': ['https://en.wikipedia.org/wiki/Ken_Skupski', 'https://en.wikipedia.org/wiki/Ken_Skupski#:~:text=At%20the%202010%20Commonwealth%20Games,mixed%20doubles%20partnering%20Sarah%20Borwell.', 'https://lsusports.net/news/2010/10/14/205012361/', 'https://www.wikiwand.com/en/Ken_Skupski#google_vignette']}",
+    "problem": "How many medals did Ken Skupski win representing England at the 2010 Commonwealth Games in Delhi?",
+    "answer": "two medals."
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Starr_Andrews', 'https://www.usfigureskating.org/news/press-release/starr-andrews-added-2021-guaranteed-rate-skate-america#:~:text=Starr%20Andrews%20will%20represent%20Team%20USA%20at%202021%20Guaranteed%20Rate%20Skate%20America%2C%20U.S.%20Figure%20Skating%20announced%20Monday.%20Andrews%20will%20replace%20Bradie%20Tennell%2C%20who%20has%20withdrawn%20from%20the%20competition%20due%20to%20injury.']}",
+    "problem": "Who replaced Bradie Tennell in the 2021 Skate America?",
+    "answer": "Starr Andrews"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Caravaggio', 'https://en.wikipedia.org/wiki/Caravaggio', 'https://capolavoridelcaravaggio.com/the-flight,', 'https://erenow.org/biographies/caravaggio-a-passionate-life/18.php']}",
+    "problem": "Which nobleman did Caravaggio beat on November 28, 1600?",
+    "answer": "Girolamo Stampa da Montepulciano"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/Natasha_C._Merle', 'https://en.wikipedia.org/wiki/Natasha_C._Merle#:~:text=From%202013%20to%202015%2C%20Merle,Fund%20(%22LDF%22).', 'https://deathpenaltyinfo.org/news/womens-history-month-profile-u-s-district-court-judge-natasha-merle', 'https://afj.org/nominee/natasha-merle/', 'https://www.naacpldf.org/about-us/staff/natasha-merle/']}",
+    "problem": "What company was Natasha Merle a civil rights fellow at from 2013 to 2015 in New York City?",
+    "answer": " Fried, Frank, Harris, Shriver & Jacobson"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/San_Francisco,_Antioquia', 'https://en.wikipedia.org/wiki/San_Francisco,_Antioquia', 'https://www.wikiwand.com/en/San_Francisco%2C_Antioquia', 'https://www.familysearch.org/es/wiki/San_Francisco,_Oriente,_Antioquia,_Colombia_-_Genealog%C3%ADa']}",
+    "problem": "What year was the municipality of San Francisco, Antioquia, Colombia, founded?",
+    "answer": "1830"
+  },
+  {
+    "metadata": "{'topic': 'History', 'answer_type': 'Number', 'urls': ['https://archive.org/details/historyoftoronto01mulvuoft/page/217/mode/1up', 'https://www.gutenberg.ca/ebooks/scadding-torontoofold/scadding-torontoofold-00-h-dir/scadding-torontoofold-00-h.html']}",
+    "problem": "According to Henry Scadding, author of \"Toronto of Old,\" how many people died on the HMS Ontario in 1780?",
+    "answer": "172."
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Panavia_Tornado', 'https://en.wikipedia.org/wiki/Boeing_F/A-18E/F_Super_Hornet#Germany', 'https://www.flightglobal.com/fixed-wing/germany-outlines-tornado-succession-plan-with-eurofighter-and-super-hornet-buy/138049.article', 'https://www.stripes.com/migration/germany-won-t-be-buying-us-planes-to-replace-aging-tornados-before-2022-official-says-1.627124']}",
+    "problem": "In which month and year was it reported that the German Defense Ministry planned to replace its Tornado aircraft with a purchase of 30 Boeing F/A-18E/F Super Hornets, 15 EA-18G Growlers, and 55 Eurofighter Typhoons?",
+    "answer": "April 2020"
+  },
+  {
+    "metadata": "{'topic': 'Sports', 'answer_type': 'Number', 'urls': ['https://www.uefa.com/uefachampionsleague/match/84072--barcelona-vs-milan/', 'https://www.uefa.com/uefachampionsleague/match/84072--barcelona-vs-milan/', 'https://www.espn.co.uk/football/match/_/gameId/196034/ac-milan-barcelona', 'https://www.flashscore.com/match/nDXw3NyS/#/match-summary/match-statistics/03']}",
+    "problem": "How many corners did Barcelona take in the Champions League semi-final match between Barcelona and Milan on April 27, 2006?",
+    "answer": "3"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Azotobacter_salinestris', 'https://en.wikipedia.org/wiki/Azotobacter_salinestris', 'https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=959650#null,', 'https://www.microbiologyresearch.org/content/journal/ijsem/10.1099/00207713-41-3-369,']}",
+    "problem": "Which two scientists (first and last names) are credited with first isolating *Azotobacter salinestris* from saline soils?",
+    "answer": "William J. Page and Shailaja Shivprasad "
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Person', 'urls': ['https://artsandculture.google.com/asset/maria-theresa-archduchess-of-habsburg-1717-1780/9AEHiSDBLOkM3A?hl=en\\n\\nhttps://en.wikipedia.org/wiki/Rosalba_Carriera', 'https://en.wikipedia.org/wiki/Maria_Theresa', 'https://es.m.wikipedia.org/wiki/Archivo:Rosalba_Carriera_-_Maria_Theresa,_Archduchess_of_Habsburg_(1717-1780)_-_Google_Art_Project.jpg,', 'https://commons.wikimedia.org/wiki/File:Rosalba_Carriera_-_Maria_Theresa,_Archduchess_of_Habsburg_(1717-1780)_-_Google_Art_Project.jpg']}",
+    "problem": "Which Venetian artist painted the portrait of Maria Theresia Walburga Amalia Christina in 1730?",
+    "answer": "Rosalba Carriera"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/D._Russell_Wartinbee', 'https://www.wikiwand.com/en/D._Russell_Wartinbee', 'https://triplydb.com/esrabek/iris/browser?resource=http%3A%2F%2Fdbpedia.org%2Fresource%2FD._Russell_Wartinbee', 'https://www.wisconsinhistory.org/Records/Article/CS14087']}",
+    "problem": "On what day, month, and year was David Russell Wartinbee, a Republican politician from Wisconsin in the United States who served in the Wisconsin State Assembly from 1961 to 1967, born?",
+    "answer": "11 November 1903"
+  },
+  {
+    "metadata": "{'topic': 'Video games', 'answer_type': 'Other', 'urls': ['https://liquipedia.net/dota2/The_International/2016', 'https://dota2.fandom.com/wiki/The_International_2016', 'https://www.pcgamesn.com/dota-2/dota-2-patch-688b-offers-final-pre-international-tweaks', 'https://liquipedia.net/dota2/The_International/2016']}",
+    "problem": "What version of Dota 2 was The International 2016 played on?",
+    "answer": "6.88b"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/Murder_of_Sagar_Sarowar_and_Meherun_Runi', 'https://en.wikipedia.org/wiki/Murder_of_Sagar_Sarowar_and_Meherun_Runi#Suspects', 'https://www.thedailystar.net/news-detail-253214', 'https://www.thedailystar.net/news-detail-253515']}",
+    "problem": "On which month and year were the names of the suspects in the Sagar-Runi murder case announced by Home Minister MK Alamgir?",
+    "answer": "October 2012"
+  },
+  {
+    "metadata": "{'topic': 'Geography', 'answer_type': 'Number', 'urls': ['https://fsi.nic.in/isfr2019/isfr-fsi-vol2.pdf', 'https://fsi.nic.in/isfr19/vol2/isfr-2019-vol-ii-tamilnadu.pdf', 'https://static.pib.gov.in/WriteReadData/userfiles/ISFR2019%20Vol-II.pdf', 'https://www.newindianexpress.com/cities/chennai/2021/Jul/26/tamil-nadu-greening-project-aims-for-33-forest-tree-cover-2335379.html#:~:text=As%20per%20India%20State%20of,State%20is%2026%2C364.02%20sq%20km.']}",
+    "problem": "What is the forest cover area of Tamil Nadu in square kilometers, according to the India State of Forest Report 2019?",
+    "answer": "26,364.02"
+  },
+  {
+    "metadata": "{'topic': 'Art', 'answer_type': 'Date', 'urls': ['https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors', 'https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors', 'https://web.archive.org/web/20211122124745/http://www.crayoncollecting.com/ccoloralpha.htm', 'https://crayola.fandom.com/wiki/Maximum_Green_Yellow']}",
+    "problem": "In which year was production started for the Crayola color with hexadecimal code #D9E650?",
+    "answer": "1926"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Date', 'urls': [\"https://journals.lww.com/greenjournal/fulltext/2019/07000/genetically_modified_babies_and_a_first.23.aspx#:~:text=The%20work%20cannot%20be%20changed,without%20permission%20from%20the%20journal.&text=The%20world's%20first%20babies%20with,born%20on%20November%2025%2C%202018.\", \"https://journals.lww.com/greenjournal/fulltext/2019/07000/genetically_modified_babies_and_a_first.23.aspx#:~:text=The%20work%20cannot%20be%20changed,without%20permission%20from%20the%20journal.&text=The%20world's%20first%20babies%20with,born%20on%20November%2025%2C%202018.\", 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8340653', 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6331330']}",
+    "problem": "What is the exact date when the first CRISPR-edited babies were reportedly born, according to a 2019 *Nature* article?",
+    "answer": "November 25, 2018"
+  },
+  {
+    "metadata": "{'topic': 'Politics', 'answer_type': 'Number', 'urls': ['https://ysk.gov.tr/doc/dosyalar/Ingilizce/ElectionResults/2018CB-416D_en.pdf', 'https://en.wikipedia.org/wiki/2018_Muharrem_%C4%B0nce_presidential_campaign']}",
+    "problem": "On June 24, 2018, how many more votes did the winning candidate get in total than Muharrem \u0130nce?",
+    "answer": "10,990,502"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Person', 'urls': ['https://en.wikipedia.org/wiki/Gordon_E._Moore_Medal_(SCI)#:~:text=2006%2C%20Jonathan%20M.%20McConnachie', 'https://www.sciencehistory.org/about/awards-program/sci-gordon-e-moore-medal/', 'https://en.wikipedia.org/wiki/Gordon_E._Moore_Medal_(SCI)', 'https://www.soci.org/awards/past-recipients/gordon-e-moore-medal']}",
+    "problem": "What is the surname of the individual who won the Gordon E. Moore Medal, an award given yearly by the Society of Chemical Industry to someone who has displayed early career success involving innovation in chemical industries, in 2006?",
+    "answer": "Jonathan M. McConnachie"
+  },
+  {
+    "metadata": "{'topic': 'Other', 'answer_type': 'Other', 'urls': ['https://en.wikipedia.org/wiki/Elizabeth_Esteve-Coll', 'http://blogs.bbk.ac.uk/bbkcomments/2023/12/14/200th-anniversary-birkbeck-effect-elizabeth-esteve-coll-museum-director-and-librarian/', 'https://en.wikipedia.org/wiki/Elizabeth_Esteve-Coll#:~:text=Esteve%2DColl%20served%20as%20Vice,being%20diagnosed%20with%20multiple%20sclerosis.', 'https://www.timeshighereducation.com/news/esteve-coll-is-to-retire/91693.article']}",
+    "problem": "What disease was Elizabeth Esteve-Coll diagnosed with that forced her to step down as Vice-Chancellor of the University of East Anglia?",
+    "answer": "multiple sclerosis diagnosis"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Date', 'urls': ['https://notepad-plus-plus.org/news/v788-released/', 'https://notepad-plus-plus.org/downloads/v7.8.8/', 'https://notepad-plus-plus.org/news/v788-released/', 'https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes#7x']}",
+    "problem": "What day, month, and year was Notepad++ version 7.8.8 released?",
+    "answer": "June 28, 2020"
+  },
+  {
+    "metadata": "{'topic': 'TV shows', 'answer_type': 'Other', 'urls': ['https://criticalrole.fandom.com/wiki/F.R.I.D.A.', 'https://en.wikipedia.org/wiki/Critical_Role_campaign_three#:~:text=Christian%20Navarro%20as%20F.R.I.D.A.,figure%20known%20as%20%22D%22.', 'https://criticalrole.fandom.com/wiki/F.R.I.D.A.', 'https://criticalrole.miraheze.org/wiki/FRIDA']}",
+    "problem": "What is the name F.R.I.D.A. an acronym for in Critical Role Campaign 3?",
+    "answer": "Far Ranging Integrated Defense Aeormaton"
+  },
+  {
+    "metadata": "{'topic': 'Science and technology', 'answer_type': 'Date', 'urls': ['- https://en.wikipedia.org/wiki/Dolly_(sheep)\\n- https://www.ed.ac.uk/roslin/about/dolly/facts/life-of-dolly', 'https://www.ed.ac.uk/roslin/about/dolly/facts/life-of-dolly#:~:text=Over%20the%20years%2C%20Dolly%20had,staff%20noticed%20her%20walking%20stiffly.', 'https://en.wikipedia.org/wiki/Dolly_(sheep)', 'http://news.bbc.co.uk/2/hi/science/nature/2764039.stm']}",
+    "problem": "In which month and year did Dolly the sheep give birth to her first lamb, Bonnie?",
+    "answer": "April 1998"
+  }
+]

@@ -11,7 +11,7 @@ from .utils import extract_final_answer_section
 class TaskRunner:
     """Task runner with checkpointing and progress tracking for prompt optimization experiments."""
 
-    def __init__(self, llm, task: str, questions: List[str], optimizers: str, result_path: str, dataset_path: str, fresh_start: bool = False):
+    def __init__(self, llm, task: str, questions: List[str], optimizers: str, output_path: str, fresh_start: bool = False):
         # Store LLM and configuration
         self.llm = llm
         self.model_id = llm.model_id
@@ -19,8 +19,7 @@ class TaskRunner:
         self.optimizers_string = optimizers
         self.optimizers_list = parse_optimizers(optimizers)
         self.questions = questions
-        self.result_path = result_path
-        self.dataset_path = dataset_path
+        self.output_path = output_path
 
         # Get task config (use wikidata config for test task)
         from .utils import TASK_MAPPING
@@ -33,7 +32,7 @@ class TaskRunner:
         # Handle fresh start flag
         if fresh_start:
             # Remove existing checkpoint for fresh start - use result path
-            checkpoint_dir = os.path.join(self.result_path, "checkpoints")
+            checkpoint_dir = os.path.join(self.output_path, "checkpoints")
             checkpoint_file = os.path.join(
                 checkpoint_dir, f"{self.model_id}_{self.task}_{self.optimizers_string.replace(',', '_')}_checkpoint.json"
             )
@@ -43,7 +42,7 @@ class TaskRunner:
 
 
         # Checkpoint setup - use result path
-        self.checkpoint_dir = os.path.join(self.result_path, "checkpoints")
+        self.checkpoint_dir = os.path.join(self.output_path, "checkpoints")
         os.makedirs(self.checkpoint_dir, exist_ok=True)
         self.checkpoint_file = os.path.join(
             self.checkpoint_dir,

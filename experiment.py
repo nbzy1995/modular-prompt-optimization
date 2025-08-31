@@ -24,8 +24,9 @@ file_path_mapping = {
     "wikidata": get_absolute_path("dataset/wikidata_questions.json"),
     "multispanqa": get_absolute_path("dataset/multispanqa_dataset.json"),
     "wikidata_category": get_absolute_path("dataset/wikidata_category_dataset.json"),
-    "test": get_absolute_path("dataset/test_data.json"),  # For testing
-    "simpleqa": get_absolute_path("dataset/simpleqa_test.json"),  # For testing, use full simpleqa.json for real experiments
+    "test": get_absolute_path("dataset/test_data.json"), 
+    "simpleqa": get_absolute_path("dataset/simpleqa.json"),  
+    "simpleqa_small": get_absolute_path("dataset/simpleqa_small.json"),  # Small subset of simpleqa for testing, use full simpleqa.json for real experiments
 }
 
 if __name__ == "__main__":
@@ -44,10 +45,10 @@ if __name__ == "__main__":
         type=str,
         help="Task to evaluate on.",
         default="wikidata",
-        choices=["wikidata", "wikidata_category", "multispanqa", "simpleqa", "test"],
+        choices=["wikidata", "wikidata_category", "multispanqa", "simpleqa","simpleqa_small", "test"],
     )
     argParser.add_argument(
-        "-o",
+        "-op",
         "--optimizers",
         type=str,
         help="Comma-separated list of prompt optimizers to apply (e.g., 'expert_persona,cot,uncertainty') or 'none' for baseline.",
@@ -64,7 +65,7 @@ if __name__ == "__main__":
         help="1 if force start fresh experiment, ignoring any existing checkpoint.",
     )
     argParser.add_argument(
-        "-r", "--result-path", type=str, help="Path to save the full experiment."
+        "-o", "--output-path", type=str, help="Path to save all outputs of the experiment."
     )
     argParser.add_argument(
         "-d", "--dataset-path", type=str, help="Path to the original dataset."
@@ -75,7 +76,7 @@ if __name__ == "__main__":
     # --------------------------------------------------
     # 1. Load task and dataset
     # --------------------------------------------------
-    if args.task == "simpleqa":
+    if args.task in ["simpleqa", "simpleqa_small"]:
         data = load_simpleqa_dataset(file_path_mapping[args.task])
         questions = get_simpleqa_questions(data)
     else:
@@ -108,8 +109,7 @@ if __name__ == "__main__":
         task=args.task,
         questions=questions,
         optimizers=args.optimizers,
-        result_path=args.result_path,
-        dataset_path=args.dataset_path,
+        output_path=args.output_path,
         fresh_start=args.fresh_start
     )
 
