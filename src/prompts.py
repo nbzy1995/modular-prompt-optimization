@@ -22,40 +22,80 @@ COT_PROMPT = """REASONING PROCESS: Explicitly show your step-by-step reasoning p
 ######################################
 
 COVE_PROMPT = """VERIFICATION PROCEDURE: Use the following verification approach:
-1. INITIAL ANSWER: Provide your first response to the question
+1. INITIAL ANSWER: Provide your initial answer to the question
 2. VERIFICATION QUESTIONS: Generate 3-5 specific verification questions to check your initial answer
 3. VERIFICATION RESPONSES: Answer each verification question thoroughly
-4. FINAL VERIFIED ANSWER: Based on the verification, provide your refined final answer
+4. FINAL VERIFIED ANSWER: Based on the verification, provide your refined final answer in the final answer section
 
 IMPORTANT: Even if the task asks for a specific format (like numbered lists), you must still show the complete verification process first, then provide the final answer in the requested format."""
 
 
 ######################################
-# WIKIDATA
+# Task Final Answer Format
 ######################################
 
-BASELINE_PROMPT_WIKI = """Answer the below question which is asking for a list of persons. Output should be a numbered list of maximum 10 persons and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
+
+
+######################################
+# WIKIDATA COMPONENTS
+######################################
+
+WIKIDATA_TASK_PROMPT = """Answer the below question which is asking for a list of persons. """
+
+WIKIDATA_FINAL_ANSWER_FORMAT = """
+FINAL ANSWER FORMAT: Regardless of your reasoning processes or methodology, after all intermediate steps, you MUST end your response with a clearly delimited final answer section:
+
+=== FINAL ANSWER ===
+[Provide your final answer here as a numbered list with exactly the format shown below]
+
+1. [Entity Name Only]
+2. [Entity Name Only]
+3. [Entity Name Only]
+...
+[Maximum 10 entities, no additional details, no explanations]
+=== END FINAL ANSWER ===
+"""
+
+WIKIDATA_EXAMPLES_PROMPT = """
+EXAMPLEs: Here is some examples of the question and the output you should return.
 
 Example Question: Who are some movie actors who were born in Boston?
-Example Answer: 1. Donnie Wahlberg
+Example Output: 
+[Some intermediate answer if requested]
+=== FINAL ANSWER ===
+1. Donnie Wahlberg
 2. Chris Evans
 3. Mark Wahlberg
 4. Ben Affleck
 5. Uma Thurman
+=== END FINAL ANSWER ===
+
 Example Question: Who are some football players who were born in Madrid?
-Example Answer: 1. Sergio Ramos
+Example Output: 
+[Some intermediate answer if requested]
+=== FINAL ANSWER ===
+1. Sergio Ramos
 2. Marcos Alonso
 3. David De Gea
 4. Fernando Torres
+=== END FINAL ANSWER ===
 
 Example Question: Who are some politicians who were born in Washington?
-Example Answer: 1. Barack Obama
+Example Output: 
+[Some intermediate reasoning if requested]
+=== FINAL ANSWER ===
+1. Barack Obama
 2. Bill Clinton
 3. Bil Sheffield
 4. George Washington
-
-Question: {question}
+=== END FINAL ANSWER ===
 """
+
+
+WIKIDATA_QUESTION_PROMPT = """
+Now here is the actual question:
+Question: {question}"""
+
 
 
 ######################################

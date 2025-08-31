@@ -4,6 +4,10 @@ from .prompts import (
     UNCERTAINTY_PROMPT,
     COT_PROMPT,
     COVE_PROMPT,
+    WIKIDATA_TASK_PROMPT,
+    WIKIDATA_EXAMPLES_PROMPT,
+    WIKIDATA_FINAL_ANSWER_FORMAT,
+    WIKIDATA_QUESTION_PROMPT,
 )
 
 
@@ -32,31 +36,65 @@ def parse_optimizers(optimizers_string: str) -> List[str]:
     return optimizers
 
 
-def optimize_prompt(baseline_prompt: str, optimizers_list: List[str]) -> str:
+def optimize_prompt(question, optimizers_list: List[str], task_config=None) -> str:
     """
-    Optimize a baseline prompt by concatenating optimizer prompts.
+    Build prompt with sequential logic:
+        ROLE → TASK → [optimizers] → FORMAT → EXAMPLES → QUESTION
     
     Args:
-        baseline_prompt: The base prompt for the task
-        optimizers_list: List of optimizer names to apply
+        optimizers_list: List of optimizer names to apply (can be empty)
+        task_config: TaskConfig object containing task info
         
     Returns:
-        Final optimized prompt with all optimizers concatenated
+        Final optimized prompt with hierarchical structure
     """
-    if not optimizers_list:
-        return baseline_prompt
+    components = _get_task_components(task_config)
+    if not components:
+        raise ValueError("Task prompt components not defined for this task.")
     
-    # Handle special case of "none" optimizer - return baseline prompt unchanged
-    if optimizers_list == ["none"]:
-        return baseline_prompt
+    prompt_parts = []
     
-    # Start with baseline prompt
-    optimized_prompt = baseline_prompt
+    # 1. ROLE (if expert_persona in optimizers)
+    if optimizers_list and "expert_persona" in optimizers_list:
+        prompt_parts.append(EXPERT_PERSONA_PROMPT)
     
-    # Append each optimizer prompt (skip empty prompts like "none")
-    for optimizer_name in optimizers_list:
-        optimizer_prompt = OPTIMIZER_PROMPTS[optimizer_name]
-        if optimizer_prompt:  # Only add non-empty prompts
-            optimized_prompt += f"\n\n{optimizer_prompt}"
+    # 2. TASK
+    prompt_parts.append(components["task_prompt"])
     
-    return optimized_prompt
+    # 3. Add other optimizers in user-specified order
+    if optimizers_list:
+        for optimizer_name in optimizers_list:
+            if optimizer_name in ["expert_persona", "none"]:
+                continue
+            optimizer_prompt = OPTIMIZER_PROMPTS.get(optimizer_name)
+            if optimizer_prompt:
+                prompt_parts.append(optimizer_prompt)
+    
+    # 4. FORMAT
+    if components["final_answer_format"]:
+        prompt_parts.append(components["final_answer_format"])
+
+    # 5. EXAMPLES
+    prompt_parts.append(components["examples_prompt"])
+    
+    # 6. QUESTION (placeholder - will be filled with actual question)
+    prompt_parts.append(components["question_prompt"].format(question=question))
+
+    return "\n\n".join(prompt_parts)
+
+def _get_task_components(task_config):
+    """Get task-specific components from task_config."""
+    if not task_config:
+        return None
+        
+    # Check if task has hierarchical components defined
+    if task_config.task_prompt and task_config.examples_prompt and task_config.question_prompt:
+        return {
+            "task_prompt": task_config.task_prompt,
+            "examples_prompt": task_config.examples_prompt, 
+            "question_prompt": task_config.question_prompt,
+            "final_answer_format": task_config.final_answer_format
+        }
+    
+    # TODO: Add components for other tasks
+    return None

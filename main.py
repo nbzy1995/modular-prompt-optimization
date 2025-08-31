@@ -22,7 +22,7 @@ file_path_mapping = {
     "wikidata": get_absolute_path("dataset/wikidata_questions.json"),
     "multispanqa": get_absolute_path("dataset/multispanqa_dataset.json"),
     "wikidata_category": get_absolute_path("dataset/wikidata_category_dataset.json"),
-    "test": get_absolute_path("small_test.json"),  # For testing
+    "test": get_absolute_path("dataset/test_data.json"),  # For testing
 }
 
 if __name__ == "__main__":

@@ -5,6 +5,7 @@ import sys
 from typing import Dict, List, Any
 
 from .prompt_optimizer import optimize_prompt, parse_optimizers
+from .answer_extractor import extract_final_answer_section
 
 
 class TaskRunner:
@@ -93,11 +94,7 @@ class TaskRunner:
         Returns:
             tuple: (optimized_prompt, response)
         """
-        # Get baseline prompt and optimize it
-        baseline_prompt = self.task_config.baseline_prompt.format(
-            question=question
-        )
-        optimized_prompt = optimize_prompt(baseline_prompt, self.optimizers_list)
+        optimized_prompt = optimize_prompt(question, self.optimizers_list, self.task_config)
         response = self.call_llm(optimized_prompt, self.task_config.max_tokens)
         
         return optimized_prompt, response
@@ -133,11 +130,15 @@ class TaskRunner:
                 print("🔧 Generating response...")
                 optimized_prompt, optimized_response = self.get_optimized_response(question)
                 
+                # Extract final answer section for evaluation
+                final_answer_section = extract_final_answer_section(optimized_response)
+                
                 result = {
                     "Question": question,
                     "Optimizers Used": self.optimizers_string,
                     "Optimized Prompt": optimized_prompt,
                     "Optimized Answer": optimized_response,
+                    "Final Answer Section": final_answer_section,
                 }
                 
                 all_results.append(result)
