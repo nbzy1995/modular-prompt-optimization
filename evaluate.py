@@ -1,6 +1,5 @@
 import argparse
-import os
-import sys
+import os, sys
 from typing import Dict, List
 import numpy as np
 
@@ -11,6 +10,7 @@ from src.data.data_processor import (
     get_cleaned_final_answer,
     get_answers_from_dict,
     get_answers_from_list,
+    get_simpleqa_answers,
 )
 
 
@@ -53,6 +53,7 @@ def compute_metrics_for_list_answer(
         positive = 0
         negative = 0
         for item in answer:
+            print(f"Item: {item}, True Answer: {true_answer}")
             if item in true_answer:
                 positive += 1
             else:
@@ -72,36 +73,62 @@ def compute_metrics_for_list_answer(
     }
 
 
+def compute_metrics_for_simpleqa(
+    answers: List[str], true_answers: List[str]
+) -> Dict[str, float]:
+    """
+    Compute exact match accuracy for SimpleQA dataset.
+    SimpleQA requires precise factual answers.
+    """
+    exact_matches = []
+    normalized_matches = []
+    
+    for answer, true_answer in zip(answers, true_answers):
+        # Exact match
+        exact_match = 1.0 if answer.strip() == true_answer.strip() else 0.0
+        exact_matches.append(exact_match)
+        
+        # Normalized match (case-insensitive, whitespace normalized)
+        answer_norm = answer.strip().lower()
+        true_answer_norm = true_answer.strip().lower()
+        normalized_match = 1.0 if answer_norm == true_answer_norm else 0.0
+        normalized_matches.append(normalized_match)
+    
+    return {
+        "exact_match_accuracy": np.mean(exact_matches),
+        "normalized_match_accuracy": np.mean(normalized_matches),
+        "total_questions": len(answers),
+        "correct_exact": int(np.sum(exact_matches)),
+        "correct_normalized": int(np.sum(normalized_matches))
+    }
+
+
 def evaluate(result_path: str, dataset_path: str, dataset_type: str):
     if not (os.path.exists(dataset_path) and os.path.exists(result_path)):
         raise ValueError("Dataset or results path does not exist.")
     dataset = read_json(dataset_path)
     results = read_json(result_path)
 
+    # Labels
     if dataset_type == "wikidata":
         true_answers = get_answers_from_dict(dataset)
     elif dataset_type == "wikidata_category" or dataset_type == "multispan_qa":
         true_answers = get_answers_from_list(dataset)
+    elif dataset_type == "simpleqa":
+        true_answers = get_simpleqa_answers(dataset)
 
+    # Predictions
     if dataset_type == "multispan_qa":
-        answers = [result["Final Refined Answer"] for result in results]
-        baseline_answers = [result["Baseline Answer"] for result in results]
-
-        baseline_metrics = compute_metrics_for_open_answer(
-            baseline_answers, true_answers
-        )
+        answers = [result["Final Answer Section"] for result in results]
         metrics = compute_metrics_for_open_answer(answers, true_answers)
+    elif dataset_type == "simpleqa":
+        answers = [result["Final Answer Section"] for result in results]
+        metrics = compute_metrics_for_simpleqa(answers, true_answers)
     else:
-        answers = get_cleaned_final_answer(results, "Final Refined Answer")
-        baseline_answers = get_cleaned_final_answer(results, "Baseline Answer")
-
-        baseline_metrics = compute_metrics_for_list_answer(
-            baseline_answers, true_answers
-        )
+        answers = get_cleaned_final_answer(results, "Final Answer Section")
         metrics = compute_metrics_for_list_answer(answers, true_answers)
 
-    print(f"Baseline metrics: {baseline_metrics}")
-    print(f"CoVe metrics: {metrics}")
+    print(f"metrics: {metrics}")
 
 
 if __name__ == "__main__":
@@ -118,7 +145,7 @@ if __name__ == "__main__":
         "--dataset-type",
         type=str,
         help="Type of the dataet.",
-        choices=["wikidata", "wikidata_category", "multispan_qa"],
+        choices=["wikidata", "wikidata_category", "multispan_qa", "simpleqa"],
     )
 
     args = argParser.parse_args()

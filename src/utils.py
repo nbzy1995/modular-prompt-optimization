@@ -1,7 +1,5 @@
 import dataclasses
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-from huggingface_hub import login
+import re
 
 # TODO: more organized prompt import and task config.
 from src.prompts import (
@@ -10,7 +8,11 @@ from src.prompts import (
     WIKIDATA_FINAL_ANSWER_FORMAT,
     WIKIDATA_EXAMPLES_PROMPT,
     WIKIDATA_QUESTION_PROMPT,
-    WIKIDATA_TASK_PROMPT
+    WIKIDATA_TASK_PROMPT,
+    SIMPLEQA_FINAL_ANSWER_FORMAT,
+    SIMPLEQA_EXAMPLES_PROMPT,
+    SIMPLEQA_QUESTION_PROMPT,
+    SIMPLEQA_TASK_PROMPT
 )
 
 @dataclasses.dataclass
@@ -53,6 +55,14 @@ TASK_MAPPING = {
         examples_prompt=WIKIDATA_EXAMPLES_PROMPT,
         question_prompt=WIKIDATA_QUESTION_PROMPT,
     ),
+    "simpleqa": TaskConfig(
+        id="simpleqa",
+        max_tokens=100,
+        task_prompt=SIMPLEQA_TASK_PROMPT,
+        final_answer_format=SIMPLEQA_FINAL_ANSWER_FORMAT,
+        examples_prompt=SIMPLEQA_EXAMPLES_PROMPT,
+        question_prompt=SIMPLEQA_QUESTION_PROMPT,
+    ),
 }
 
 
@@ -66,3 +76,23 @@ def get_absolute_path(path_relative_to_project_root):
     )
     return final_directory
 
+def extract_final_answer_section(response: str) -> str:
+    """
+    Extract the final answer section from the response.
+    
+    Args:
+        response: The full LLM response text
+        
+    Returns:
+        The final answer section as a string (empty if not found)
+    """
+    
+    # Look for the delimited final answer section
+    final_answer_pattern = r'=== FINAL ANSWER ===(.*?)=== END FINAL ANSWER ==='
+    match = re.search(final_answer_pattern, response, re.DOTALL | re.IGNORECASE)
+    
+    if match:
+        return match.group(1).strip()
+    
+    # If no delimited section found, return empty string
+    return ""

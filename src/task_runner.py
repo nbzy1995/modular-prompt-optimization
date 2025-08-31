@@ -5,13 +5,13 @@ import sys
 from typing import Dict, List, Any
 
 from .prompt_optimizer import optimize_prompt, parse_optimizers
-from .answer_extractor import extract_final_answer_section
+from .utils import extract_final_answer_section
 
 
 class TaskRunner:
     """Task runner with checkpointing and progress tracking for prompt optimization experiments."""
-    
-    def __init__(self, llm, task: str, questions: List[str], optimizers: str):
+
+    def __init__(self, llm, task: str, questions: List[str], optimizers: str, result_path: str, dataset_path: str, fresh_start: bool = False):
         # Store LLM and configuration
         self.llm = llm
         self.model_id = llm.model_id
@@ -19,7 +19,9 @@ class TaskRunner:
         self.optimizers_string = optimizers
         self.optimizers_list = parse_optimizers(optimizers)
         self.questions = questions
-        
+        self.result_path = result_path
+        self.dataset_path = dataset_path
+
         # Get task config (use wikidata config for test task)
         from .utils import TASK_MAPPING
         actual_task = "wikidata" if task == "test" else task
@@ -27,13 +29,25 @@ class TaskRunner:
         if self.task_config is None:
             print(f"Invalid task. Valid tasks are: {', '.join(TASK_MAPPING.keys())}")
             sys.exit()
-        
-        # Checkpoint setup - use current working directory  
-        self.checkpoint_dir = os.path.join(os.getcwd(), "checkpoints")
+
+        # Handle fresh start flag
+        if fresh_start:
+            # Remove existing checkpoint for fresh start - use result path
+            checkpoint_dir = os.path.join(self.result_path, "checkpoints")
+            checkpoint_file = os.path.join(
+                checkpoint_dir, f"{self.model_id}_{self.task}_{self.optimizers_string.replace(',', '_')}_checkpoint.json"
+            )
+            if os.path.exists(checkpoint_file):
+                os.remove(checkpoint_file)
+                print(f"🗑️ Removed existing checkpoint for fresh start")
+
+
+        # Checkpoint setup - use result path
+        self.checkpoint_dir = os.path.join(self.result_path, "checkpoints")
         os.makedirs(self.checkpoint_dir, exist_ok=True)
         self.checkpoint_file = os.path.join(
             self.checkpoint_dir,
-            f"{self.model_id}_{self.task}_{optimizers.replace(',', '_')}_checkpoint.json"
+            f"{self.model_id}_{self.task}_{self.optimizers_string.replace(',', '_')}_checkpoint.json"
         )
         
         # Load checkpoint if exists

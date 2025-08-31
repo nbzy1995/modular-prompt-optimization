@@ -36,3 +36,33 @@ def get_items_from_answer(result: str) -> List[str]:
 
 def get_cleaned_final_answer(results: List[str], answer_slice: str) -> List[List[str]]:
     return [get_items_from_answer(result[answer_slice]) for result in results]
+
+def load_simpleqa_dataset(path: str) -> List[Dict[str, str]]:
+    """Load SimpleQA dataset from JSON file"""
+    data = read_json(path)
+    return data
+
+def get_simpleqa_questions(data: List[Dict[str, str]]) -> List[str]:
+    """Extract questions from SimpleQA dataset"""
+    return [item['problem'] for item in data]
+
+def get_simpleqa_answers(data: List[Dict[str, str]]) -> List[str]:
+    """Extract answers from SimpleQA dataset"""
+    return [item['answer'] for item in data]
+
+def get_simpleqa_metadata(data: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """Extract metadata from SimpleQA dataset"""
+    import ast
+    metadata_list = []
+    for item in data:
+        try:
+            # Parse metadata string to dict
+            if isinstance(item['metadata'], str):
+                metadata = ast.literal_eval(item['metadata'])
+            else:
+                metadata = item['metadata']
+            metadata_list.append(metadata)
+        except:
+            # Fallback if parsing fails
+            metadata_list.append({'topic': 'Unknown', 'answer_type': 'Other'})
+    return metadata_list

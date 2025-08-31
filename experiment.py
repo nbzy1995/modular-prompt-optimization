@@ -11,6 +11,8 @@ from src.data.data_processor import (
     read_json,
     get_questions_from_list,
     get_questions_from_dict,
+    load_simpleqa_dataset,
+    get_simpleqa_questions,
 )
 
 
@@ -23,6 +25,7 @@ file_path_mapping = {
     "multispanqa": get_absolute_path("dataset/multispanqa_dataset.json"),
     "wikidata_category": get_absolute_path("dataset/wikidata_category_dataset.json"),
     "test": get_absolute_path("dataset/test_data.json"),  # For testing
+    "simpleqa": get_absolute_path("dataset/simpleqa_test.json"),  # For testing, use full simpleqa.json for real experiments
 }
 
 if __name__ == "__main__":
@@ -60,32 +63,27 @@ if __name__ == "__main__":
         default=False,
         help="1 if force start fresh experiment, ignoring any existing checkpoint.",
     )
+    argParser.add_argument(
+        "-r", "--result-path", type=str, help="Path to save the full experiment."
+    )
+    argParser.add_argument(
+        "-d", "--dataset-path", type=str, help="Path to the original dataset."
+    )
+
     args = argParser.parse_args()
-
-    # --------------------------------------------------
-
-    # Handle fresh start flag
-    if args.fresh_start:
-        # Remove existing checkpoint for fresh start - use current working directory
-        checkpoint_dir = os.path.join(os.getcwd(), "checkpoints")
-        checkpoint_file = os.path.join(
-            checkpoint_dir, f"{args.model}_{args.task}_{args.optimizers.replace(',', '_')}_checkpoint.json"
-        )
-        if os.path.exists(checkpoint_file):
-            os.remove(checkpoint_file)
-            print(f"🗑️ Removed existing checkpoint for fresh start")
-
 
     # --------------------------------------------------
     # 1. Load task and dataset
     # --------------------------------------------------
-    data = read_json(file_path_mapping[args.task])
-    if args.task in ["wikidata", "test"]:
-        questions = get_questions_from_dict(data)
+    if args.task == "simpleqa":
+        data = load_simpleqa_dataset(file_path_mapping[args.task])
+        questions = get_simpleqa_questions(data)
     else:
-        questions = get_questions_from_list(data)
-
-
+        data = read_json(file_path_mapping[args.task])
+        if args.task in ["wikidata", "test"]:
+            questions = get_questions_from_dict(data)
+        else:
+            questions = get_questions_from_list(data)
 
     # --------------------------------------------------
     # 2. Setup LLM model
@@ -109,7 +107,10 @@ if __name__ == "__main__":
         llm=llm,
         task=args.task,
         questions=questions,
-        optimizers=args.optimizers
+        optimizers=args.optimizers,
+        result_path=args.result_path,
+        dataset_path=args.dataset_path,
+        fresh_start=args.fresh_start
     )
 
     task_runner.run_experiments()

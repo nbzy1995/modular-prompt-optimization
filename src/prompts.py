@@ -129,3 +129,46 @@ BASELINE_PROMPT_MULTI_QA = """Answer the below question correctly and in a conci
 
 Question: {question}
 """
+
+######################################
+# SIMPLEQA COMPONENTS
+######################################
+
+SIMPLEQA_TASK_PROMPT = """Answer the below factual question with a single, precise answer. Provide only the specific information requested."""
+
+SIMPLEQA_FINAL_ANSWER_FORMAT = """
+FINAL ANSWER FORMAT: Regardless of your reasoning processes or methodology, after all intermediate steps, you MUST end your response with a clearly delimited final answer section:
+
+=== FINAL ANSWER ===
+[Provide your single, precise answer here - no additional details or explanations]
+=== END FINAL ANSWER ===
+"""
+
+SIMPLEQA_EXAMPLES_PROMPT = """
+EXAMPLES: Here are some examples of the question and output format you should follow.
+
+Example Question: Who received the IEEE Frank Rosenblatt Award in 2010?
+Example Output: 
+[Some intermediate reasoning if requested]
+=== FINAL ANSWER ===
+Michio Sugeno
+=== END FINAL ANSWER ===
+
+Example Question: What's the name of the women's liberal arts college in Cambridge, Massachusetts?
+Example Output: 
+[Some intermediate reasoning if requested]
+=== FINAL ANSWER ===
+Radcliffe College
+=== END FINAL ANSWER ===
+
+Example Question: How much money, in euros, was the surgeon held responsible for Stella Obasanjo's death ordered to pay her son?
+Example Output: 
+[Some intermediate reasoning if requested]
+=== FINAL ANSWER ===
+120,000
+=== END FINAL ANSWER ===
+"""
+
+SIMPLEQA_QUESTION_PROMPT = """
+Now here is the actual question:
+Question: {question}"""
