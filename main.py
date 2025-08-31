@@ -22,7 +22,7 @@ file_path_mapping = {
     "wikidata": get_absolute_path("dataset/wikidata_questions.json"),
     "multispanqa": get_absolute_path("dataset/multispanqa_dataset.json"),
     "wikidata_category": get_absolute_path("dataset/wikidata_category_dataset.json"),
-    "test": get_absolute_path("temp_one_question.json"),  # For testing
+    "test": get_absolute_path("small_test.json"),  # For testing
 }
 
 if __name__ == "__main__":
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         "-o",
         "--optimizers",
         type=str,
-        help="Comma-separated list of prompt optimizers to apply (e.g., 'expert_persona,cot,uncertainty').",
+        help="Comma-separated list of prompt optimizers to apply (e.g., 'expert_persona,cot,uncertainty') or 'none' for baseline.",
         default="cove",
     )
     argParser.add_argument(
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     # 1. Load task and dataset
     # --------------------------------------------------
     data = read_json(file_path_mapping[args.task])
-    if args.task == "wikidata":
+    if args.task in ["wikidata", "test"]:
         questions = get_questions_from_dict(data)
     else:
         questions = get_questions_from_list(data)

@@ -12,6 +12,7 @@ OPTIMIZER_PROMPTS = {
     "cot": COT_PROMPT, 
     "uncertainty": UNCERTAINTY_PROMPT,
     "cove": COVE_PROMPT,
+    "none": "",  # Baseline prompt without optimization
 }
 
 
@@ -45,12 +46,17 @@ def optimize_prompt(baseline_prompt: str, optimizers_list: List[str]) -> str:
     if not optimizers_list:
         return baseline_prompt
     
+    # Handle special case of "none" optimizer - return baseline prompt unchanged
+    if optimizers_list == ["none"]:
+        return baseline_prompt
+    
     # Start with baseline prompt
     optimized_prompt = baseline_prompt
     
-    # Append each optimizer prompt
+    # Append each optimizer prompt (skip empty prompts like "none")
     for optimizer_name in optimizers_list:
         optimizer_prompt = OPTIMIZER_PROMPTS[optimizer_name]
-        optimized_prompt += f"\n\n{optimizer_prompt}"
+        if optimizer_prompt:  # Only add non-empty prompts
+            optimized_prompt += f"\n\n{optimizer_prompt}"
     
     return optimized_prompt

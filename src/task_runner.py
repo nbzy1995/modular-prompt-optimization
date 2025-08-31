@@ -87,22 +87,20 @@ class TaskRunner:
         """Call LLM using the simple interface."""
         return self.llm.call_llm(prompt, max_tokens)
 
-    def get_baseline_response(self, question: str) -> str:
-        """Get baseline response for a question."""
-        baseline_prompt = self.task_config.baseline_prompt.format(
-            question=question
-        )
-        return self.call_llm(baseline_prompt, self.task_config.max_tokens)
-
-    def get_optimized_response(self, question: str) -> str:
-        """Get optimized response for a question using the specified optimizers."""
+    def get_optimized_response(self, question: str) -> tuple[str, str]:
+        """Get optimized response for a question using the specified optimizers.
+        
+        Returns:
+            tuple: (optimized_prompt, response)
+        """
         # Get baseline prompt and optimize it
         baseline_prompt = self.task_config.baseline_prompt.format(
             question=question
         )
         optimized_prompt = optimize_prompt(baseline_prompt, self.optimizers_list)
+        response = self.call_llm(optimized_prompt, self.task_config.max_tokens)
         
-        return self.call_llm(optimized_prompt, self.task_config.max_tokens)
+        return optimized_prompt, response
 
     def print_result(self, result: Dict[str, str]):
         """Print result."""
@@ -131,19 +129,15 @@ class TaskRunner:
                 
                 self.print_progress(i, len(self.questions), question)
                 
-                # Get baseline response
-                print("🤖 Generating baseline response...")
-                baseline_response = self.get_baseline_response(question)
-                
-                # Get optimized response
-                print("🔧 Generating optimized response...")
-                optimized_response = self.get_optimized_response(question)
+                # Get optimized response (includes baseline when optimizer="none")
+                print("🔧 Generating response...")
+                optimized_prompt, optimized_response = self.get_optimized_response(question)
                 
                 result = {
                     "Question": question,
-                    "Baseline Answer": baseline_response,
-                    "Optimized Answer": optimized_response,
                     "Optimizers Used": self.optimizers_string,
+                    "Optimized Prompt": optimized_prompt,
+                    "Optimized Answer": optimized_response,
                 }
                 
                 all_results.append(result)
