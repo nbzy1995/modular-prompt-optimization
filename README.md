@@ -1,152 +1,126 @@
-# Modular Prompt Optimization Library
+# Modular Prompt Optimization Framework
 
-A modular LLM prompt optimization library containing various prompt optimization techniques and their combinations. This library provides a complete pipeline for evaluating LLM prompt techniques on question-answering tasks, with a focus on hallucination reduction.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](https://docs.pytest.org/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
-## :fire: Quickstart
+A framework for evaluating modular combinations of prompt optimization techniques on LLM hallucination reduction. Designed for systematic experimentation with comprehensive evaluation metrics.
 
-First, create a Python virtual environment and install dependencies:
+## Features
 
+- **Hallucination Evaluation**: correct/incorrect/abstention responses with precision, recall, F1, and hallucination rates
+- **Multiple Optimizers**: Chain-of-Thought, Chain-of-Verification, Expert Persona, Uncertainty Quantification, and their arbitrary combinations
+- **Multiple Dataset**: Full support for OpenAI's SimpleQA hallucination benchmark dataset, and more
+- **Multi-LLM Support**: OpenAI GPT, Google Gemini, via unified interface
+- **Automatic Checkpointing**: Resume interrupted experiments, progress tracking
+
+## Quick Start
+
+### Prerequisites
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) for fast Python package management:
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+# Install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# or: pip install uv
 ```
 
-Then, create a `.env` file in the project root with your API keys:
-
+### Setup
 ```bash
-OPENAI_API_KEY=sk-abc.....
-HF_API_KEY=hf_abc.......
-GOOGLE_API_KEY=your_google_api_key
-SCALEDOWN_API_KEY=your_scaledown_api_key
+# Clone and setup environment (uv handles everything automatically)
+git clone <repository-url>
+cd modular-prompt-optimization
+uv sync
+
+# Add API keys to .env file
+OPENAI_API_KEY=your-key
+GOOGLE_API_KEY=your-key  
+SCALEDOWN_API_KEY=your-key
 ```
 
 ## Usage
 
-### Running Experiments
-
+### Run Experiments
 ```bash
-python3 main.py --model=MODEL --task=TASK --optimizers=OPTIMIZERS [--temperature=0.07] [--top-p=0.9] [--fresh-start=True]
+# Basic experiment
+uv run experiment.py --task=simpleqa --model=scaledown-gpt-4o --optimizers=cot --output-path=results
+
+# Multiple optimizers  
+uv run experiment.py --task=simpleqa --model=scaledown-gpt-4o --optimizers=expert_persona,cot --output-path=results
 ```
 
-### Examples
-
+### Evaluate Results
 ```bash
-# Run CoVe optimization on wikidata with Gemini
-python3 main.py --model=gemini2.5_flash_lite --task=wikidata --optimizers=cove
-
-# Combine multiple optimizers on multispanqa
-python3 main.py --model=scaledown-gpt-4o --task=multispanqa --optimizers=expert_persona,cot,uncertainty
-
-# Resume interrupted experiment (automatic checkpointing)
-python3 main.py --model=gemini2.5_flash_lite --task=wikidata --optimizers=cove
-
-# Force restart experiment
-python3 main.py --model=gemini2.5_flash_lite --task=wikidata --optimizers=cove --fresh-start=True
+uv run evaluate.py -r results/scaledown-gpt-4o_simpleqa_cot_results.json -d dataset/simpleqa.json -t simpleqa
 ```
 
-### Evaluation
+Example output:
+```
+🚨 HALLUCINATION ANALYSIS:
+   Hallucination Rate: 0.684 (68.4% of attempted answers)
+   Abstention Rate: 0.020 (model says 'I don't know')
+   
+🎯 CORE PERFORMANCE METRICS:
+   Precision: 0.316 (accuracy when attempting answers)
+   F1 Score: 0.308
+```
 
+### Analysis
 ```bash
-python3 src/evaluate.py -r RESULT_PATH -d DATASET_PATH -t DATASET_TYPE
+cd experiments/
+jupyter notebook simpleqa_hallucination_analysis.ipynb
 ```
 
 ## Available Options
 
-### Models
-- `gemini2.5_flash_lite` - Google Gemini 2.5 Flash Lite
-- `scaledown-gpt-4o` - GPT-4o via Scaledown API
-- `llama2`, `llama2_70b`, `llama-65b` - Llama models (requires HuggingFace setup)
-- `gpt3` - OpenAI GPT-3
+**Models**: `scaledown-gpt-4o`, `gemini2.5_flash_lite`, `llama2`, `llama2_70b`
 
-### Tasks
-- `wikidata` - WikiData question-answering
-- `wikidata_category` - WikiData category classification
-- `multispanqa` - Multi-span question-answering
-- `simpleqa` - Simple question-answering
-- `test` - Test dataset (uses wikidata prompts)
+**Tasks**: `simpleqa`, `wikidata`, `multispanqa`, `wikidata_category`
 
-### Optimizers
-- `expert_persona` - Expert persona prompting
-- `cot` - Chain-of-Thought prompting  
-- `uncertainty` - Uncertainty-aware prompting
-- `cove` - Chain-of-Verification
-- Multiple optimizers can be combined with commas: `expert_persona,cot,uncertainty`
-
-## Features
-
-### Automatic Checkpointing
-- Experiments automatically save progress to `checkpoints/` directory
-- Resume interrupted experiments by running the same command
-- Use `--fresh-start=True` to ignore existing checkpoints
-
-### Result Management
-- Results automatically saved to `result/{model}_{task}_{optimizers}_results.json`
-- Each result contains baseline and optimized responses for comparison
-- Progress tracking with detailed logging
-
-### Modular Architecture
-- Easy to add new optimization techniques
-- Support for multiple LLM providers
-- Configuration-driven task and model management
+**Optimizers**: `cot`, `cove`, `expert_persona`, `uncertainty` (combinable with commas)
 
 ## Architecture
 
-### Data Flow
-1. Load dataset questions based on selected task
-2. Create appropriate LLM provider (Google, Scaledown, etc.)
-3. For each question: generate baseline response → apply optimizers → generate optimized response
-4. Save results with automatic checkpointing
-5. Optional evaluation against ground truth
+- `src/llms.py` - LLM provider implementations
+- `src/task_runner.py` - Experiment orchestration with checkpointing  
+- `src/prompt_optimizer.py` - Modular optimization techniques
+- `evaluate.py` - Enhanced evaluation metrics
+- `experiments/` - Analysis notebook and results
 
-### Core Components
+## Evaluation Metrics
 
-- **LLM Providers** (`src/llms.py`): Unified interface for different LLM APIs
-- **Task Runner** (`src/task_runner.py`): Experiment orchestration with checkpointing
-- **Prompt Optimizer** (`src/prompt_optimizer.py`): Modular optimization techniques
-- **Data Pipeline** (`src/data/`): Dataset loading and preprocessing utilities
-- **Configuration** (`src/utils.py`): Task and model configuration management
+The framework provides detailed hallucination analysis:
 
-### Directory Structure
+- **Response Classification**: Correct, Incorrect (hallucinations), Abstentions
+- **Core Metrics**: Precision, Recall, F1 Score
+- **Hallucination Metrics**: Hallucination rate, abstention rate, calibration metrics
+- **Interactive Analysis**: Inspect specific response types and compare optimizers
 
-```
-src/
-├── data/              # Dataset utilities and preprocessors  
-├── llms.py           # LLM provider implementations
-├── task_runner.py    # Experiment orchestration
-├── prompt_optimizer.py # Optimization techniques
-├── prompts.py        # Prompt templates
-├── utils.py          # Configuration classes
-└── evaluate.py       # Evaluation metrics
+## Extension
 
-dataset/              # Processed datasets
-result/               # Experiment results (auto-generated)
-checkpoints/          # Progress checkpoints (auto-generated)
-tests/                # Test files
-```
-
-## Development
-
-### Adding New Optimizers
-
-1. Add prompt template to `src/prompts.py`
-2. Register in `OPTIMIZER_PROMPTS` dict in `src/prompt_optimizer.py`
-3. The optimizer will be automatically available via CLI
-
-### Adding New Tasks
-
-1. Add `TaskConfig` entry to `TASK_MAPPING` in `src/utils.py`
-2. Add corresponding prompt template in `src/prompts.py`
-3. Add dataset file path to `file_path_mapping` in `main.py`
-
-### Adding New LLM Providers
-
-1. Implement new class inheriting from `LLM` base class in `src/llms.py`
-2. Add model detection logic to `LLMProviderFactory.create_provider()`
-3. The provider will be automatically available via CLI
+Add new optimizers by extending `OPTIMIZER_PROMPTS` in `src/prompt_optimizer.py`.
+Add new tasks by adding `TaskConfig` entries to `TASK_MAPPING` in `src/utils.py`.
 
 ## Testing
 
 ```bash
-python -m pytest tests/
+# Run unit tests
+uv run pytest tests/
+
+# Run with coverage
+uv run pytest tests/ --cov=src
+
+# Install dev dependencies
+uv sync --group dev
 ```
+
+GitHub Actions CI automatically runs tests on Python 3.8+ for all commits and pull requests.
+
+## Requirements
+
+- Python 3.8+ (managed automatically by uv)
+- [uv](https://docs.astral.sh/uv/) package manager
+- Dependencies are defined in `pyproject.toml`
+
+All dependencies are automatically managed by uv - no manual pip installs needed!

@@ -1,0 +1,141 @@
+[project]
+name = "modular-prompt-optimization"
+version = "0.1.0"
+description = "A framework for evaluating prompt optimization techniques on LLM hallucination reduction"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+keywords = ["llm", "prompt-optimization", "hallucination", "nlp", "ai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    # Core ML libraries
+    "torch>=2.0.1",
+    "transformers==4.34.1",
+    "bitsandbytes; platform_system == 'Linux'",
+    "datasets",
+    "accelerate",
+    "trl",
+    "safetensors",
+    "huggingface_hub",
+    
+    # API clients
+    "openai",
+    "google-generativeai",
+    "langchain",
+    "langchain-openai", 
+    "langchain-community",
+    
+    # Data processing
+    "python-dotenv",
+    "jsonlines",
+    "sparqlwrapper",
+    
+    # Analysis and visualization
+    "jupyter",
+    "matplotlib",
+    "seaborn",
+    "pandas",
+    "numpy",
+    
+    # Logging and tracking
+    "wandb",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "pre-commit>=3.0.0",
+]
+
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/modular-prompt-optimization"
+Repository = "https://github.com/your-username/modular-prompt-optimization"
+Issues = "https://github.com/your-username/modular-prompt-optimization/issues"
+
+[project.scripts]
+run-experiment = "experiment:main"
+evaluate-results = "evaluate:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--verbose",
+]
+filterwarnings = [
+    "ignore::UserWarning",
+    "ignore::DeprecationWarning",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "setup.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
