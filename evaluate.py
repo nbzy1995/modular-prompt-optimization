@@ -73,34 +73,111 @@ def compute_metrics_for_list_answer(
     }
 
 
+def classify_simpleqa_response(answer: str, true_answer: str) -> str:
+    """
+    Classify a SimpleQA response into one of 4 categories:
+    - 'correct': Factually accurate answer
+    - 'incorrect': Wrong factual information (hallucination)
+    - 'abstention': Model acknowledges uncertainty ("I don't know" etc.)
+    """
+    answer_clean = answer.strip().lower()
+    true_answer_clean = true_answer.strip().lower()
+    
+    # Abstention patterns - model acknowledges uncertainty
+    abstention_patterns = [
+        "i don't know", "i do not know", "i'm not sure", "i am not sure",
+        "i'm uncertain", "i am uncertain", "i cannot determine", "i can't determine",
+        "i'm not certain", "i am not certain", "uncertain", "unknown", 
+        "not sure", "don't know", "do not know", "can't say", "cannot say",
+        "i cannot answer", "i can't answer", "insufficient information",
+        "not enough information", "unable to determine", "i'm unsure", "i am unsure"
+    ]
+    
+    # Check for abstention
+    for pattern in abstention_patterns:
+        if pattern in answer_clean:
+            return 'abstention'
+    
+    # Check for correct answer (normalized comparison)
+    if answer_clean == true_answer_clean:
+        return 'correct'
+    
+    # Additional fuzzy matching for correct answers (handle minor variations)
+    # Remove common punctuation and extra spaces
+    import re
+    answer_normalized = re.sub(r'[^\w\s]', '', answer_clean).strip()
+    true_answer_normalized = re.sub(r'[^\w\s]', '', true_answer_clean).strip()
+    
+    if answer_normalized == true_answer_normalized:
+        return 'correct'
+    
+    return 'incorrect'
+
+
 def compute_metrics_for_simpleqa(
     answers: List[str], true_answers: List[str]
 ) -> Dict[str, float]:
     """
-    Compute exact match accuracy for SimpleQA dataset.
-    SimpleQA requires precise factual answers.
+    Enhanced SimpleQA evaluation with hallucination detection and calibration metrics.
+    
+    Classifies responses and computes precision, recall, F1, and hallucination rates.
+    Following WikiData evaluation approach but adapted for factual QA.
     """
-    exact_matches = []
-    normalized_matches = []
-    
+    # Classify all responses
+    classifications = []
     for answer, true_answer in zip(answers, true_answers):
-        # Exact match
-        exact_match = 1.0 if answer.strip() == true_answer.strip() else 0.0
-        exact_matches.append(exact_match)
-        
-        # Normalized match (case-insensitive, whitespace normalized)
-        answer_norm = answer.strip().lower()
-        true_answer_norm = true_answer.strip().lower()
-        normalized_match = 1.0 if answer_norm == true_answer_norm else 0.0
-        normalized_matches.append(normalized_match)
+        classification = classify_simpleqa_response(answer, true_answer)
+        classifications.append(classification)
     
-    return {
-        "exact_match_accuracy": np.mean(exact_matches),
-        "normalized_match_accuracy": np.mean(normalized_matches),
-        "total_questions": len(answers),
-        "correct_exact": int(np.sum(exact_matches)),
-        "correct_normalized": int(np.sum(normalized_matches))
+    # Count categories
+    correct_count = classifications.count('correct')
+    incorrect_count = classifications.count('incorrect')  # Hallucinations
+    abstention_count = classifications.count('abstention')
+    total_questions = len(answers)
+
+    # Attempted answers (not abstentions)
+    attempted_count = correct_count + incorrect_count
+    
+    # Core metrics (following WikiData precision/recall approach)
+    precision = correct_count / attempted_count if attempted_count > 0 else 0.0
+    recall = correct_count / total_questions  # Coverage of correct knowledge
+    f1_score = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+    
+    # Hallucination metrics
+    hallucination_rate = incorrect_count / attempted_count if attempted_count > 0 else 0.0
+    abstention_rate = abstention_count / total_questions
+    
+    # Calibration metrics (OpenAI SimpleQA style)
+    attempted_accuracy = correct_count / attempted_count if attempted_count > 0 else 0.0
+    overall_accuracy = correct_count / total_questions
+    
+    # Detailed breakdown
+    results = {
+        # Core performance metrics
+        "precision": precision,
+        "recall": recall, 
+        "f1_score": f1_score,
+        
+        # Hallucination and calibration metrics
+        "hallucination_rate": hallucination_rate,
+        "abstention_rate": abstention_rate,
+        "attempted_accuracy": attempted_accuracy,
+        "overall_accuracy": overall_accuracy,
+        
+        # Raw counts for detailed analysis
+        "total_questions": total_questions,
+        "correct_answers": correct_count,
+        "incorrect_answers": incorrect_count,  # Hallucinations
+        "abstentions": abstention_count,
+        "attempted_answers": attempted_count,
+        
+        # Breakdown by category (percentages)
+        "correct_pct": correct_count / total_questions * 100,
+        "incorrect_pct": incorrect_count / total_questions * 100,
+        "abstention_pct": abstention_count / total_questions * 100,
     }
+    
+    return results
 
 
 def evaluate(result_path: str, dataset_path: str, dataset_type: str):
@@ -121,14 +198,14 @@ def evaluate(result_path: str, dataset_path: str, dataset_type: str):
     if dataset_type == "multispan_qa":
         answers = [result["Final Answer Section"] for result in results]
         metrics = compute_metrics_for_open_answer(answers, true_answers)
+        print(f"metrics: {metrics}")
     elif dataset_type in ["simpleqa", "simpleqa_small"]:
         answers = [result["Final Answer Section"] for result in results]
         metrics = compute_metrics_for_simpleqa(answers, true_answers)
     else:
         answers = get_cleaned_final_answer(results, "Final Answer Section")
         metrics = compute_metrics_for_list_answer(answers, true_answers)
-
-    print(f"metrics: {metrics}")
+        print(f"metrics: {metrics}")
 
 
 if __name__ == "__main__":
