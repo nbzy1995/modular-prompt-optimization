@@ -1,76 +1,126 @@
-# Modular Prompt Optimization Library
+# Modular Prompt Optimization Framework
 
-This is a LLM prompt optimization library containing a variety of LLM prompt optimization techniques, as well as combinations of them. This library also provides the full pipeline of evaluating LLM prompt techniques on various tasks, especially on hallucination reduction.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](https://docs.pytest.org/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
+A framework for evaluating modular combinations of prompt optimization techniques on LLM hallucination reduction. Designed for systematic experimentation with comprehensive evaluation metrics.
 
-## :fire: Quickstart
+## Features
 
-First, create a python virtual environment and install the requirements:
+- **Hallucination Evaluation**: correct/incorrect/abstention responses with precision, recall, F1, and hallucination rates
+- **Multiple Optimizers**: Chain-of-Thought, Chain-of-Verification, Expert Persona, Uncertainty Quantification, and their arbitrary combinations
+- **Multiple Dataset**: Full support for OpenAI's SimpleQA hallucination benchmark dataset, and more
+- **Multi-LLM Support**: OpenAI GPT, Google Gemini, via unified interface
+- **Automatic Checkpointing**: Resume interrupted experiments, progress tracking
+
+## Quick Start
+
+### Prerequisites
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) for fast Python package management:
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+# Install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# or: pip install uv
 ```
+
+### Setup
 ```bash
-pip install -r requirements.txt
-```
+# Clone and setup environment (uv handles everything automatically)
+git clone <repository-url>
+cd modular-prompt-optimization
+uv sync
 
-Then, create a file named `.env` to store API keys. This file should look like:
+# Add API keys to .env file
+OPENAI_API_KEY=your-key
+GOOGLE_API_KEY=your-key  
+SCALEDOWN_API_KEY=your-key
 ```
-OPENAI_API_KEY=sk-abc.....
-HF_API_KEY=hf_abc.......
-```
-
-An example full experiment that apply CoVe technique on wiki-qa dataset using Gemini is in `experiment/cove_experiment.ipynb`
-
 
 ## Usage
 
+### Run Experiments
 ```bash
-python3 main.py --model=MODEL --task=TASK --setting=SETTING [--temperature=0.07] [--top-p=0.9]
+# Basic experiment
+uv run experiment.py --task=simpleqa --model=scaledown-gpt-4o --optimizers=cot --output-path=results
+
+# Multiple optimizers  
+uv run experiment.py --task=simpleqa --model=scaledown-gpt-4o --optimizers=expert_persona,cot --output-path=results
 ```
 
+### Evaluate Results
+```bash
+uv run evaluate.py -r results/scaledown-gpt-4o_simpleqa_cot_results.json -d dataset/simpleqa.json -t simpleqa
+```
 
-### Available Options
-- **Prompt Optimization Techniques**: 
-    - Cove: `joint`, `two_step`, `factored`
-    - CoT:
-    - Expert Persona: 
+Example output:
+```
+🚨 HALLUCINATION ANALYSIS:
+   Hallucination Rate: 0.684 (68.4% of attempted answers)
+   Abstention Rate: 0.020 (model says 'I don't know')
+   
+🎯 CORE PERFORMANCE METRICS:
+   Precision: 0.316 (accuracy when attempting answers)
+   F1 Score: 0.308
+```
 
-- **LLM Models**: `llama2`, `gpt3`, `gemini2.5`
-- **Tasks**: `wikidata`, `wikidata_category`, `multispanqa`
+### Analysis
+```bash
+cd experiments/
+jupyter notebook simpleqa_hallucination_analysis.ipynb
+```
 
+## Available Options
 
+**Models**: `scaledown-gpt-4o`, `gemini2.5_flash_lite`, `llama2`, `llama2_70b`
 
-## Organization
+**Tasks**: `simpleqa`, `wikidata`, `multispanqa`, `wikidata_category`
 
-TODO: to be revised
+**Optimizers**: `cot`, `cove`, `expert_persona`, `uncertainty` (combinable with commas)
 
-__Data Flow__
-1. Load dataset questions based on task
-2. Apply selected prompt techniques (Cove, CoT, etc.)
-3. Save LLM responses as JSON
-4. (optional) Evaluate response with metrics
+## Architecture
 
+- `src/llms.py` - LLM provider implementations
+- `src/task_runner.py` - Experiment orchestration with checkpointing  
+- `src/prompt_optimizer.py` - Modular optimization techniques
+- `evaluate.py` - Enhanced evaluation metrics
+- `experiments/` - Analysis notebook and results
 
-`src/`: Core Library
+## Evaluation Metrics
 
-1. Data Processing (`src/data/`):
-   - Question/answer extraction utilities
-   - For various datasets
+The framework provides detailed hallucination analysis:
 
-2. Prompt Optimizer: (`src/prompt_optim/`):
-    - individual modules, CoVe, CoT, etc.
-    - combining modules.
+- **Response Classification**: Correct, Incorrect (hallucinations), Abstentions
+- **Core Metrics**: Precision, Recall, F1 Score
+- **Hallucination Metrics**: Hallucination rate, abstention rate, calibration metrics
+- **Interactive Analysis**: Inspect specific response types and compare optimizers
 
-3. Evaluator: (`src/evaluate.py`):
-    - evaluate response on ground truth, using various metrics.
+## Extension
 
-4. Configuration: (`src/util`):
-    - setup LLMs, tasks, metrics.
+Add new optimizers by extending `OPTIMIZER_PROMPTS` in `src/prompt_optimizer.py`.
+Add new tasks by adding `TaskConfig` entries to `TASK_MAPPING` in `src/utils.py`.
 
+## Testing
 
-`datasets`: 
+```bash
+# Run unit tests
+uv run pytest tests/
 
-`experiments`: Example experiments with final eval results 
+# Run with coverage
+uv run pytest tests/ --cov=src
 
-`tests`: TODO: to be implemented
+# Install dev dependencies
+uv sync --group dev
+```
+
+GitHub Actions CI automatically runs tests on Python 3.8+ for all commits and pull requests.
+
+## Requirements
+
+- Python 3.8+ (managed automatically by uv)
+- [uv](https://docs.astral.sh/uv/) package manager
+- Dependencies are defined in `pyproject.toml`
+
+All dependencies are automatically managed by uv - no manual pip installs needed!
