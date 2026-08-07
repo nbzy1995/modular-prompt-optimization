@@ -1,0 +1,66 @@
+[
+  {
+    "condition": "none",
+    "n": 100,
+    "accuracy": 0.31,
+    "attempted_accuracy": 0.31313131313131315,
+    "hallucination_rate": 0.6868686868686869,
+    "not_attempted_rate": 0.01
+  },
+  {
+    "condition": "cot",
+    "n": 100,
+    "accuracy": 0.37,
+    "attempted_accuracy": 0.37373737373737376,
+    "hallucination_rate": 0.6262626262626263,
+    "not_attempted_rate": 0.01
+  },
+  {
+    "condition": "cove",
+    "n": 100,
+    "accuracy": 0.32,
+    "attempted_accuracy": 0.32,
+    "hallucination_rate": 0.68,
+    "not_attempted_rate": 0.0
+  },
+  {
+    "condition": "uncertainty",
+    "n": 100,
+    "accuracy": 0.33,
+    "attempted_accuracy": 0.3333333333333333,
+    "hallucination_rate": 0.6666666666666666,
+    "not_attempted_rate": 0.01
+  },
+  {
+    "condition": "cot_uncertainty",
+    "n": 100,
+    "accuracy": 0.36,
+    "attempted_accuracy": 0.3673469387755102,
+    "hallucination_rate": 0.6326530612244898,
+    "not_attempted_rate": 0.02
+  },
+  {
+    "condition": "cove_uncertainty",
+    "n": 100,
+    "accuracy": 0.36,
+    "attempted_accuracy": 0.36363636363636365,
+    "hallucination_rate": 0.6363636363636364,
+    "not_attempted_rate": 0.01
+  },
+  {
+    "condition": "expert_persona_cot",
+    "n": 100,
+    "accuracy": 0.36,
+    "attempted_accuracy": 0.3673469387755102,
+    "hallucination_rate": 0.6326530612244898,
+    "not_attempted_rate": 0.02
+  },
+  {
+    "condition": "expert_persona_uncertainty",
+    "n": 100,
+    "accuracy": 0.34,
+    "attempted_accuracy": 0.3434343434343434,
+    "hallucination_rate": 0.6565656565656566,
+    "not_attempted_rate": 0.01
+  }
+]

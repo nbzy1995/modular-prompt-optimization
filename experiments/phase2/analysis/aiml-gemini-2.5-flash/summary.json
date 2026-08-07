@@ -1,0 +1,56 @@
+{
+  "none": {
+    "accuracy": 0.38000000000000006,
+    "hallucination_rate": 0.62,
+    "abstention_rate": 0.0,
+    "ece": 0.5989898989898991,
+    "brier": 0.5945959595959595,
+    "mean_conf": 0.9787878787878789,
+    "seeds": 3
+  },
+  "abstention": {
+    "accuracy": 0.3866666666666667,
+    "hallucination_rate": 0.6013745704467354,
+    "abstention_rate": 0.03,
+    "ece": 0.5780797101449276,
+    "brier": 0.5776177536231885,
+    "mean_conf": 0.9983695652173914,
+    "seeds": 3
+  },
+  "expert_persona": {
+    "accuracy": 0.3233333333333333,
+    "hallucination_rate": 0.6766666666666667,
+    "abstention_rate": 0.0,
+    "ece": 0.6559450171821307,
+    "brier": 0.655353264604811,
+    "mean_conf": 0.989278350515464,
+    "seeds": 3
+  },
+  "expert_persona+abstention": {
+    "accuracy": 0.38999999999999996,
+    "hallucination_rate": 0.61,
+    "abstention_rate": 0.0,
+    "ece": 0.6016129032258065,
+    "brier": 0.6021774193548387,
+    "mean_conf": 0.9994623655913979,
+    "seeds": 3
+  },
+  "cot": {
+    "accuracy": 0.37666666666666665,
+    "hallucination_rate": 0.600709219858156,
+    "abstention_rate": 0.056666666666666664,
+    "ece": 0.5964310226492793,
+    "brier": 0.5964310226492793,
+    "mean_conf": 1.0,
+    "seeds": 3
+  },
+  "cot+abstention": {
+    "accuracy": 0.33666666666666667,
+    "hallucination_rate": 0.6259259259259259,
+    "abstention_rate": 0.10000000000000002,
+    "ece": 0.6217228464419475,
+    "brier": 0.6217228464419475,
+    "mean_conf": 1.0,
+    "seeds": 3
+  }
+}

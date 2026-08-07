@@ -1,0 +1,902 @@
+[
+  {
+    "Question": "Who received the IEEE Frank Rosenblatt Award in 2010?",
+    "target": "Michio Sugeno",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nMichio Sugeno\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Michio Sugeno",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Who was awarded the Oceanography Society's Jerlov Award in 2018?",
+    "target": "Annick Bricaud",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What's the name of the women's liberal arts college in Cambridge, Massachusetts?",
+    "target": "Radcliffe College",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nRadcliffe College\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Radcliffe College",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In whose honor was the Leipzig 1877 tournament organized?",
+    "target": "Adolf Anderssen",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The Leipzig 1877 chess tournament was organized in honor of Louis Paulsen, a prominent chess player of that era.\n\n=== FINAL ANSWER ===\nLouis Paulsen\n=== END FINAL ANSWER ===\nCONFIDENCE: 80",
+    "Final Answer Section": "Louis Paulsen",
+    "confidence": 80,
+    "abstained": false
+  },
+  {
+    "Question": "According to Karl Küchler, what did Empress Elizabeth of Austria's favorite sculpture depict, which was made for her villa Achilleion at Corfu?",
+    "target": "Poet Henrich Heine.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Empress Elizabeth of Austria's favorite sculpture, according to Karl Küchler, depicted the dying Achilles. This sculpture was made for her villa Achilleion at Corfu.\n\n=== FINAL ANSWER ===\nThe dying Achilles\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "The dying Achilles",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "How much money, in euros, was the surgeon held responsible for Stella Obasanjo's death ordered to pay her son?",
+    "target": "120,000",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\n120,000\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "120,000",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What were the month and year when Obama told Christianity Today, \"I am a Christian, and I am a devout Christian. I believe in the redemptive death and resurrection of Jesus Christ\"?",
+    "target": "January 2008",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "Who appointed the Chief Justice of India, Mirza Hameedullah Beg, in 1977?",
+    "target": "Fakhruddin Ali Ahmed",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Mirza Hameedullah Beg was appointed as the Chief Justice of India by the President of India. In 1977, the President of India was Fakhruddin Ali Ahmed.\n\n=== FINAL ANSWER ===\nFakhruddin Ali Ahmed\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Fakhruddin Ali Ahmed",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What is the name of the former Prime Minister of Iceland who worked as a cabin crew member until 1971?",
+    "target": "Jóhanna Sigurðardóttir",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Jóhanna Sigurðardóttir, the former Prime Minister of Iceland, worked as a flight attendant until 1971.\n\n=== FINAL ANSWER ===\nJóhanna Sigurðardóttir\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Jóhanna Sigurðardóttir",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "To whom did Mehbooba Mufti Sayed contest the 2019 Lok Sabha elections and lose?",
+    "target": "Hasnain Masoodi",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Mehbooba Mufti Sayed contested the 2019 Lok Sabha elections from the Anantnag constituency in Jammu and Kashmir. She lost to Hasnain Masoodi of the Jammu and Kashmir National Conference.\n\n=== FINAL ANSWER ===\nHasnain Masoodi\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Hasnain Masoodi",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "How many fouls did Inter commit in the Champions League final match between Bayern and Inter on May 23, 2010?",
+    "target": "13",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't have direct access to specific match statistics such as the number of fouls committed by a team in a particular game. This type of detailed sports statistic is typically found in match reports or databases dedicated to sports statistics.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What year did the Lego part with ID gal56 first release?",
+    "target": "2002",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In which year did the Japanese scientist Koichi Mizushima receive the Kato Memorial Prize?",
+    "target": "1999",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+    "target": "2023",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The Monash Gallery of Art (MGA) rebranded and became the Museum of Australian Photography (MAPh) in the year 2022.\n\n=== FINAL ANSWER ===\n2022\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "2022",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Who requested the Federal Aviation Administration (FAA) implement a 900 sq mi (2,300 km2) temporary flight restriction zone over the operations areas of the Deepwater Horizon?",
+    "target": "The Coast Guard",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The request for the Federal Aviation Administration (FAA) to implement a temporary flight restriction zone over the operations areas of the Deepwater Horizon was made by the United States Coast Guard.\n\n=== FINAL ANSWER ===\nUnited States Coast Guard\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "United States Coast Guard",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What signature piece of the MOBA did Scott Wilson discover on the curb between two trash cans?",
+    "target": "Lucy in the Field with Flowers",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The Museum of Bad Art (MOBA) is known for its collection of art that is considered to be \"bad\" in a humorous or entertaining way. One of the signature pieces of the MOBA, discovered by Scott Wilson on the curb between two trash cans, is \"Lucy in the Field with Flowers.\"\n\n=== FINAL ANSWER ===\nLucy in the Field with Flowers\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Lucy in the Field with Flowers",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What player scored all the conversions for Spain in the rugby match between Spain and Romania that was part of the 2022 Rugby Europe Championship on February 27, 2022?",
+    "target": "Manuel Ordas",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nGonzalo Vinuesa\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Gonzalo Vinuesa",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What is the surname of the psychiatrist who prescribes medication for Marie Hanson for her periodic blackouts in Season 1, Episode 20 of Ally McBeal?",
+    "target": "Peters",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What is the British-American kickboxer Andrew Tate's kickboxing name?",
+    "target": "King cobra",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Andrew Tate is known by the kickboxing name \"Cobra Tate.\"\n\n=== FINAL ANSWER ===\nCobra Tate\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Cobra Tate",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What position was John Gilbert Layton appointed to in Quebec from 1969 until 1970?",
+    "target": " Quebec Youth Parliament prime minister",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nPresident of the Quebec Liberal Party\n=== END FINAL ANSWER ===\nCONFIDENCE: 80",
+    "Final Answer Section": "President of the Quebec Liberal Party",
+    "confidence": 80,
+    "abstained": false
+  },
+  {
+    "Question": "Who won the Gerard P. Kuiper Prize in 2001?",
+    "target": "Bruce W. Hapke",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nClark R. Chapman\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Clark R. Chapman",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Which streamer won the \"Best VTuber Streamer\" award at The Streamer Awards in 2022?",
+    "target": "CodeMiko",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The \"Best VTuber Streamer\" award at The Streamer Awards in 2022 was won by the streamer known as \"CodeMiko.\"\n\n=== FINAL ANSWER ===\nCodeMiko\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "CodeMiko",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What did Daemon Targaryen say to Rhaenyra about living life in fear in Episode 4, Season 1 of House of the Dragon?",
+    "target": "You cannot live your life in fear, or you will forsake the best parts of it.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "On which U.S. TV station did the Canadian reality series *To Serve and Protect* debut?",
+    "target": "KVOS-TV",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The Canadian reality series *To Serve and Protect* debuted on the U.S. TV station Court TV.\n\n=== FINAL ANSWER ===\nCourt TV\n=== END FINAL ANSWER ===\nCONFIDENCE: 80",
+    "Final Answer Section": "Court TV",
+    "confidence": 80,
+    "abstained": false
+  },
+  {
+    "Question": "What instrument did Alec Aitken play well enough for a professional musician to remark, \"Aitken is the most accomplished amateur musician I have ever known\"?",
+    "target": "Violin",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Alec Aitken was known for his mathematical prowess, but he was also a talented musician. The instrument he played well enough to receive such a compliment was the piano.\n\n=== FINAL ANSWER ===\nPiano\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Piano",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "On what day, month, and year did Tara Chand (a politician and a Dalit leader from Jammu and Kashmir) resign from the Indian National Congress in support of Ghulam Nabi Azad?",
+    "target": "August 30, 2022",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What was the strike rate of Harbhajan Singh in the final match of IPL 2015?",
+    "target": "200.00",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't have access to specific match statistics such as the strike rate of Harbhajan Singh in the final match of IPL 2015. Therefore, I cannot provide a precise answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In the lore of Dungeons and Dragons, what is the name of the fortress in the Astral Plane used as a lair by the red great wyrm Ashardalon?",
+    "target": "Bastion of Unborn Souls",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nCitadel of the Planes\n=== END FINAL ANSWER ===\nCONFIDENCE: 70",
+    "Final Answer Section": "Citadel of the Planes",
+    "confidence": 70,
+    "abstained": false
+  },
+  {
+    "Question": "In which episode and season of South Park does Bill Cosby (BSM-471) first appear? Give me the number and title.",
+    "target": "Season 4 Episode 12: \"Trapper Keeper\"",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Bill Cosby (BSM-471) first appears in the \"South Park\" episode titled \"Imaginationland Episode II,\" which is the 11th episode of the 11th season.\n\n=== FINAL ANSWER ===\nSeason 11, Episode 11 - \"Imaginationland Episode II\"\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Season 11, Episode 11 - \"Imaginationland Episode II\"",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "The WWI Q-Ship \"Salvia\" was partially reconstructed with a false counter-stern to resemble what kind of ship?",
+    "target": "tramp",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The WWI Q-Ship \"Salvia\" was partially reconstructed with a false counter-stern to resemble a tramp steamer. Q-ships were decoy vessels used during World War I to lure and engage submarines by disguising themselves as non-military ships.\n\n=== FINAL ANSWER ===\nTramp steamer\n=== END FINAL ANSWER ===\nCONFIDENCE: 80",
+    "Final Answer Section": "Tramp steamer",
+    "confidence": 80,
+    "abstained": false
+  },
+  {
+    "Question": "Which district in Kashmir was originally known as Panwangam?",
+    "target": "Pulwama",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In 1810, François Aimé Louis Dumoulin published a collection of how many engravings themed on the journey of \"Robinson Crusoe\"?",
+    "target": "150",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+    "target": "October 23, 2018",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In the series \"El guardián invisible,\" who portrays the character Alfonso Álvarez de Toledo?",
+    "target": "Ramón Barea",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nPaco Tous\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Paco Tous",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "On what day, month, and year was David Sweet, Canadian politician, born?",
+    "target": "June 24, 1957",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "David Sweet, the Canadian politician, was born on June 24, 1957.\n\n=== FINAL ANSWER ===\nJune 24, 1957\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "June 24, 1957",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "From which high school did the first female governor of Hawaii, United States, graduate?",
+    "target": "Birmingham High School",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The first female governor of Hawaii was Linda Lingle. She graduated from Birmingham High School in Lake Balboa, California.\n\n=== FINAL ANSWER ===\nBirmingham High School\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Birmingham High School",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In which month and year did Khusro Bakhtiar (former Federal Minister for Planning, Development, and Reforms, Pakistan) announce that the government was considering establishing a Pak-China business council to promote the private sector's role in the China-Pakistan Economic Corridor (CPEC)?",
+    "target": "June 2019",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "target": "Akiko Kumahira",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What are the first names and surnames of the figure skaters who came 21st in the ice dance category at the 2022 Winter Olympics in Beijing?",
+    "target": "Katharina Müller and Tim Dieck",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What is the name of the kibbutz that Simon Le Bon lived on in 1978?",
+    "target": "Gvulot.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Simon Le Bon, the lead singer of Duran Duran, lived on a kibbutz in Israel in 1978. The name of the kibbutz is Kibbutz Gvulot.\n\n=== FINAL ANSWER ===\nKibbutz Gvulot\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Kibbutz Gvulot",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Who won the 1991 Ig Nobel Prize for Peace?",
+    "target": "Edward Teller",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nEdward Teller\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Edward Teller",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Why did David Chow come to Genoa City on \"The Young and the Restless\"?",
+    "target": "To avenge the murder of his former fiancée, Carmen Mesta.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "David Chow came to Genoa City on \"The Young and the Restless\" initially as a political consultant to help Nikki Newman with her campaign for the Wisconsin State Senate.\n\n=== FINAL ANSWER ===\nTo help Nikki Newman with her campaign for the Wisconsin State Senate.\n=== END FINAL ANSWER ===\nCONFIDENCE: 80",
+    "Final Answer Section": "To help Nikki Newman with her campaign for the Wisconsin State Senate.",
+    "confidence": 80,
+    "abstained": false
+  },
+  {
+    "Question": "In which season and episode of Archer does Sterling go into a rampage? Give me the season, number, and title of the episode.",
+    "target": "Season 2, Episode 9 \"Placebo Effect\"",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Sterling Archer goes on a rampage in Season 5, Episode 4, titled \"Archer Vice: House Call.\"\n\n=== FINAL ANSWER ===\nSeason 5, Episode 4, \"Archer Vice: House Call\"\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Season 5, Episode 4, \"Archer Vice: House Call\"",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "On what day, month, and year was Algerian artist Mohammed Racim born?",
+    "target": "June 24th, 1896.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\n24 June 1896\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "24 June 1896",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "How many original artworks were shown in the Society of Illustrators' first \"Annual Exhibition\"?",
+    "target": "350",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In what year was Eugenius Aristides Nisbet elected to the Georgia House of Representatives?",
+    "target": "1827",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Eugenius Aristides Nisbet was elected to the Georgia House of Representatives in 1827.\n\n=== FINAL ANSWER ===\n1827\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "1827",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What day/month/year was it announced that the politician Ibrahim Rugova had been diagnosed with lung cancer?",
+    "target": "5 September 2005",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In 2022, which university did Honda Battle of the Bands (HBOB) select to be the first-ever HBCU campus to host the in-person event?",
+    "target": "Alabama State University",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "In 2022, the Honda Battle of the Bands (HBOB) selected Alabama State University to be the first-ever HBCU campus to host the in-person event.\n\n=== FINAL ANSWER ===\nAlabama State University\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Alabama State University",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Who wrote the lyrics to \"Dream Serenade,\" the opening theme song for the radio program \"The American Album of Familiar Music\"?",
+    "target": "Alfred Bryan",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In what year did Etta Cone last visit Europe?",
+    "target": "1938",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Etta Cone last visited Europe in 1935.\n\n=== FINAL ANSWER ===\n1935\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "1935",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What day, month, and year was Vladislav Kaborda born?",
+    "target": "July 24, 1995",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In what year was John Williams inducted into the Classical Music Hall of Fame?",
+    "target": "2004.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "John Williams, the renowned composer, was inducted into the Classical Music Hall of Fame in 2000.\n\n=== FINAL ANSWER ===\n2000\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "2000",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "On which month and day was the 1985 St. Louis mayoral election held?",
+    "target": " April 2",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?",
+    "target": "36.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "In which year did Askham Richard, the village in the North of England, first become a conservation area?",
+    "target": "1975",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What are the GPS coordinates of Malawi?",
+    "target": "13° 15' 4.38\" S, 34° 18' 5.50\" E.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Malawi is a country in southeastern Africa, and its GPS coordinates can be represented by the approximate central point of the country. The coordinates are typically given in terms of latitude and longitude.\n\n=== FINAL ANSWER ===\n13.2543° S, 34.3015° E\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "13.2543° S, 34.3015° E",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "On which day, month, and year did the Hubble Telescope enter a partial safe mode following suspected hardware problems in its most advanced instrument, the Wide Field Camera 3 instrument?",
+    "target": "January 8, 2019",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The Hubble Space Telescope entered a partial safe mode on October 23, 2018, due to suspected hardware problems in its Wide Field Camera 3 instrument.\n\n=== FINAL ANSWER ===\nOctober 23, 2018\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "October 23, 2018",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Before 2013, what was the municipal division of Gusevsky District in Kaliningrad Oblast incorporated as?",
+    "target": "Gusevsky Municipal District",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The municipal division of Gusevsky District in Kaliningrad Oblast before 2013 was incorporated as Gusevsky Municipal District.\n\n=== FINAL ANSWER ===\nGusevsky Municipal District\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Gusevsky Municipal District",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What were Martin Haspelmath's and Michael Cysouw's respective affiliations when they authored \"Identifying Semantic Role Clusters and Alignment Types via Microrole Coexpression Tendencies\"?",
+    "target": "Max Planck Institute for Evolutionary Anthropology and Philipps-Universität Marburg",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "Who was Racing's top scorer in the Copa Libertadores 1967?",
+    "target": "Norberto Raffo",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nNorberto Raffo\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Norberto Raffo",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What were the date, month, and year of death of the former PM of J&K, Mehr Chand Mahajan?",
+    "target": "11 December 1967.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Mehr Chand Mahajan, the former Prime Minister of Jammu and Kashmir, passed away on December 11, 1967.\n\n=== FINAL ANSWER ===\nDecember 11, 1967\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "December 11, 1967",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What was Beloit College's Center for the Sciences renamed in 2017?",
+    "target": "Marjorie and James Sanger Center for the Sciences.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "From which dealer's shop did the Florentine authorities buy the \"Pitti Tondo\" in 1823?",
+    "target": "Fedele Acciai",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "Who was the director of the Lebedev Physical Institute of the Russian Academy of Sciences between 1951 and 1972?",
+    "target": "Dmitri Skobeltsyn",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nDmitri Ivanenko\n=== END FINAL ANSWER ===\nCONFIDENCE: 70",
+    "Final Answer Section": "Dmitri Ivanenko",
+    "confidence": 70,
+    "abstained": false
+  },
+  {
+    "Question": "In what year was Alain Stanké made a member of the Order of Canada?",
+    "target": "1998",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Alain Stanké was made a member of the Order of Canada in 1998.\n\n=== FINAL ANSWER ===\n1998\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "1998",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What are the first and last names of the scientist who collaborated with Vincent Joseph Schaefer to issue the U.S. patent for \"Method and Apparatus for Producing Aerosols\" in 1943?",
+    "target": "Langmuir Irving",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "Who was the Swedish footballer who spent his entire career as a winger for the club GAIS in the Swedish Allsvenskan from 1949 to 1960 and passed away on February 26, 2017?",
+    "target": "Frank Jacobsson",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nKarl-Alfred Jacobsson\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Karl-Alfred Jacobsson",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What is the name of the statue that Rosemarie Trockel made for the city of Frankfurt in 1994?",
+    "target": "Frankfurter Engel",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nHahn/Cock\n=== END FINAL ANSWER ===\nCONFIDENCE: 70",
+    "Final Answer Section": "Hahn/Cock",
+    "confidence": 70,
+    "abstained": false
+  },
+  {
+    "Question": "What team finished with 38 points at the end of the 2021-2022 Premier League season?",
+    "target": "Leeds United",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The 2021-2022 Premier League season saw Watford finish with 23 points and Norwich City with 22 points, both of which were relegated. The team that finished with 38 points was Burnley.\n\n=== FINAL ANSWER ===\nBurnley\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Burnley",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What position was Everton in when Rafael Benítez was sacked in the 2021-22 Premier League season?",
+    "target": "15th place",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Rafael Benítez was sacked as the manager of Everton during the 2021-22 Premier League season when the team was in 16th position.\n\n=== FINAL ANSWER ===\n16th\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "16th",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In which year was the municipality of Sonsón, Antioquia, Colombia, founded?",
+    "target": "1800",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The municipality of Sonsón, Antioquia, Colombia, was founded in the year 1800.\n\n=== FINAL ANSWER ===\n1800\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "1800",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Who replaced Don Santos in the band group Immature?",
+    "target": "Kelton \"LDB\" Kessee",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nKelton \"LDB\" Kessee\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Kelton \"LDB\" Kessee",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In Season 3 of the American version of \"The Circle,\" in which episode did Vince enter the game?",
+    "target": "7",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\nEpisode 6\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Episode 6",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What is the length in meters of Abdullah Bridge in Srinagar?",
+    "target": "390 metres",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "How many acres did the University of Alabama purchase to expand its campus in 2010?",
+    "target": "168",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What is the first vampire number in recreational mathematics obtained by a 3x3-digit multiplication?",
+    "target": "102510",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "A vampire number is a composite natural number with an even number of digits, that can be factored into two integers, called \"fangs,\" each with half as many digits as the original number and not both ending in zero. The first vampire number obtained by a 3x3-digit multiplication is 100,245, which is the product of 146 and 687.\n\n=== FINAL ANSWER ===\n100245\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "100245",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In which district of Uttarakhand was Ila Pant (an Indian politician) born?",
+    "target": "Nainital district",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "At which university was the mechanical engineer Gang Chen an assistant professor from 1993 to 1997?",
+    "target": "Duke University",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Gang Chen was an assistant professor at Duke University from 1993 to 1997.\n\n=== FINAL ANSWER ===\nDuke University\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Duke University",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "How many medals did Ken Skupski win representing England at the 2010 Commonwealth Games in Delhi?",
+    "target": "two medals.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Ken Skupski won one medal representing England at the 2010 Commonwealth Games in Delhi.\n\n=== FINAL ANSWER ===\n1\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "1",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Who replaced Bradie Tennell in the 2021 Skate America?",
+    "target": "Starr Andrews",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Bradie Tennell was replaced by Audrey Shin in the 2021 Skate America.\n\n=== FINAL ANSWER ===\nAudrey Shin\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Audrey Shin",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "Which nobleman did Caravaggio beat on November 28, 1600?",
+    "target": "Girolamo Stampa da Montepulciano",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Caravaggio was known for his tumultuous life and involvement in various altercations. However, specific details about an incident involving a nobleman on November 28, 1600, are not widely documented or known. Given the lack of specific information about this event, I cannot provide a precise answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What company was Natasha Merle a civil rights fellow at from 2013 to 2015 in New York City?",
+    "target": " Fried, Frank, Harris, Shriver & Jacobson",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Natasha Merle was a civil rights fellow at the NAACP Legal Defense and Educational Fund from 2013 to 2015 in New York City.\n\n=== FINAL ANSWER ===\nNAACP Legal Defense and Educational Fund\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "NAACP Legal Defense and Educational Fund",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What year was the municipality of San Francisco, Antioquia, Colombia, founded?",
+    "target": "1830",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "San Francisco, Antioquia, Colombia, was founded in the year 1830.\n\n=== FINAL ANSWER ===\n1830\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "1830",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "According to Henry Scadding, author of \"Toronto of Old,\" how many people died on the HMS Ontario in 1780?",
+    "target": "172.",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "=== FINAL ANSWER ===\n88\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "88",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In which month and year was it reported that the German Defense Ministry planned to replace its Tornado aircraft with a purchase of 30 Boeing F/A-18E/F Super Hornets, 15 EA-18G Growlers, and 55 Eurofighter Typhoons?",
+    "target": "April 2020",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The German Defense Ministry's plan to replace its Tornado aircraft with a purchase of Boeing F/A-18E/F Super Hornets, EA-18G Growlers, and Eurofighter Typhoons was reported in April 2020.\n\n=== FINAL ANSWER ===\nApril 2020\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "April 2020",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "How many corners did Barcelona take in the Champions League semi-final match between Barcelona and Milan on April 27, 2006?",
+    "target": "3",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "Which two scientists (first and last names) are credited with first isolating *Azotobacter salinestris* from saline soils?",
+    "target": "William J. Page and Shailaja Shivprasad ",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know the specific scientists credited with first isolating *Azotobacter salinestris* from saline soils. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "Which Venetian artist painted the portrait of Maria Theresia Walburga Amalia Christina in 1730?",
+    "target": "Rosalba Carriera",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The portrait of Maria Theresia Walburga Amalia Christina in 1730 was painted by the Venetian artist Rosalba Carriera.\n\n=== FINAL ANSWER ===\nRosalba Carriera\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Rosalba Carriera",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "On what day, month, and year was David Russell Wartinbee, a Republican politician from Wisconsin in the United States who served in the Wisconsin State Assembly from 1961 to 1967, born?",
+    "target": "11 November 1903",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What version of Dota 2 was The International 2016 played on?",
+    "target": "6.88b",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The International 2016, a major Dota 2 tournament, was played on version 6.88 of the game.\n\n=== FINAL ANSWER ===\n6.88\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "6.88",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "On which month and year were the names of the suspects in the Sagar-Runi murder case announced by Home Minister MK Alamgir?",
+    "target": "October 2012",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What is the forest cover area of Tamil Nadu in square kilometers, according to the India State of Forest Report 2019?",
+    "target": "26,364.02",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "According to the India State of Forest Report 2019, the forest cover area of Tamil Nadu is 26,364 square kilometers.\n\n=== FINAL ANSWER ===\n26,364\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "26,364",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In which year was production started for the Crayola color with hexadecimal code #D9E650?",
+    "target": "1926",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What is the exact date when the first CRISPR-edited babies were reportedly born, according to a 2019 *Nature* article?",
+    "target": "November 25, 2018",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "The first CRISPR-edited babies were reportedly born in November 2018. However, the exact date is not specified in the 2019 *Nature* article. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 40",
+    "Final Answer Section": "I don't know",
+    "confidence": 40,
+    "abstained": true
+  },
+  {
+    "Question": "On June 24, 2018, how many more votes did the winning candidate get in total than Muharrem İnce?",
+    "target": "10,990,502",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know. \n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What is the surname of the individual who won the Gordon E. Moore Medal, an award given yearly by the Society of Chemical Industry to someone who has displayed early career success involving innovation in chemical industries, in 2006?",
+    "target": "Jonathan M. McConnachie",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What disease was Elizabeth Esteve-Coll diagnosed with that forced her to step down as Vice-Chancellor of the University of East Anglia?",
+    "target": "multiple sclerosis diagnosis",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "I don't know\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 0",
+    "Final Answer Section": "I don't know",
+    "confidence": 0,
+    "abstained": true
+  },
+  {
+    "Question": "What day, month, and year was Notepad++ version 7.8.8 released?",
+    "target": "June 28, 2020",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Notepad++ version 7.8.8 was released on June 7, 2020.\n\n=== FINAL ANSWER ===\nJune 7, 2020\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "June 7, 2020",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "What is the name F.R.I.D.A. an acronym for in Critical Role Campaign 3?",
+    "target": "Far Ranging Integrated Defense Aeormaton",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "F.R.I.D.A. is an acronym for \"Fully Realized Individual Designed for Acquisitions\" in Critical Role Campaign 3.\n\n=== FINAL ANSWER ===\nFully Realized Individual Designed for Acquisitions\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "Fully Realized Individual Designed for Acquisitions",
+    "confidence": 90,
+    "abstained": false
+  },
+  {
+    "Question": "In which month and year did Dolly the sheep give birth to her first lamb, Bonnie?",
+    "target": "April 1998",
+    "Optimizers Used": "abstain@50",
+    "Optimized Answer": "Dolly the sheep, the first mammal to be cloned from an adult somatic cell, gave birth to her first lamb, Bonnie, in April 1998.\n\n=== FINAL ANSWER ===\nApril 1998\n=== END FINAL ANSWER ===\nCONFIDENCE: 90",
+    "Final Answer Section": "April 1998",
+    "confidence": 90,
+    "abstained": false
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "Question": "Who received the IEEE Frank Rosenblatt Award in 2010?",
+    "target": "Michio Sugeno",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The IEEE Frank Rosenblatt Award in 2010 was received by Michio Sugeno.\n\n=== FINAL ANSWER ===\nMichio Sugeno\n=== END FINAL ANSWER ===\nCONFIDENCE: 85",
+    "Final Answer Section": "Michio Sugeno",
+    "confidence": 85,
+    "abstained": false
+  },
+  {
+    "Question": "Who was awarded the Oceanography Society's Jerlov Award in 2018?",
+    "target": "Annick Bricaud",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about the Oceanography Society's Jerlov Award in 2018.\n\nThe Nils Gunnar Jerlov Award is given by The Oceanography Society for outstanding research in optical oceanography. \n\nIn 2018, the Jerlov Award was presented to Emmanuel Boss from the University of Maine, who is known for his significant contributions to optical oceanography.\n\n=== FINAL ANSWER ===\nEmmanuel Boss\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Emmanuel Boss",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What's the name of the women's liberal arts college in Cambridge, Massachusetts?",
+    "target": "Radcliffe College",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "=== FINAL ANSWER ===\nRadcliffe College\n=== END FINAL ANSWER ===\nCONFIDENCE: 85",
+    "Final Answer Section": "Radcliffe College",
+    "confidence": 85,
+    "abstained": false
+  },
+  {
+    "Question": "In whose honor was the Leipzig 1877 tournament organized?",
+    "target": "Adolf Anderssen",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Leipzig 1877 chess tournament was organized in honor of Adolf Anderssen, the great German chess master, on the occasion of his 60th birthday (or as a tribute to him).\n\nWait, let me reconsider. Adolf Anderssen was born in 1818, so in 1877 he would have been turning 59. Let me think more carefully.\n\nActually, the Leipzig 1877 tournament was organized in honor of Adolf Anderssen. He was the dominant German chess player of the era, and Leipzig tournaments were often associated with honoring him. Anderssen died in 1879, and various tournaments were held in his honor during his later years.\n\n=== FINAL ANSWER ===\nAdolf Anderssen\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "Adolf Anderssen",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "According to Karl Küchler, what did Empress Elizabeth of Austria's favorite sculpture depict, which was made for her villa Achilleion at Corfu?",
+    "target": "Poet Henrich Heine.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about Empress Elizabeth of Austria (Sisi), her villa Achilleion at Corfu, and Karl Küchler's account of her favorite sculpture there.\n\nThe Achilleion was built for Empress Elizabeth (Sisi) in Corfu. It featured several sculptures, most notably related to Achilles. The most famous sculpture at the Achilleion is the large \"Dying Achilles\" statue.\n\nKarl Küchler was a sculptor who worked for Empress Elizabeth. According to accounts, Küchler made a sculpture for the Achilleion. Based on historical records about the Achilleion and Küchler's work, the sculpture he created that was Elizabeth's favorite depicted the dying Achilles (Achilles dying/wounded).\n\nThe \"Dying Achilles\" by Ernst Herter is the famous large statue at the Achilleion, but Küchler also created works for Elizabeth. According to Karl Küchler's own account, the sculpture he made for the Achilleion that was Elizabeth's favorite depicted the poet Heinrich Heine - Elizabeth had a great admiration for Heine and commissioned a statue of him for the Achilleion.\n\n=== FINAL ANSWER ===\nHeinrich Heine\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "Heinrich Heine",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "How much money, in euros, was the surgeon held responsible for Stella Obasanjo's death ordered to pay her son?",
+    "target": "120,000",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The surgeon, Cristina Rodríguez Marcos, was ordered to pay Stella Obasanjo's son 120,000 euros in compensation.\n\n=== FINAL ANSWER ===\n120,000\n=== END FINAL ANSWER ===\nCONFIDENCE: 85",
+    "Final Answer Section": "120,000",
+    "confidence": 85,
+    "abstained": false
+  },
+  {
+    "Question": "What were the month and year when Obama told Christianity Today, \"I am a Christian, and I am a devout Christian. I believe in the redemptive death and resurrection of Jesus Christ\"?",
+    "target": "January 2008",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The interview where Obama made this statement to Christianity Today was in January 2008, during the presidential primary campaign.\n\n=== FINAL ANSWER ===\nJanuary 2008\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "January 2008",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "Who appointed the Chief Justice of India, Mirza Hameedullah Beg, in 1977?",
+    "target": "Fakhruddin Ali Ahmed",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Mirza Hameedullah Beg was appointed Chief Justice of India in January 1977. At that time, the President of India was Fakhruddin Ali Ahmed, but he died in February 1977. The appointment of Beg as CJI was made on January 29, 1977, by President Fakhruddin Ali Ahmed.\n\nWait - let me reconsider. Fakhruddin Ali Ahmed died on February 11, 1977. M.H. Beg was sworn in as Chief Justice on January 29, 1977. So the appointment was indeed made by President Fakhruddin Ali Ahmed.\n\nHowever, I should note that in India, the President formally appoints the Chief Justice. The President at the time of Beg's appointment (January 29, 1977) was Fakhruddin Ali Ahmed.\n\n=== FINAL ANSWER ===\nPresident Fakhruddin Ali Ahmed\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "President Fakhruddin Ali Ahmed",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "What is the name of the former Prime Minister of Iceland who worked as a cabin crew member until 1971?",
+    "target": "Jóhanna Sigurðardóttir",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify a former Prime Minister of Iceland who worked as a cabin crew member (flight attendant) until 1971.\n\nJóhanna Sigurðardóttir comes to mind as a notable Icelandic PM with a working-class background, but she was a flight attendant for Loftleiðir Icelandic airline before entering politics. She worked as a flight attendant and was active in the cabin crew union. She became Prime Minister in 2009.\n\nJóhanna Sigurðardóttir worked as a flight attendant for Loftleiðir from 1962 to 1971, then became involved in union activities and later politics.\n\n=== FINAL ANSWER ===\nJóhanna Sigurðardóttir\n=== END FINAL ANSWER ===\nCONFIDENCE: 82",
+    "Final Answer Section": "Jóhanna Sigurðardóttir",
+    "confidence": 82,
+    "abstained": false
+  },
+  {
+    "Question": "To whom did Mehbooba Mufti Sayed contest the 2019 Lok Sabha elections and lose?",
+    "target": "Hasnain Masoodi",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "In the 2019 Lok Sabha elections, Mehbooba Mufti Sayed contested from the Anantnag constituency in Jammu & Kashmir. She lost to Hasnain Masoodi of the National Conference.\n\n=== FINAL ANSWER ===\nHasnain Masoodi\n=== END FINAL ANSWER ===\nCONFIDENCE: 82",
+    "Final Answer Section": "Hasnain Masoodi",
+    "confidence": 82,
+    "abstained": false
+  },
+  {
+    "Question": "How many fouls did Inter commit in the Champions League final match between Bayern and Inter on May 23, 2010?",
+    "target": "13",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall the statistics from the 2010 UEFA Champions League Final between Bayern Munich and Inter Milan, played on May 23, 2010 at the Santiago Bernabéu Stadium in Madrid.\n\nInter Milan won the match 2-0, with goals from Diego Milito (two goals). This was José Mourinho's Inter completing the treble.\n\nRegarding match statistics, I recall that Inter committed fewer fouls than Bayern in this match. The specific foul count I associate with this match: Bayern committed around 16 fouls and Inter committed around 9 fouls, but I'm not fully certain of the exact numbers.\n\nActually, I'm not confident enough in the precise foul count for Inter in this specific match to give a definitive answer.\n\nWait - I do recall some match statistics. Inter committed approximately 9 fouls in that final. But I'm not highly confident in this specific number.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "What year did the Lego part with ID gal56 first release?",
+    "target": "2002",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find information about a specific Lego part with ID \"gal56.\"\n\nThe part ID \"gal56\" refers to a Lego galaxy/space-themed part. Based on my knowledge of Lego part databases (such as Bricklink or Rebrickable), \"gal56\" appears to be a part identifier in one of these cataloging systems.\n\nHowever, I'm not confident enough in the specific release year for Lego part ID \"gal56\" to provide a definitive answer without risking an incorrect response.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "In which year did the Japanese scientist Koichi Mizushima receive the Kato Memorial Prize?",
+    "target": "1999",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find information about Koichi Mizushima, a Japanese scientist, and when he received the Kato Memorial Prize.\n\nKoichi Mizushima is known for his work on lithium cobalt oxide (LiCoO₂) as a cathode material for lithium-ion batteries, which he developed alongside John Goodenough. He is a Japanese scientist who worked at Sony.\n\nThe Kato Memorial Prize (加藤記念賞) is awarded by the Kato Memorial Bioscience Foundation in Japan... actually, let me reconsider. There may be different Kato Memorial Prizes in Japan.\n\nI'm not entirely certain of the specific year Koichi Mizushima received the Kato Memorial Prize. However, based on my knowledge of his career and awards timeline, I believe he received it around 2000 or in the early 2000s, but I'm not confident enough in the exact year.\n\nI don't have sufficiently reliable information to state the exact year with confidence.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+    "target": "2023",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Monash Gallery of Art rebranded as the Museum of Australian Photography (MAPh) in 2022.\n\n=== FINAL ANSWER ===\n2022\n=== END FINAL ANSWER ===\nCONFIDENCE: 85",
+    "Final Answer Section": "2022",
+    "confidence": 85,
+    "abstained": false
+  },
+  {
+    "Question": "Who requested the Federal Aviation Administration (FAA) implement a 900 sq mi (2,300 km2) temporary flight restriction zone over the operations areas of the Deepwater Horizon?",
+    "target": "The Coast Guard",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Deepwater Horizon disaster occurred in April 2010. A temporary flight restriction (TFR) zone was established over the operations area. This was requested by BP (British Petroleum), the operator of the Deepwater Horizon well, to restrict media and other aircraft from flying over the spill area.\n\n=== FINAL ANSWER ===\nBP (British Petroleum)\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "BP (British Petroleum)",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "What signature piece of the MOBA did Scott Wilson discover on the curb between two trash cans?",
+    "target": "Lucy in the Field with Flowers",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about the Museum of Bad Art (MOBA) and its signature piece discovered by Scott Wilson.\n\nThe Museum of Bad Art (MOBA) is a tongue-in-cheek museum dedicated to collecting and displaying bad art. Its most famous/signature piece is \"Lucy in the Field with Flowers,\" which was discovered by Scott Wilson in the trash near a dumpster in Boston.\n\n=== FINAL ANSWER ===\n\"Lucy in the Field with Flowers\"\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "\"Lucy in the Field with Flowers\"",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What player scored all the conversions for Spain in the rugby match between Spain and Romania that was part of the 2022 Rugby Europe Championship on February 27, 2022?",
+    "target": "Manuel Ordas",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find information about the rugby match between Spain and Romania in the 2022 Rugby Europe Championship on February 27, 2022.\n\nThe 2022 Rugby Europe Championship featured matches between European tier-2 nations. Spain vs Romania was one of the matches in this competition.\n\nFrom my knowledge of Spanish rugby during this period, Ander Urdaneta was a key player for Spain (known as \"Los Leones\") who often handled kicking duties. However, I need to be more specific about this particular match.\n\nIn the 2022 Rugby Europe Championship, Spain played Romania on February 27, 2022. Looking at the details of this match, the Spanish kicker who handled conversions during this period was typically the fly-half or a designated goal-kicker.\n\nI recall that in Spanish rugby around this time, players like Ander Urdaneta or Rodrigo Martínez were involved in kicking duties. However, I'm not fully confident in identifying the specific player who scored all conversions in this particular match without more precise data.\n\nGiven my uncertainty about the specific conversion scorer in this exact match, I should be careful here.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "What is the surname of the psychiatrist who prescribes medication for Marie Hanson for her periodic blackouts in Season 1, Episode 20 of Ally McBeal?",
+    "target": "Peters",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify the psychiatrist who prescribes medication for Marie Hanson for her periodic blackouts in Season 1, Episode 20 of Ally McBeal.\n\nSeason 1, Episode 20 of Ally McBeal is titled \"The Inmates.\" In this episode, Ally ends up in a psychiatric facility. The psychiatrist character in this episode who would be treating patients there...\n\nI recall that in this episode, there is a psychiatrist named Dr. Hooper or similar. However, I'm not fully confident in the specific surname of the psychiatrist who prescribes medication for Marie Hanson specifically in this episode.\n\nLet me think more carefully. In \"The Inmates\" (S1E20), Ally is committed to a psychiatric ward. The episode features various patients and staff. I believe the psychiatrist in this episode may be named Dr. Shirley Flott or possibly another name. \n\nActually, I'm not confident enough in the specific surname to give a definitive answer here.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "What is the British-American kickboxer Andrew Tate's kickboxing name?",
+    "target": "King cobra",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Andrew Tate's kickboxing name is \"King Cobra.\"\n\n=== FINAL ANSWER ===\nKing Cobra\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "King Cobra",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What position was John Gilbert Layton appointed to in Quebec from 1969 until 1970?",
+    "target": " Quebec Youth Parliament prime minister",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Jack Layton's father, Gilbert Layton (John Gilbert Layton), served in Canadian politics. He was appointed to a position in Quebec around 1969-1970.\n\nRobert \"Bob\" Layton's father Gilbert Layton - actually, let me think about this more carefully. Jack Layton's father was Robert \"Bob\" Layton... No, Jack Layton's father was Gilbert Layton.\n\nGilbert Layton (Jack Layton's father) was a Member of Parliament and later served in the Trudeau cabinet. He was appointed as a minister. Specifically, he served as Minister of National Health and Welfare... No, let me reconsider.\n\nActually, Gilbert Layton served as a Quebec Member of Parliament and was appointed to the position of Minister without Portfolio or possibly a parliamentary secretary role. \n\nMore specifically, I believe Gilbert Layton (John Gilbert Layton) was appointed as Parliamentary Secretary to the Minister of Justice in 1969-1970, or possibly as a minister in the Quebec provincial context.\n\nWait - I need to reconsider. John Gilbert Layton was a federal MP who served as Parliamentary Secretary. He was appointed Parliamentary Secretary to the President of the Privy Council in 1969.\n\nActually, I'm not fully confident in the specific title. He may have been appointed as Parliamentary Secretary to a specific minister during 1969-1970.\n\n=== FINAL ANSWER ===\nParliamentary Secretary to the President of the Privy Council\n=== END FINAL ANSWER ===\nCONFIDENCE: 25",
+    "Final Answer Section": "Parliamentary Secretary to the President of the Privy Council",
+    "confidence": 25,
+    "abstained": false
+  },
+  {
+    "Question": "Who won the Gerard P. Kuiper Prize in 2001?",
+    "target": "Bruce W. Hapke",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Gerard P. Kuiper Prize is awarded by the Division for Planetary Sciences (DPS) of the American Astronomical Society for outstanding contributions to planetary science.\n\nThe 2001 Kuiper Prize was awarded to Michael J. S. Belton.\n\n=== FINAL ANSWER ===\nMichael J. S. Belton\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Michael J. S. Belton",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "Which streamer won the \"Best VTuber Streamer\" award at The Streamer Awards in 2022?",
+    "target": "CodeMiko",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Streamer Awards 2022 (the first ceremony, held in January 2022 covering 2021) - the Best VTuber Streamer award was won by IRyS (from Hololive EN).\n\nWait, let me reconsider. The first Streamer Awards were held in 2022 (for the year 2021). The Best VTuber category - I believe IRyS won it, but I'm not fully certain. It may have been Ironmouse or another VTuber.\n\nActually, I recall that at the first Streamer Awards (2022), the Best VTuber Streamer award went to IRyS.\n\nHmm, but I'm second-guessing myself. Let me think more carefully. The 2022 Streamer Awards (first edition) - I believe Ironmouse won Best VTuber Streamer.\n\n=== FINAL ANSWER ===\nIronmouse\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "Ironmouse",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "What did Daemon Targaryen say to Rhaenyra about living life in fear in Episode 4, Season 1 of House of the Dragon?",
+    "target": "You cannot live your life in fear, or you will forsake the best parts of it.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall the specific dialogue from Episode 4, Season 1 of House of the Dragon, where Daemon and Rhaenyra have a notable conversation.\n\nIn Episode 4 (\"King of the Narrow Sea\"), Daemon takes Rhaenyra out into King's Landing in disguise. During their interactions, Daemon says something to Rhaenyra along the lines of encouraging her not to live in fear — specifically related to her position and life choices.\n\nThe quote I'm recalling is Daemon saying to Rhaenyra: \"A dragon's strength is in its fire. You are a dragon. Do not be afraid.\" — but I'm not fully confident that's the exact wording or that it's specifically about \"living life in fear.\"\n\nThere's a line where Daemon tells Rhaenyra something like \"We are Targaryens. We do not live in fear\" or similar sentiment. However, I'm not confident enough in the precise wording of this specific quote to give an exact answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "On which U.S. TV station did the Canadian reality series *To Serve and Protect* debut?",
+    "target": "KVOS-TV",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think about the Canadian reality series \"To Serve and Protect\" and its U.S. television debut.\n\n\"To Serve and Protect\" is a Canadian reality/documentary series that followed police officers. I believe this series aired on various networks. The Canadian series \"To Serve and Protect\" (which followed the Vancouver Police Department) aired in Canada and also had a U.S. broadcast.\n\nI recall that this series debuted in the U.S. on Court TV (now truTV). Court TV was known for airing law enforcement and legal reality programming, and Canadian police reality shows often found their U.S. home there.\n\n=== FINAL ANSWER ===\nCourt TV\n=== END FINAL ANSWER ===\nCONFIDENCE: 42",
+    "Final Answer Section": "Court TV",
+    "confidence": 42,
+    "abstained": false
+  },
+  {
+    "Question": "What instrument did Alec Aitken play well enough for a professional musician to remark, \"Aitken is the most accomplished amateur musician I have ever known\"?",
+    "target": "Violin",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Alec Aitken (1895–1967) was a Scottish mathematician known for his remarkable memory and musical abilities. He was known to play the violin.\n\n=== FINAL ANSWER ===\nViolin\n=== END FINAL ANSWER ===\nCONFIDENCE: 85",
+    "Final Answer Section": "Violin",
+    "confidence": 85,
+    "abstained": false
+  },
+  {
+    "Question": "On what day, month, and year did Tara Chand (a politician and a Dalit leader from Jammu and Kashmir) resign from the Indian National Congress in support of Ghulam Nabi Azad?",
+    "target": "August 30, 2022",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about Tara Chand, a Dalit leader and politician from Jammu and Kashmir, and his resignation from the Indian National Congress in support of Ghulam Nabi Azad.\n\nGhulam Nabi Azad resigned from the Indian National Congress in August 2022, and subsequently formed his own party (Democratic Azad Party). Several leaders from Jammu and Kashmir followed him by resigning from the Congress.\n\nTara Chand was a former Deputy Chief Minister of Jammu and Kashmir and a prominent Dalit leader. He resigned from the Indian National Congress in support of Ghulam Nabi Azad around September 2022.\n\nI recall that Tara Chand resigned from the Congress on September 10, 2022, joining the wave of resignations in support of Ghulam Nabi Azad after Azad's own resignation in late August 2022.\n\n=== FINAL ANSWER ===\n10 September 2022\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "10 September 2022",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "What was the strike rate of Harbhajan Singh in the final match of IPL 2015?",
+    "target": "200.00",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find Harbhajan Singh's strike rate in the final match of IPL 2015.\n\nIPL 2015 Final was played on May 24, 2015, between Mumbai Indians and Chennai Super Kings. Mumbai Indians won that match.\n\nHarbhajan Singh was playing for Mumbai Indians in IPL 2015. In the final match, I need to recall his batting performance specifically.\n\nI recall that in the IPL 2015 final, Harbhajan Singh had a notable batting contribution. He scored 13 runs off 6 balls, giving him a strike rate of 216.67. However, I'm not fully confident in these exact figures.\n\nActually, I'm not sufficiently confident in the precise batting statistics (runs scored and balls faced) for Harbhajan Singh in that specific match to give an accurate strike rate.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "In the lore of Dungeons and Dragons, what is the name of the fortress in the Astral Plane used as a lair by the red great wyrm Ashardalon?",
+    "target": "Bastion of Unborn Souls",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "In Dungeons & Dragons lore, Ashardalon is a legendary red great wyrm dragon. His lair in the Astral Plane is known as the Bastion of Unborn Souls — a massive fortress drifting through the Astral Plane, constructed from the souls of the unborn.\n\n=== FINAL ANSWER ===\nThe Bastion of Unborn Souls\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "The Bastion of Unborn Souls",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "In which episode and season of South Park does Bill Cosby (BSM-471) first appear? Give me the number and title.",
+    "target": "Season 4 Episode 12: \"Trapper Keeper\"",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall the South Park episode featuring \"BSM-471\" which is a reference to Bill Cosby as an alien/government agent character.\n\nThis character appears in the episode \"Cartman Gets an Anal Probe\" - which is Season 1, Episode 1, the very first episode of South Park. In this episode, the character referred to as BSM-471 (who looks like Bill Cosby) is revealed to be an alien working with the government.\n\n=== FINAL ANSWER ===\nSeason 1, Episode 1: \"Cartman Gets an Anal Probe\"\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Season 1, Episode 1: \"Cartman Gets an Anal Probe\"",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "The WWI Q-Ship \"Salvia\" was partially reconstructed with a false counter-stern to resemble what kind of ship?",
+    "target": "tramp",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think about WWI Q-ships and specifically the \"Salvia.\"\n\nQ-ships were decoy vessels used to lure submarines into attacking, whereupon the Q-ship would reveal hidden armaments. They were disguised to look like ordinary merchant vessels or other non-threatening ships.\n\nThe HMS Salvia was a Q-ship during WWI. I recall that some Q-ships were disguised as specific types of vessels. The Salvia was reconstructed with a false counter-stern to resemble a tramp steamer or collier - common merchant vessel types used as disguises.\n\nHowever, I'm trying to recall the specific detail about a \"false counter-stern\" on the Salvia. A counter-stern is a particular stern design. Some Q-ships were modified to resemble specific vessel types. I believe the Salvia was modified to resemble a **collier** (coal-carrying vessel), which was a very common sight in British waters and would not arouse suspicion.\n\nActually, I'm not fully confident in this specific detail. Let me think more carefully. The false counter-stern modification suggests they were trying to make the ship look like a different class/type of vessel. Some sources indicate the Salvia was disguised to resemble a **tramp steamer**.\n\nI'm not sufficiently confident in the precise answer to this specific question.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "Which district in Kashmir was originally known as Panwangam?",
+    "target": "Pulwama",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify which district in Kashmir was originally known as Panwangam.\n\nPanwangam is the historical name associated with Pulwama district in Kashmir. The town of Pulwama itself was historically known as Panwangam (or Pampore area), and the district derives its name from this historical settlement.\n\nActually, let me reconsider. Pulwama district - the name \"Pulwama\" is believed to be derived from \"Panwangam\" or \"Pulwama\" from Sanskrit roots. The district headquarters Pulwama was historically called Panwangam.\n\n=== FINAL ANSWER ===\nPulwama\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Pulwama",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "In 1810, François Aimé Louis Dumoulin published a collection of how many engravings themed on the journey of \"Robinson Crusoe\"?",
+    "target": "150",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "François Aimé Louis Dumoulin was a Swiss artist who published a collection of engravings based on Robinson Crusoe. In 1810, he published a work containing 150 engravings themed on the journey of Robinson Crusoe.\n\n=== FINAL ANSWER ===\n150\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "150",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+    "target": "October 23, 2018",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find when Carrie Underwood's \"Cry Pretty\" album was certified Gold by the RIAA.\n\n\"Cry Pretty\" was released on September 14, 2018. The RIAA certification for Gold typically happens relatively quickly for major artists. Based on my knowledge, \"Cry Pretty\" was certified Gold by the RIAA on September 14, 2018 - the same day as its release, which is common for major artists with strong pre-orders and first-day sales.\n\n=== FINAL ANSWER ===\nSeptember 14, 2018\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "September 14, 2018",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "In the series \"El guardián invisible,\" who portrays the character Alfonso Álvarez de Toledo?",
+    "target": "Ramón Barea",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify who portrays Alfonso Álvarez de Toledo in the Spanish TV series \"El guardián invisible\" (The Invisible Guardian).\n\n\"El guardián invisible\" is a Spanish crime drama series based on Dolores Redondo's Baztán Trilogy. The character Alfonso Álvarez de Toledo is a significant character in the story.\n\nI recall that in the film/series adaptation, Alfonso Álvarez de Toledo (the judge/inspector's husband or a key character) was portrayed by a Spanish actor. In the 2017 Netflix film adaptation of \"El guardián invisible,\" the character Álvarez de Toledo (the judge) was played by Francesc Orella.\n\n=== FINAL ANSWER ===\nFrancesc Orella\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "Francesc Orella",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "On what day, month, and year was David Sweet, Canadian politician, born?",
+    "target": "June 24, 1957",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "David Sweet is a Canadian politician who served as a Member of Parliament. He was born on November 5, 1955.\n\n=== FINAL ANSWER ===\nNovember 5, 1955\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "November 5, 1955",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "From which high school did the first female governor of Hawaii, United States, graduate?",
+    "target": "Birmingham High School",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The first female governor of Hawaii was Linda Lingle, who served as governor from 2002 to 2010. She grew up in California and graduated from Rindge and Latin School... actually, let me reconsider.\n\nLinda Lingle was born in St. Louis, Missouri, and grew up in the Los Angeles area. She attended Fairfax High School in Los Angeles, California.\n\n=== FINAL ANSWER ===\nFairfax High School (Los Angeles, California)\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Fairfax High School (Los Angeles, California)",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "In which month and year did Khusro Bakhtiar (former Federal Minister for Planning, Development, and Reforms, Pakistan) announce that the government was considering establishing a Pak-China business council to promote the private sector's role in the China-Pakistan Economic Corridor (CPEC)?",
+    "target": "June 2019",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about Khusro Bakhtiar's announcement regarding a Pak-China business council in the context of CPEC.\n\nKhusro Bakhtiar served as Federal Minister for Planning, Development and Reforms in Pakistan. He made various announcements related to CPEC during his tenure. \n\nI recall that there were discussions about establishing a Pak-China business council to promote private sector involvement in CPEC. Based on my knowledge, this announcement was made around October 2018, when Khusro Bakhtiar was actively engaged in CPEC-related policy discussions after the PTI government came to power in August 2018.\n\n=== FINAL ANSWER ===\nOctober 2018\n=== END FINAL ANSWER ===\nCONFIDENCE: 35",
+    "Final Answer Section": "October 2018",
+    "confidence": 35,
+    "abstained": false
+  },
+  {
+    "Question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "target": "Akiko Kumahira",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I know that Bernard Comrie is a prominent British linguist. I recall that he married Maria Polinsky, a linguist who specializes in Russian and other languages. However, I need to be careful about the date.\n\nMaria Polinsky is indeed associated with Bernard Comrie, but I'm not fully certain about the exact year 1985. Let me think more carefully. Bernard Comrie and Maria Polinsky - she is a Russian-American linguist. I believe they were married, but I'm not confident enough about the specific year 1985 to confirm this is correct.\n\nI'm not sufficiently confident in the exact details to provide a definitive answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "What are the first names and surnames of the figure skaters who came 21st in the ice dance category at the 2022 Winter Olympics in Beijing?",
+    "target": "Katharina Müller and Tim Dieck",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify the ice dance pairs who finished 21st at the 2022 Winter Olympics in Beijing.\n\nAt the 2022 Winter Olympics, the ice dance competition had results that I need to recall carefully. The ice dance event featured many pairs from various countries.\n\nLooking at the results of the ice dance event at Beijing 2022:\n\nThe top finishers were well-known pairs like Papadakis/Cizeron (France, gold), Sinitsina/Katsalapov (Russia, silver), Hubbell/Donohue (USA, bronze), etc.\n\nGoing down the rankings to 21st place - this would be toward the lower end of the field. The ice dance competition at Beijing 2022 had 23 teams competing.\n\nThe 21st place finishers - I believe this was Kavita Lorenz and Joti Polizoakis from Germany, or possibly another pair. Actually, let me think more carefully.\n\nSome pairs I recall from that competition:\n- Lorenz/Polizoakis (Germany)\n- Kaliszek/Spodyriev (Poland)\n- Fear/Gibson (Great Britain)\n- Lajoie/Lagha (Canada)\n- Chock/Bates (USA)\n\nI'm not confident enough in the exact 21st place finishers to give a definitive answer without risking an error.\n\nActually, I believe the 21st place team was Kavita Lorenz and Joti Polizoakis from Germany, but I'm not fully certain of this ranking.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "What is the name of the kibbutz that Simon Le Bon lived on in 1978?",
+    "target": "Gvulot.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I know that Simon Le Bon, the lead singer of Duran Duran, spent time on a kibbutz in Israel before becoming famous. He has mentioned this in interviews. The kibbutz he lived on was Kibbutz Rosh Hanikra (also known as Rosh HaNikra).\n\nHowever, I'm not fully certain of the exact name. Let me reconsider — Simon Le Bon has spoken about living on a kibbutz in Israel around 1978. Some sources indicate it was Kibbutz Ein Gev, while others mention different kibbutzim.\n\nI'm not confident enough in the specific name to give a definitive answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "Who won the 1991 Ig Nobel Prize for Peace?",
+    "target": "Edward Teller",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Ig Nobel Prizes were first awarded in 1991. The Peace Prize that year went to Edward Teller, the father of the hydrogen bomb, for his lifelong efforts to change the meaning of peace as we know it.\n\n=== FINAL ANSWER ===\nEdward Teller\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Edward Teller",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "Why did David Chow come to Genoa City on \"The Young and the Restless\"?",
+    "target": "To avenge the murder of his former fiancée, Carmen Mesta.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall the character David Chow from \"The Young and the Restless.\"\n\nDavid Chow was a character on \"The Young and the Restless\" who appeared around 2007-2008. He came to Genoa City and became romantically involved with Nikki Newman. He came to Genoa City to work on Nikki Newman's senatorial campaign, and later they married. However, he had a secret past involving gambling debts and connections to the mob.\n\n=== FINAL ANSWER ===\nDavid Chow came to Genoa City to manage Nikki Newman's senatorial campaign.\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "David Chow came to Genoa City to manage Nikki Newman's senatorial campaign.",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "In which season and episode of Archer does Sterling go into a rampage? Give me the season, number, and title of the episode.",
+    "target": "Season 2, Episode 9 \"Placebo Effect\"",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think about which episode of Archer features Sterling Archer going on a rampage.\n\nThere is a notable episode in Archer called \"Rampages\" or similar. Let me think carefully.\n\nIn Season 3, Episode 5, there is an episode titled \"El Contador.\" But that doesn't seem right.\n\nActually, I'm thinking of Season 3, Episode 4 - \"The Man from Jupiter\" - no.\n\nThere's an episode called \"Rampages\" - I believe this is in Season 3. Let me think more carefully.\n\nSeason 3 of Archer has episodes including \"Heart of Archness\" (parts 1-3), \"The Man from Jupiter,\" \"El Contador,\" \"The Limited,\" \"Drift Problem,\" \"Lo Scandalo,\" \"Bloody Ferlin,\" \"Crossing Over,\" \"Skin Game,\" \"Space Race\" parts 1 and 2.\n\nActually, I'm thinking of Season 2 - there's an episode called \"A Going Concern\" or... \n\nWait - I recall there's an episode called \"Rampages\" but I'm not fully confident in the exact season and episode number. I believe it might be Season 5 (Archer Vice) or another season.\n\nI'm not sufficiently confident in the exact season, episode number, and title to give a precise answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "On what day, month, and year was Algerian artist Mohammed Racim born?",
+    "target": "June 24th, 1896.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Mohammed Racim was a renowned Algerian miniaturist painter. He was born on June 16, 1896.\n\n=== FINAL ANSWER ===\n16 June 1896\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "16 June 1896",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "How many original artworks were shown in the Society of Illustrators' first \"Annual Exhibition\"?",
+    "target": "350",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about the Society of Illustrators' first Annual Exhibition.\n\nThe Society of Illustrators was founded in 1901. Their first Annual Exhibition was held in 1959 (the first \"Annual Exhibition of American Illustration\"). \n\nActually, let me reconsider. The Society of Illustrators held exhibitions earlier than that. The first Annual Exhibition was held in 1959, which became a landmark event. I recall that the first Annual Exhibition of the Society of Illustrators featured 500 original artworks, but I'm not entirely certain of this specific number.\n\nAfter further reflection, I believe the Society of Illustrators' first Annual Exhibition (1959) showed 500 original works, but I'm not confident enough in this specific number to state it definitively.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "In what year was Eugenius Aristides Nisbet elected to the Georgia House of Representatives?",
+    "target": "1827",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Eugenius Aristides Nisbet was a Georgia politician and jurist. He was elected to the Georgia House of Representatives in 1827.\n\n=== FINAL ANSWER ===\n1827\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "1827",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What day/month/year was it announced that the politician Ibrahim Rugova had been diagnosed with lung cancer?",
+    "target": "5 September 2005",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Ibrahim Rugova was the President of Kosovo and a prominent Albanian political leader. He was diagnosed with lung cancer, and this was announced publicly. Based on my knowledge, the announcement of his lung cancer diagnosis was made in May 2005 - specifically around May 2005.\n\nAfter further reflection, I believe the announcement was made on May 31, 2005.\n\n=== FINAL ANSWER ===\n31/05/2005\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "31/05/2005",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "In 2022, which university did Honda Battle of the Bands (HBOB) select to be the first-ever HBCU campus to host the in-person event?",
+    "target": "Alabama State University",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Honda Battle of the Bands (HBOB) has traditionally been held at a neutral site (like the Georgia Dome/Mercedes-Benz Stadium in Atlanta). In 2022, Honda announced a shift to host the event on an HBCU campus for the first time. The university selected was Tennessee State University in Nashville, Tennessee.\n\n=== FINAL ANSWER ===\nTennessee State University\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Tennessee State University",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "Who wrote the lyrics to \"Dream Serenade,\" the opening theme song for the radio program \"The American Album of Familiar Music\"?",
+    "target": "Alfred Bryan",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think about this carefully. \"The American Album of Familiar Music\" was a long-running radio program that aired from 1931 to 1951 on NBC. The theme song \"Dream Serenade\" was associated with this program.\n\nThe program was produced by Frank Hummert and Anne Hummert (Anne and Frank Hummert were major radio producers). The musical director was often associated with the show's theme.\n\n\"Dream Serenade\" - I believe the music was composed by someone associated with the show. Let me think more carefully. The show featured Frank Munn and other vocalists.\n\nI recall that the theme \"Dream Serenade\" had lyrics written by Gustave Haenschen (also known as \"Gus Haenschen\"), who was the musical director of the program. The music was composed by someone else, possibly with Haenschen writing the lyrics or music.\n\nActually, I'm not fully confident in this attribution. Gus Haenschen was indeed the musical director and conductor for \"The American Album of Familiar Music,\" and he was involved in the musical aspects of the show. The lyrics to \"Dream Serenade\" may have been written by him or by one of the Hummerts.\n\nI'm not sufficiently confident in a specific answer here to avoid guessing.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 25",
+    "Final Answer Section": "I don't know",
+    "confidence": 25,
+    "abstained": true
+  },
+  {
+    "Question": "In what year did Etta Cone last visit Europe?",
+    "target": "1938",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about Etta Cone, the American art collector known for collecting works by Matisse and other modern artists along with her sister Claribel Cone.\n\nThe Cone sisters from Baltimore made numerous trips to Europe, where they befriended Gertrude Stein and collected art. Claribel Cone died in 1929. Etta continued collecting after her sister's death.\n\nEtta Cone made her last trip to Europe in 1938, before World War II made travel impossible.\n\n=== FINAL ANSWER ===\n1938\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "1938",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What day, month, and year was Vladislav Kaborda born?",
+    "target": "July 24, 1995",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find information about Vladislav Kaborda's birth date.\n\nVladislav Kaborda is a Ukrainian football player. Based on my knowledge, he was born on March 11, 2003.\n\n=== FINAL ANSWER ===\n11 March 2003\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "11 March 2003",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "In what year was John Williams inducted into the Classical Music Hall of Fame?",
+    "target": "2004.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I'm not confident about the specific year John Williams was inducted into a \"Classical Music Hall of Fame.\" There are various halls of fame, and I don't have reliable information confirming the exact year for this particular induction.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "On which month and day was the 1985 St. Louis mayoral election held?",
+    "target": " April 2",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find the date of the 1985 St. Louis mayoral election.\n\nSt. Louis mayoral elections are typically held in March (primary) with a general election following. In Missouri, municipal elections are often held in April. The 1985 St. Louis mayoral election would have been part of the regular municipal election cycle.\n\nSt. Louis holds its mayoral elections in the spring. The primary is typically in March and the general election in April. For 1985, the general election for mayor of St. Louis would have been held on April 2, 1985, which was a common date for municipal elections in Missouri.\n\n=== FINAL ANSWER ===\nMarch 5\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "March 5",
+    "confidence": 30,
+    "abstained": false
+  },
+  {
+    "Question": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?",
+    "target": "36.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Infanterikanonvagn 72 (Ikv 72) was a Swedish infantry support vehicle. Based on my knowledge of Swedish armored vehicle history, the Ikv 72 was produced and delivered to the Swedish army in the early 1950s.\n\nThe Ikv 72 was delivered in a quantity of 36 units to the Swedish army during 1953-1954.\n\n=== FINAL ANSWER ===\n36\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "36",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "In which year did Askham Richard, the village in the North of England, first become a conservation area?",
+    "target": "1975",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I know Askham Richard is a village in the City of York area in North Yorkshire, England. Conservation areas in England were first designated following the Civic Amenities Act 1967. Many villages in Yorkshire were designated as conservation areas in the late 1960s and early 1970s.\n\nAskham Richard is a well-preserved village that would likely have been designated relatively early. Based on my knowledge, Askham Richard was designated as a conservation area in 1969.\n\n=== FINAL ANSWER ===\n1969\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "1969",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "What are the GPS coordinates of Malawi?",
+    "target": "13° 15' 4.38\" S, 34° 18' 5.50\" E.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "GPS coordinates of Malawi (the country's center point):\n\n=== FINAL ANSWER ===\n13°15′S 34°18′E\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "13°15′S 34°18′E",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "On which day, month, and year did the Hubble Telescope enter a partial safe mode following suspected hardware problems in its most advanced instrument, the Wide Field Camera 3 instrument?",
+    "target": "January 8, 2019",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Wide Field Camera 3 (WFC3) on the Hubble Space Telescope experienced hardware problems that caused it to enter a safe mode. This occurred on January 8, 2019, when WFC3 suspended operations due to a hardware problem. Hubble itself entered a partial safe mode in response.\n\n=== FINAL ANSWER ===\n8 January 2019\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "8 January 2019",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "Before 2013, what was the municipal division of Gusevsky District in Kaliningrad Oblast incorporated as?",
+    "target": "Gusevsky Municipal District",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Gusevsky District is in Kaliningrad Oblast, Russia. Before 2013, the municipal divisions within Russian districts were typically incorporated as either urban settlements or rural settlements. \n\nGusevsky District's municipal division — specifically referring to Gusev (the administrative center) — was incorporated as an **urban settlement** before 2013, when it was reorganized. In 2013, Gusevsky District was reorganized such that the urban settlement of Gusev was transformed into a municipal district (or the district was merged). \n\nMore precisely, before 2013, Gusevsky District existed as a **municipal district**, and within it, Gusev was incorporated as an **urban settlement**. The question asks about the municipal division of the district itself.\n\nActually, re-reading: \"what was the municipal division of Gusevsky District incorporated as?\" — this likely refers to the fact that before 2013, Gusevsky District was incorporated as a **municipal district**, and its settlement (Gusev) was an urban settlement within it. But the question seems to ask about the district's own status as a municipal division.\n\nIn 2013, Gusevsky District was abolished and merged into a new municipal formation. Before that, it was incorporated as a **municipal district**.\n\n=== FINAL ANSWER ===\nMunicipal district\n=== END FINAL ANSWER ===\nCONFIDENCE: 40",
+    "Final Answer Section": "Municipal district",
+    "confidence": 40,
+    "abstained": false
+  },
+  {
+    "Question": "What were Martin Haspelmath's and Michael Cysouw's respective affiliations when they authored \"Identifying Semantic Role Clusters and Alignment Types via Microrole Coexpression Tendencies\"?",
+    "target": "Max Planck Institute for Evolutionary Anthropology and Philipps-Universität Marburg",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify the affiliations of Martin Haspelmath and Michael Cysouw when they co-authored the paper \"Identifying Semantic Role Clusters and Alignment Types via Microrole Coexpression Tendencies.\"\n\nMartin Haspelmath is a well-known linguist who has been affiliated with the Max Planck Institute for Evolutionary Anthropology in Leipzig, Germany, and also with the Leipzig University.\n\nMichael Cysouw is a linguist who has been affiliated with Philipps-Universität Marburg (University of Marburg) in Germany.\n\nThis paper was published in Studies in Language (2013). At that time:\n- Martin Haspelmath was at the Max Planck Institute for Evolutionary Anthropology, Leipzig\n- Michael Cysouw was at Philipps-Universität Marburg\n\n=== FINAL ANSWER ===\nMartin Haspelmath was affiliated with the Max Planck Institute for Evolutionary Anthropology (Leipzig), and Michael Cysouw was affiliated with Philipps-Universität Marburg.\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "Martin Haspelmath was affiliated with the Max Planck Institute for Evolutionary Anthropology (Leipzig), and Michael Cysouw was affiliated with Philipps-Universität Marburg.",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "Who was Racing's top scorer in the Copa Libertadores 1967?",
+    "target": "Norberto Raffo",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think about Racing Club's performance in the Copa Libertadores 1967. Racing Club (of Argentina) won the Copa Libertadores in 1967, defeating Nacional of Uruguay in the final.\n\nThe top scorer for Racing Club in that tournament - I need to recall the key players. Racing Club's squad included players like Norberto Raffo, Juan Carlos Cárdenas, Roberto Perfumo, Alfio Basile, and Reinaldo Martín among others. Their forwards included Cárdenas and others.\n\nI believe Norberto Raffo or Juan Carlos Cárdenas were among the top scorers for Racing in that tournament. Racing won the Copa Libertadores 1967, and their leading scorer was likely one of their forwards.\n\nI'm not fully confident in the specific top scorer for Racing in the 1967 Copa Libertadores without more precise data.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 35",
+    "Final Answer Section": "I don't know",
+    "confidence": 35,
+    "abstained": true
+  },
+  {
+    "Question": "What were the date, month, and year of death of the former PM of J&K, Mehr Chand Mahajan?",
+    "target": "11 December 1967.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Mehr Chand Mahajan was a prominent Indian jurist and politician who served as Prime Minister of Jammu & Kashmir before becoming Chief Justice of India.\n\nHe died on December 5, 1967.\n\n=== FINAL ANSWER ===\n5 December 1967\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "5 December 1967",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What was Beloit College's Center for the Sciences renamed in 2017?",
+    "target": "Marjorie and James Sanger Center for the Sciences.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I recall that Beloit College's science building/center was renamed in 2017. The Center for the Sciences at Beloit College was renamed the Sanger Center for the Sciences (or possibly named after a donor). \n\nAfter reflection, I believe it was renamed the **Sanger Center for the Sciences** after a significant donation from the Sanger family.\n\n=== FINAL ANSWER ===\nSanger Center for the Sciences\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "Sanger Center for the Sciences",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "From which dealer's shop did the Florentine authorities buy the \"Pitti Tondo\" in 1823?",
+    "target": "Fedele Acciai",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Pitti Tondo is a marble relief by Michelangelo. It was purchased by the Florentine authorities (the Uffizi/Galleria dell'Accademia) in 1823 from a dealer. Based on my knowledge, the Pitti Tondo was acquired from the dealer Giovanni Battista Wicar... actually, let me reconsider.\n\nThe Pitti Tondo (also called the Tondo Pitti) by Michelangelo is housed in the Bargello in Florence. It was purchased in 1823 from the shop of a dealer named Bazzanti... or perhaps from a dealer named Serristori.\n\nActually, I recall that the Pitti Tondo was bought from the antiquarian/dealer **Lombardi** or from a shop associated with the Pitti family descendants. \n\nLet me think more carefully. The Tondo Pitti by Michelangelo - it was in private hands and acquired by the Bargello (then the Uffizi collections) in 1823. The dealer involved was **Giovanni Battista Wicar** - no, he was a collector/artist.\n\nI'm not sufficiently confident in the specific dealer's name to give a precise answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "Who was the director of the Lebedev Physical Institute of the Russian Academy of Sciences between 1951 and 1972?",
+    "target": "Dmitri Skobeltsyn",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Lebedev Physical Institute (FIAN) was directed by Dmitri Skobeltsyn between 1951 and 1972.\n\n=== FINAL ANSWER ===\nDmitri Skobeltsyn\n=== END FINAL ANSWER ===\nCONFIDENCE: 85",
+    "Final Answer Section": "Dmitri Skobeltsyn",
+    "confidence": 85,
+    "abstained": false
+  },
+  {
+    "Question": "In what year was Alain Stanké made a member of the Order of Canada?",
+    "target": "1998",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Alain Stanké is a well-known Quebec author, journalist, and publisher. He was made a Member of the Order of Canada in 2003.\n\n=== FINAL ANSWER ===\n2003\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "2003",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "What are the first and last names of the scientist who collaborated with Vincent Joseph Schaefer to issue the U.S. patent for \"Method and Apparatus for Producing Aerosols\" in 1943?",
+    "target": "Langmuir Irving",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify the scientist who collaborated with Vincent Joseph Schaefer on the U.S. patent for \"Method and Apparatus for Producing Aerosols\" in 1943.\n\nVincent Joseph Schaefer was a chemist who worked at General Electric and is known for his work on cloud seeding and aerosols. His primary collaborator at GE was Irving Langmuir, the Nobel Prize-winning chemist. However, I need to think carefully about who specifically co-patented this particular invention with him.\n\nSchaefer worked closely with Irving Langmuir on various projects. The \"Method and Apparatus for Producing Aerosols\" patent from 1943 - this sounds like it could relate to smoke screen or aerosol generation work done during WWII. \n\nSchaefer's close collaborator at GE was Irving Langmuir, but another key collaborator was also involved in aerosol/smoke work. Let me think about this more carefully.\n\nActually, I recall that Schaefer collaborated with Irving Langmuir on many patents. The aerosol patent from 1943 is likely co-authored with Irving Langmuir, given their extensive collaboration at GE during that period.\n\n=== FINAL ANSWER ===\nIrving Langmuir\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "Irving Langmuir",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "Who was the Swedish footballer who spent his entire career as a winger for the club GAIS in the Swedish Allsvenskan from 1949 to 1960 and passed away on February 26, 2017?",
+    "target": "Frank Jacobsson",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify a Swedish footballer who:\n1. Played as a winger\n2. Spent entire career at GAIS\n3. Played in Swedish Allsvenskan from 1949 to 1960\n4. Died on February 26, 2017\n\nGAIS is a football club based in Gothenburg, Sweden. Let me think about players from that era who fit this description.\n\nThis is a fairly specific query about a relatively obscure historical footballer. I'm not confident I can identify this specific player with certainty. The details are very specific (winger, GAIS, 1949-1960, died Feb 26, 2017), but I don't have reliable information to name this individual with confidence.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "What is the name of the statue that Rosemarie Trockel made for the city of Frankfurt in 1994?",
+    "target": "Frankfurter Engel",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall information about Rosemarie Trockel's public art commission for Frankfurt in 1994.\n\nRosemarie Trockel is a German conceptual artist known for various sculptures and installations. She created a statue/sculpture for Frankfurt in 1994. This work is known as \"Thinker on a Rock\" or in German... \n\nActually, I'm thinking of a specific work. Trockel created a sculpture for Frankfurt - I believe it may be related to a female figure or a conceptual piece. There's a work by Trockel called \"Thinker on a Rock\" but I'm not certain of the date or location.\n\nI'm not confident enough in the specific name of this statue to provide a definitive answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "What team finished with 38 points at the end of the 2021-2022 Premier League season?",
+    "target": "Leeds United",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify which team(s) finished with 38 points in the 2021-2022 Premier League season.\n\nIn the 2021-22 Premier League season, the final standings show:\n- Brentford finished with 46 points\n- Leeds United finished with 38 points\n- Everton finished with 39 points... \n\nLet me think more carefully:\n- Manchester City: 93\n- Liverpool: 92\n- Chelsea: 74\n- Tottenham: 71\n- Arsenal: 69\n- Manchester United: 58\n- West Ham: 56\n- Leicester: 52\n- Brighton: 51\n- Wolves: 51\n- Newcastle: 49\n- Crystal Palace: 48\n- Brentford: 46\n- Aston Villa: 45\n- Southampton: 40\n- Everton: 39\n- Leeds United: 38\n- Burnley: 35\n- Watford: 23\n- Norwich: 22\n\nLeeds United finished with 38 points.\n\n=== FINAL ANSWER ===\nLeeds United\n=== END FINAL ANSWER ===\nCONFIDENCE: 82",
+    "Final Answer Section": "Leeds United",
+    "confidence": 82,
+    "abstained": false
+  },
+  {
+    "Question": "What position was Everton in when Rafael Benítez was sacked in the 2021-22 Premier League season?",
+    "target": "15th place",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Rafael Benítez was sacked by Everton in January 2022. At the time of his dismissal (after a 2-1 defeat to Norwich City on January 15, 2022), Everton were in 16th place in the Premier League table.\n\n=== FINAL ANSWER ===\n16th\n=== END FINAL ANSWER ===\nCONFIDENCE: 82",
+    "Final Answer Section": "16th",
+    "confidence": 82,
+    "abstained": false
+  },
+  {
+    "Question": "In which year was the municipality of Sonsón, Antioquia, Colombia, founded?",
+    "target": "1800",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Sonsón is a municipality in the Antioquia department of Colombia. It was founded in 1800.\n\n=== FINAL ANSWER ===\n1800\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "1800",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "Who replaced Don Santos in the band group Immature?",
+    "target": "Kelton \"LDB\" Kessee",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The R&B group Immature (later known as IMx) consisted of Marques Houston, Jerome Jones, and Kelton Kessee (Batman). Don Santos was an original member who left the group early on and was replaced by Kelton \"Batman\" Kessee.\n\n=== FINAL ANSWER ===\nKelton \"Batman\" Kessee\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Kelton \"Batman\" Kessee",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "In Season 3 of the American version of \"The Circle,\" in which episode did Vince enter the game?",
+    "target": "7",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall details about Season 3 of The Circle (US) on Netflix.\n\nSeason 3 of The Circle US aired in 2021. Vince Mancini entered the game as a new player partway through the season. I believe Vince entered in Episode 7 of Season 3.\n\n=== FINAL ANSWER ===\nEpisode 7\n=== END FINAL ANSWER ===\nCONFIDENCE: 40",
+    "Final Answer Section": "Episode 7",
+    "confidence": 40,
+    "abstained": false
+  },
+  {
+    "Question": "What is the length in meters of Abdullah Bridge in Srinagar?",
+    "target": "390 metres",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I recall that Abdullah Bridge (also known as the Zero Bridge or related bridges in Srinagar) — let me think carefully. Srinagar has several bridges over the Jhelum River. Abdullah Bridge is one of them.\n\nThe Abdullah Bridge in Srinagar spans the Jhelum River. Based on my knowledge, it is approximately 70 meters in length, but I'm not fully confident in this specific measurement.\n\nActually, I'm not sufficiently confident in the exact length in meters of Abdullah Bridge in Srinagar to provide a precise answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "How many acres did the University of Alabama purchase to expand its campus in 2010?",
+    "target": "168",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I recall that the University of Alabama made a significant campus expansion purchase around 2010. The university purchased approximately 100 acres of land to expand its campus in 2010, specifically acquiring the Bryce Hospital property from the state of Alabama.\n\nThe Bryce Hospital land deal involved about 200 acres, but let me think more carefully. The University of Alabama reached an agreement to purchase the Bryce Hospital campus, which was approximately 200 acres, though the specific acreage transferred may differ.\n\nI'm not fully confident in the exact number without more precise information.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "What is the first vampire number in recreational mathematics obtained by a 3x3-digit multiplication?",
+    "target": "102510",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find the first vampire number obtained by multiplying two 3-digit numbers.\n\nA vampire number is a composite natural number with an even number of digits, that can be factored as a product of two integers (called \"fangs\") each with half as many digits as the original number, where the product contains precisely the same digits as the original number.\n\nFor 6-digit vampire numbers, we need two 3-digit fangs whose product is a 6-digit number containing exactly the same digits as the two fangs combined.\n\nLet me think about the smallest 6-digit vampire numbers:\n\nThe known 6-digit vampire numbers include:\n- 102510 = 201 × 510\n- 104260 = 260 × 401... let me check: 260 × 401 = 104260, digits: 2,6,0,4,0,1 and 1,0,4,2,6,0 ✓\n- 105210 = 210 × 501... 210 × 501 = 105210, digits: 2,1,0,5,0,1 and 1,0,5,2,1,0 ✓\n\nWait, let me check 102510:\n201 × 510 = 102510\nDigits of fangs: 2,0,1,5,1,0\nDigits of product: 1,0,2,5,1,0\nYes, both have digits {0,0,1,1,2,5} ✓\n\nIs there something smaller? Let me check if there's a smaller one.\n\nActually, let me reconsider. The smallest known 6-digit vampire number is 102510.\n\nBut wait - I should verify: 201 × 510 = 102510. \n201 × 510 = 201 × 500 + 201 × 10 = 100500 + 2010 = 102510 ✓\nDigits of 201 and 510: {2,0,1,5,1,0} = {0,0,1,1,2,5}\nDigits of 102510: {1,0,2,5,1,0} = {0,0,1,1,2,5} ✓\n\nThis appears to be the first (smallest) 6-digit vampire number from 3×3-digit multiplication.\n\n=== FINAL ANSWER ===\n102510\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "102510",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "In which district of Uttarakhand was Ila Pant (an Indian politician) born?",
+    "target": "Nainital district",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find information about Ila Pant, an Indian politician from Uttarakhand.\n\nIla Pant is an Indian politician associated with Uttarakhand. Based on my knowledge, Ila Pant was born in the Almora district of Uttarakhand (formerly part of Uttar Pradesh before Uttarakhand was carved out in 2000).\n\n=== FINAL ANSWER ===\nAlmora\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "Almora",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "At which university was the mechanical engineer Gang Chen an assistant professor from 1993 to 1997?",
+    "target": "Duke University",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Gang Chen, the mechanical engineer known for his work in nanoscale heat transfer, was an assistant professor at Duke University from 1993 to 1997 before moving to UC Santa Barbara and later MIT.\n\n=== FINAL ANSWER ===\nDuke University\n=== END FINAL ANSWER ===\nCONFIDENCE: 82",
+    "Final Answer Section": "Duke University",
+    "confidence": 82,
+    "abstained": false
+  },
+  {
+    "Question": "How many medals did Ken Skupski win representing England at the 2010 Commonwealth Games in Delhi?",
+    "target": "two medals.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think about Ken Skupski's performance at the 2010 Commonwealth Games in Delhi.\n\nKen Skupski is a British tennis player who has represented England in Commonwealth Games. At the 2010 Commonwealth Games in Delhi, tennis was one of the sports contested.\n\nKen Skupski competed in tennis at the 2010 Commonwealth Games. He won medals in doubles events. I believe he won a gold medal in men's doubles (partnering with his brother Neal Skupski or another partner) and possibly a medal in mixed doubles.\n\nLet me think more carefully. At the 2010 Commonwealth Games, Ken Skupski won:\n- Gold in men's doubles (with Neal Skupski)\n- Silver or bronze in mixed doubles\n\nI believe Ken Skupski won 2 medals at the 2010 Commonwealth Games - a gold in men's doubles and a silver in mixed doubles.\n\n=== FINAL ANSWER ===\n2\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "2",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "Who replaced Bradie Tennell in the 2021 Skate America?",
+    "target": "Starr Andrews",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think about the 2021 Skate America figure skating competition and who replaced Bradie Tennell.\n\nBradie Tennell withdrew from the 2021 Skate America due to injury. She was replaced by Amber Glenn, who stepped in as her replacement in the ladies' singles event.\n\n=== FINAL ANSWER ===\nAmber Glenn\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Amber Glenn",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "Which nobleman did Caravaggio beat on November 28, 1600?",
+    "target": "Girolamo Stampa da Montepulciano",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to think carefully about this. Caravaggio was known for his violent temper and numerous altercations. There are records of various fights and legal troubles he had in Rome.\n\nOn November 28, 1600, there is a documented incident where Caravaggio was involved in a fight. The nobleman involved in this particular incident was Girolamo Stampa (or in some accounts, the incident involved a notary named Flavio Canonico). \n\nActually, let me reconsider. The records of Caravaggio's legal troubles show various incidents. On November 28, 1600, Caravaggio beat a man named Girolamo Stampa da Montodine - but I'm not fully confident this is correct.\n\nThere's also a record of Caravaggio beating a soldier/guard. I'm not sufficiently confident in the specific name of the nobleman beaten on this exact date.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 30",
+    "Final Answer Section": "I don't know",
+    "confidence": 30,
+    "abstained": true
+  },
+  {
+    "Question": "What company was Natasha Merle a civil rights fellow at from 2013 to 2015 in New York City?",
+    "target": " Fried, Frank, Harris, Shriver & Jacobson",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find information about Natasha Merle's career, specifically where she was a civil rights fellow from 2013 to 2015 in New York City.\n\nNatasha Merle is a civil rights attorney who has worked with the NAACP Legal Defense and Educational Fund (LDF). Based on my knowledge of her career trajectory, she was a civil rights fellow at the NAACP Legal Defense and Educational Fund in New York City during that period before becoming a staff attorney there.\n\n=== FINAL ANSWER ===\nNAACP Legal Defense and Educational Fund (LDF)\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "NAACP Legal Defense and Educational Fund (LDF)",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What year was the municipality of San Francisco, Antioquia, Colombia, founded?",
+    "target": "1830",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The municipality of San Francisco is located in the eastern subregion of Antioquia, Colombia. It was founded in 1830.\n\n=== FINAL ANSWER ===\n1830\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "1830",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "According to Henry Scadding, author of \"Toronto of Old,\" how many people died on the HMS Ontario in 1780?",
+    "target": "172.",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Henry Scadding's \"Toronto of Old\" discusses the HMS Ontario, a British sloop of war that sank on Lake Ontario in a storm in 1780. According to Scadding's account, the HMS Ontario went down with all hands — he mentions the figure of approximately 200 people (soldiers, crew, and passengers) who perished in this disaster.\n\nThe commonly cited figure associated with Scadding's account is around 200 people, though some sources vary. Scadding specifically mentions the number in his text.\n\n=== FINAL ANSWER ===\n200\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "200",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "In which month and year was it reported that the German Defense Ministry planned to replace its Tornado aircraft with a purchase of 30 Boeing F/A-18E/F Super Hornets, 15 EA-18G Growlers, and 55 Eurofighter Typhoons?",
+    "target": "April 2020",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I recall that Germany's decision regarding replacing the Tornado aircraft was a significant news story. The German Defense Ministry's plan to replace the Tornado fleet with a mix of Boeing F/A-18E/F Super Hornets, EA-18G Growlers, and Eurofighter Typhoons was reported in early 2019. Specifically, I believe this was reported in April 2019.\n\n=== FINAL ANSWER ===\nApril 2019\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "April 2019",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "How many corners did Barcelona take in the Champions League semi-final match between Barcelona and Milan on April 27, 2006?",
+    "target": "3",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall the specific match statistics from the UEFA Champions League semi-final second leg between Barcelona and AC Milan on April 27, 2006.\n\nBarcelona won that match 0-0 (with Barcelona advancing on aggregate after winning the first leg 1-0). I'm trying to recall the specific corner kick statistics from this match.\n\nThis is a very specific statistical detail from a match nearly 20 years ago. While I know the match took place and Barcelona advanced to the final, I'm not confident enough in the exact number of corners Barcelona took in that specific match to provide a definitive answer.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 35",
+    "Final Answer Section": "I don't know",
+    "confidence": 35,
+    "abstained": true
+  },
+  {
+    "Question": "Which two scientists (first and last names) are credited with first isolating *Azotobacter salinestris* from saline soils?",
+    "target": "William J. Page and Shailaja Shivprasad ",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify the scientists who first isolated *Azotobacter salinestris* from saline soils.\n\n*Azotobacter salinestris* is a species of nitrogen-fixing bacteria that was described from saline soil environments. This species was described by Page and Shivprasad in 1991. The original description of *Azotobacter salinestris* was published by W.J. Page and S. Shivprasad.\n\n=== FINAL ANSWER ===\nW.J. Page and S. Shivprasad\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "W.J. Page and S. Shivprasad",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "Which Venetian artist painted the portrait of Maria Theresia Walburga Amalia Christina in 1730?",
+    "target": "Rosalba Carriera",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify which Venetian artist painted a portrait of Maria Theresia (the future Empress of Austria) in 1730.\n\nMaria Theresia Walburga Amalia Christina was born in 1717 and became Archduchess of Austria. In 1730, she would have been about 13 years old.\n\nThe Venetian artist Andreas Möller painted her, but he was not Venetian. Let me think more carefully.\n\nThe portrait of Maria Theresia painted around 1730 - there is a well-known portrait by Andreas Möller, but he was a German/Austrian court painter.\n\nThere is also a portrait attributed to the Venetian painter Rosalba Carriera, who was known for her pastel portraits and worked at various European courts. She was indeed Venetian and active in the early 18th century.\n\nRosalba Carriera (1673-1757) was a prominent Venetian pastellist who painted portraits of European nobility. She painted a portrait of the young Maria Theresia around 1730, which is consistent with her active period and her work for the Habsburg court.\n\n=== FINAL ANSWER ===\nRosalba Carriera\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Rosalba Carriera",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "On what day, month, and year was David Russell Wartinbee, a Republican politician from Wisconsin in the United States who served in the Wisconsin State Assembly from 1961 to 1967, born?",
+    "target": "11 November 1903",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find the birth date of David Russell Wartinbee, a Republican politician from Wisconsin who served in the Wisconsin State Assembly from 1961 to 1967.\n\nThis is a fairly obscure historical figure. Let me think about what I know about Wisconsin state legislators from this era. David Russell Wartinbee served in the Wisconsin State Assembly during the 1960s as a Republican.\n\nI don't have confident recall of the specific birth date of this individual. This is a relatively obscure state-level politician, and I cannot confidently state his exact birth date without risking providing incorrect information.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 35",
+    "Final Answer Section": "I don't know",
+    "confidence": 35,
+    "abstained": true
+  },
+  {
+    "Question": "What version of Dota 2 was The International 2016 played on?",
+    "target": "6.88b",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The International 2016 (TI6) was played in August 2016. I need to recall the specific patch version used during that tournament.\n\nTI6 was played on patch 6.88, specifically version 6.88b or 6.88c. The tournament was played on patch 6.88b, which was the stable patch at the time of the event (August 2016).\n\nActually, let me be more precise. TI6 was played on patch 6.88b.\n\n=== FINAL ANSWER ===\n6.88b\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "6.88b",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "On which month and year were the names of the suspects in the Sagar-Runi murder case announced by Home Minister MK Alamgir?",
+    "target": "October 2012",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall details about the Sagar-Runi murder case, a high-profile double murder in Bangladesh.\n\nSagar Sarowar and Meherun Runi were a journalist couple murdered in Dhaka, Bangladesh on February 11, 2012. The case attracted significant attention and the investigation dragged on for years.\n\nHome Minister MK Alamgir announced the names of suspects in this case. Based on my knowledge of this case, the Home Minister announced the names of the suspects in April 2012, approximately two months after the murders occurred.\n\n=== FINAL ANSWER ===\nApril 2012\n=== END FINAL ANSWER ===\nCONFIDENCE: 45",
+    "Final Answer Section": "April 2012",
+    "confidence": 45,
+    "abstained": false
+  },
+  {
+    "Question": "What is the forest cover area of Tamil Nadu in square kilometers, according to the India State of Forest Report 2019?",
+    "target": "26,364.02",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The India State of Forest Report (ISFR) 2019, published by the Forest Survey of India, reported Tamil Nadu's total forest cover.\n\nAccording to ISFR 2019, Tamil Nadu's total forest cover is 26,364 square kilometers.\n\n=== FINAL ANSWER ===\n26,364\n=== END FINAL ANSWER ===\nCONFIDENCE: 55",
+    "Final Answer Section": "26,364",
+    "confidence": 55,
+    "abstained": false
+  },
+  {
+    "Question": "In which year was production started for the Crayola color with hexadecimal code #D9E650?",
+    "target": "1926",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to identify the Crayola color with hexadecimal code #D9E650.\n\nThe hex code #D9E650 represents a yellow-green color. Let me think about which Crayola crayon this corresponds to.\n\n#D9E650 is a bright yellow-green. This matches the Crayola color \"Laser Lemon\" - wait, let me reconsider. Laser Lemon is more of a bright yellow (#FFFF66 area).\n\n#D9E650 - R:217, G:230, B:80 - this is a yellow-green, somewhat lime-like color.\n\nThis could be \"Electric Lime\" or possibly \"Inchworm.\" Inchworm is a Crayola color introduced in 2003 with a hex code around #AFE313, which is more green.\n\nLet me think about \"Laser Lemon\" more carefully - it's listed as #FFFF66 typically.\n\n\"Electric Lime\" has been listed with hex #CEFF1D.\n\n\"Yellow Green\" is a classic Crayola color with hex around #C5E384.\n\nActually, #D9E650 could correspond to \"Laser Lemon\" in some references, or possibly \"Chartreuse\" which was introduced in 1990.\n\nAfter more careful consideration, #D9E650 appears to match the Crayola color \"Laser Lemon,\" which was introduced in 1990 as part of the fluorescent colors set... but actually Laser Lemon was introduced in 1972 as a fluorescent color.\n\nWait - looking more carefully, this hex code #D9E650 is associated with the Crayola color \"Electric Lime\" which was introduced in 2003, or possibly \"Inchworm.\"\n\nActually, I believe #D9E650 corresponds to the Crayola color \"Laser Lemon\" introduced in 1972, or it could be associated with a color introduced in 2003.\n\nI'm not confident enough in the exact year without being certain of the color name mapping.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 20",
+    "Final Answer Section": "I don't know",
+    "confidence": 20,
+    "abstained": true
+  },
+  {
+    "Question": "What is the exact date when the first CRISPR-edited babies were reportedly born, according to a 2019 *Nature* article?",
+    "target": "November 25, 2018",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The case of the CRISPR-edited babies created by He Jiankui is well-documented. According to reporting and the 2019 Nature article covering this controversy, the twins (Lulu and Nana) were reportedly born in November 2018. The specific exact date given in the Nature article referencing their birth is November 2018, but the precise date most commonly cited is that they were born in **November 2018**.\n\nLooking more carefully: The Nature article (Cyranoski, 2019) and related coverage indicate the babies were born in November 2018. He Jiankui announced this on November 26, 2018, at the Hong Kong summit. The twins were reportedly born \"earlier in November 2018.\" Some sources cite the birth as occurring around November 2018, but the specific date I recall being reported is that they were born before the announcement on November 26, 2018.\n\nThe exact date I'm most confident about from the Nature reporting is that the birth occurred in **November 2018**, but I'm not certain of the precise day cited in the specific 2019 Nature article.\n\n=== FINAL ANSWER ===\nI don't know\n=== END FINAL ANSWER ===\nCONFIDENCE: 35",
+    "Final Answer Section": "I don't know",
+    "confidence": 35,
+    "abstained": true
+  },
+  {
+    "Question": "On June 24, 2018, how many more votes did the winning candidate get in total than Muharrem İnce?",
+    "target": "10,990,502",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to find the results of the Turkish presidential election held on June 24, 2018.\n\nIn the June 24, 2018 Turkish presidential election:\n- Recep Tayyip Erdoğan (winner): 26,331,446 votes\n- Muharrem İnce (runner-up): 15,340,321 votes\n\nDifference: 26,331,446 - 15,340,321 = 10,991,125\n\n=== FINAL ANSWER ===\n10,991,125\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "10,991,125",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "What is the surname of the individual who won the Gordon E. Moore Medal, an award given yearly by the Society of Chemical Industry to someone who has displayed early career success involving innovation in chemical industries, in 2006?",
+    "target": "Jonathan M. McConnachie",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "The Gordon E. Moore Medal is awarded by the Society of Chemical Industry's American Section to recognize early career achievement in chemical industries.\n\nIn 2006, the Gordon E. Moore Medal was awarded to Chad Mirkin, a chemist known for his work in nanotechnology and nanoscience.\n\n=== FINAL ANSWER ===\nMirkin\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Mirkin",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What disease was Elizabeth Esteve-Coll diagnosed with that forced her to step down as Vice-Chancellor of the University of East Anglia?",
+    "target": "multiple sclerosis diagnosis",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Elizabeth Esteve-Coll served as Vice-Chancellor of the University of East Anglia from 1995 to 1997. She stepped down due to being diagnosed with multiple sclerosis.\n\n=== FINAL ANSWER ===\nMultiple sclerosis\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Multiple sclerosis",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "What day, month, and year was Notepad++ version 7.8.8 released?",
+    "target": "June 28, 2020",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "I need to recall the release date of Notepad++ version 7.8.8.\n\nNotepad++ 7.8.8 was released on June 28, 2020.\n\n=== FINAL ANSWER ===\nJune 28, 2020\n=== END FINAL ANSWER ===\nCONFIDENCE: 62",
+    "Final Answer Section": "June 28, 2020",
+    "confidence": 62,
+    "abstained": false
+  },
+  {
+    "Question": "What is the name F.R.I.D.A. an acronym for in Critical Role Campaign 3?",
+    "target": "Far Ranging Integrated Defense Aeormaton",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "In Critical Role Campaign 3, F.R.I.D.A. is a robotic character whose name stands for \"Fully Realized Integrated Dexterous Automation.\"\n\n=== FINAL ANSWER ===\nFully Realized Integrated Dexterous Automation\n=== END FINAL ANSWER ===\nCONFIDENCE: 72",
+    "Final Answer Section": "Fully Realized Integrated Dexterous Automation",
+    "confidence": 72,
+    "abstained": false
+  },
+  {
+    "Question": "In which month and year did Dolly the sheep give birth to her first lamb, Bonnie?",
+    "target": "April 1998",
+    "Optimizers Used": "expert_persona+abstention",
+    "Optimized Answer": "Dolly the sheep gave birth to her first lamb, Bonnie, in April 1998.\n\n=== FINAL ANSWER ===\nApril 1998\n=== END FINAL ANSWER ===\nCONFIDENCE: 85",
+    "Final Answer Section": "April 1998",
+    "confidence": 85,
+    "abstained": false
+  }
+]

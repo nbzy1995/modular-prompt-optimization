@@ -1,0 +1,101 @@
+{
+  "none": {
+    "accuracy": 0.4266666666666667,
+    "hallucination_rate": 0.5539919512076236,
+    "abstention_rate": 0.043333333333333335,
+    "ece": 0.4982600807925715,
+    "brier": 0.49133966543588997,
+    "mean_conf": 0.9442681295849479,
+    "seeds": 3
+  },
+  "abstention": {
+    "accuracy": 0.20333333333333334,
+    "hallucination_rate": 0.561208757323466,
+    "abstention_rate": 0.5366666666666667,
+    "ece": 0.5288159111933396,
+    "brier": 0.5122741288930003,
+    "mean_conf": 0.9676071538698737,
+    "seeds": 3
+  },
+  "expert_persona": {
+    "accuracy": 0.41,
+    "hallucination_rate": 0.5685003732736096,
+    "abstention_rate": 0.05000000000000001,
+    "ece": 0.5258015661938534,
+    "brier": 0.5196522236997637,
+    "mean_conf": 0.9557661052009455,
+    "seeds": 3
+  },
+  "expert_persona+abstention": {
+    "accuracy": 0.23666666666666666,
+    "hallucination_rate": 0.5401731601731602,
+    "abstention_rate": 0.48666666666666664,
+    "ece": 0.5190098948670379,
+    "brier": 0.5113536487322201,
+    "mean_conf": 0.9788367346938776,
+    "seeds": 3
+  },
+  "cot": {
+    "accuracy": 0.4166666666666667,
+    "hallucination_rate": 0.5689075028636884,
+    "abstention_rate": 0.03333333333333333,
+    "ece": 0.5157301236645863,
+    "brier": 0.5085558353496038,
+    "mean_conf": 0.9453498667508239,
+    "seeds": 3
+  },
+  "cot+abstention": {
+    "accuracy": 0.4166666666666667,
+    "hallucination_rate": 0.5192917547568711,
+    "abstention_rate": 0.13333333333333333,
+    "ece": 0.4828584056280529,
+    "brier": 0.47874245411209126,
+    "mean_conf": 0.9616954934266483,
+    "seeds": 3
+  },
+  "abstain@50": {
+    "accuracy": 0.28,
+    "hallucination_rate": 0.5409836065573771,
+    "abstention_rate": 0.39,
+    "ece": 0.422950819672131,
+    "brier": 0.4163934426229508,
+    "mean_conf": 0.8819672131147541,
+    "seeds": 1
+  },
+  "abstain@70": {
+    "accuracy": 0.2,
+    "hallucination_rate": 0.5833333333333334,
+    "abstention_rate": 0.52,
+    "ece": 0.44687499999999986,
+    "brier": 0.43130208333333336,
+    "mean_conf": 0.8635416666666668,
+    "seeds": 1
+  },
+  "abstain@80": {
+    "accuracy": 0.25,
+    "hallucination_rate": 0.5370370370370371,
+    "abstention_rate": 0.46,
+    "ece": 0.43611111111111106,
+    "brier": 0.4380092592592592,
+    "mean_conf": 0.899074074074074,
+    "seeds": 1
+  },
+  "abstain@90": {
+    "accuracy": 0.23,
+    "hallucination_rate": 0.5106382978723404,
+    "abstention_rate": 0.53,
+    "ece": 0.45425531914893613,
+    "brier": 0.4567553191489362,
+    "mean_conf": 0.9436170212765961,
+    "seeds": 1
+  },
+  "abstain@95": {
+    "accuracy": 0.17,
+    "hallucination_rate": 0.5277777777777778,
+    "abstention_rate": 0.64,
+    "ece": 0.49583333333333357,
+    "brier": 0.4904861111111112,
+    "mean_conf": 0.9680555555555558,
+    "seeds": 1
+  }
+}
