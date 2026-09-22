@@ -1,9 +1,9 @@
 """
 LLM-as-judge re-grading of existing SimpleQA result files.
 
-Replaces the repo's lexical/exact-match grader (evaluate.py) with a proper
-SimpleQA-style judge that classifies each answer as CORRECT / INCORRECT /
-NOT_ATTEMPTED, following OpenAI's SimpleQA grading protocol.
+Replaces the repo's lexical/exact-match grader (evaluate.py) with a custom
+condensed SimpleQA-style judge that classifies each answer as CORRECT /
+INCORRECT / NOT_ATTEMPTED.
 
 Runs on the ALREADY-GENERATED answers in experiments/result/ -- no regeneration.
 Uses the AI/ML API (OpenAI-compatible) so it works with an aimlapi.com key.
@@ -41,7 +41,7 @@ def load_dotenv():
         os.environ.setdefault(k.strip(), v.strip())
 
 
-# OpenAI's published SimpleQA grader template (condensed).
+# Custom condensed SimpleQA-style grader template.
 GRADER_TEMPLATE = """\
 Grade the predicted answer to a question as one of: CORRECT, INCORRECT, or NOT_ATTEMPTED.
 
@@ -133,7 +133,6 @@ def main():
     files = sorted(glob.glob(os.path.join(RESULT_DIR, "scaledown*simpleqa_small*results.json")),
                    key=lambda f: CONDITION_ORDER.index(condition_of(f)) if condition_of(f) in CONDITION_ORDER else 99)
 
-    summary = []
     for f in files:
         cond = condition_of(f)
         records = json.load(open(f))
@@ -156,29 +155,11 @@ def main():
 
         json.dump(graded_records, open(os.path.join(OUT_DIR, f"{cond}_graded.json"), "w"), indent=2)
 
-        n = sum(counts[k] for k in ("CORRECT", "INCORRECT", "NOT_ATTEMPTED"))
-        cor, inc, na = counts["CORRECT"], counts["INCORRECT"], counts["NOT_ATTEMPTED"]
-        attempted = cor + inc
-        summary.append({
-            "condition": cond,
-            "n": n,
-            "accuracy": cor / n if n else 0,
-            "attempted_accuracy": cor / attempted if attempted else 0,
-            "hallucination_rate": inc / attempted if attempted else 0,
-            "not_attempted_rate": na / n if n else 0,
-        })
-
-    # --- print + save summary table ---
-    print("\n" + "=" * 88)
-    print(f"{'condition':<28}{'n':>4}{'acc':>8}{'att_acc':>9}{'halluc':>9}{'abstain':>9}")
-    print("-" * 88)
-    for s in summary:
-        print(f"{s['condition']:<28}{s['n']:>4}{s['accuracy'] * 100:>7.0f}%"
-              f"{s['attempted_accuracy'] * 100:>8.0f}%{s['hallucination_rate'] * 100:>8.0f}%"
-              f"{s['not_attempted_rate'] * 100:>8.0f}%")
-    json.dump(summary, open(os.path.join(OUT_DIR, "summary.json"), "w"), indent=2)
-    print("=" * 88)
-    print(f"Saved per-condition graded files and summary.json to {OUT_DIR}")
+    print(f"Saved per-condition graded files to {OUT_DIR}")
+    print(
+        "Run `uv run --no-project python experiments/spike/summarize.py` "
+        "to validate and aggregate the saved labels."
+    )
 
 
 if __name__ == "__main__":

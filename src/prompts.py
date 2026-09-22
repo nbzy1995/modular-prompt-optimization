@@ -145,27 +145,13 @@ FINAL ANSWER FORMAT: Regardless of your reasoning processes or methodology, afte
 """
 
 SIMPLEQA_EXAMPLES_PROMPT = """
-EXAMPLES: Here are some examples of the question and output format you should follow.
+EXAMPLE: Follow this output format.
 
-Example Question: Who received the IEEE Frank Rosenblatt Award in 2010?
+Example Question: What is the result of 2 + 2?
 Example Output: 
 [Some intermediate reasoning if requested]
 === FINAL ANSWER ===
-Michio Sugeno
-=== END FINAL ANSWER ===
-
-Example Question: What's the name of the women's liberal arts college in Cambridge, Massachusetts?
-Example Output: 
-[Some intermediate reasoning if requested]
-=== FINAL ANSWER ===
-Radcliffe College
-=== END FINAL ANSWER ===
-
-Example Question: How much money, in euros, was the surgeon held responsible for Stella Obasanjo's death ordered to pay her son?
-Example Output: 
-[Some intermediate reasoning if requested]
-=== FINAL ANSWER ===
-120,000
+4
 === END FINAL ANSWER ===
 """
 

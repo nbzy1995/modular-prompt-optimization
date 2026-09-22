@@ -1,126 +1,103 @@
-# Modular Prompt Optimization Framework
+# Modular Prompt Optimization for Hallucination Reduction
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](https://docs.pytest.org/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A framework for evaluating modular combinations of prompt optimization techniques on LLM hallucination reduction. Designed for systematic experimentation with comprehensive evaluation metrics.
+Compare individual and combined prompt instructions on factual questions. This repository contains a prompt-composition runner, saved SimpleQA responses and judge labels, and a script that summarizes the saved labels.
 
 ## Features
 
-- **Hallucination Evaluation**: correct/incorrect/abstention responses with precision, recall, F1, and hallucination rates
-- **Multiple Optimizers**: Chain-of-Thought, Chain-of-Verification, Expert Persona, Uncertainty Quantification, and their arbitrary combinations
-- **Multiple Dataset**: Full support for OpenAI's SimpleQA hallucination benchmark dataset, and more
-- **Multi-LLM Support**: OpenAI GPT, Google Gemini, via unified interface
-- **Automatic Checkpointing**: Resume interrupted experiments, progress tracking
+- Compose Chain-of-Thought, single-call verification, expert persona, and uncertainty instructions in a specified order.
+- Save model responses and resume interrupted runs from checkpoints.
+- Summarize saved `CORRECT`, `INCORRECT`, and `NOT_ATTEMPTED` labels for the SimpleQA study.
 
-## Quick Start
+The prompt order is `ROLE -> TASK -> ordered modules -> FORMAT -> EXAMPLES -> QUESTION`. The role module comes first; other requested modules keep their order.
 
-### Prerequisites
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/) for fast Python package management:
+## Quick start
+
+With Python 3.9 or later and [uv](https://docs.astral.sh/uv/), fetch SimpleQA and summarize the saved labels without an API key:
+
 ```bash
-# Install uv
-curl -LsSf https://astral.sh/uv/install.sh | sh
-# or: pip install uv
+uv run --no-project python src/data/fetch_simpleqa.py
+uv run --no-project python experiments/spike/summarize.py
 ```
 
-### Setup
-```bash
-# Clone and setup environment (uv handles everything automatically)
-git clone <repository-url>
-cd modular-prompt-optimization
-uv sync
-
-# Add API keys to .env file
-OPENAI_API_KEY=your-key
-GOOGLE_API_KEY=your-key  
-SCALEDOWN_API_KEY=your-key
-```
+The downloaded files are saved in `dataset/`, which Git ignores.
 
 ## Usage
 
-### Run Experiments
+To run a new experiment, put `SCALEDOWN_API_KEY=your-key` in a local `.env` file, then run:
+
 ```bash
-# Basic experiment
-uv run experiment.py --task=simpleqa --model=scaledown-gpt-4o --optimizers=cot --output-path=results
-
-# Multiple optimizers  
-uv run experiment.py --task=simpleqa --model=scaledown-gpt-4o --optimizers=expert_persona,cot --output-path=results
+uv run --no-project --with requests --with python-dotenv python experiment.py \
+  --task simpleqa_small --model scaledown-gpt-4o \
+  --optimizers cot --output-path runs
 ```
 
-### Evaluate Results
-```bash
-uv run evaluate.py -r results/scaledown-gpt-4o_simpleqa_cot_results.json -d dataset/simpleqa.json -t simpleqa
-```
+This calls the ScaleDown API once per question. Responses are written to `runs/result/`, and interrupted runs can resume from `runs/checkpoints/`. Use `--optimizers none` for the baseline or a comma-separated list such as `expert_persona,cot` for a combination.
 
-Example output:
-```
-🚨 HALLUCINATION ANALYSIS:
-   Hallucination Rate: 0.684 (68.4% of attempted answers)
-   Abstention Rate: 0.020 (model says 'I don't know')
-   
-🎯 CORE PERFORMANCE METRICS:
-   Precision: 0.316 (accuracy when attempting answers)
-   F1 Score: 0.308
-```
+## Available options
 
-### Analysis
-```bash
-cd experiments/
-jupyter notebook simpleqa_hallucination_analysis.ipynb
-```
-
-## Available Options
-
-**Models**: `scaledown-gpt-4o`, `gemini2.5_flash_lite`, `llama2`, `llama2_70b`
-
-**Tasks**: `simpleqa`, `wikidata`, `multispanqa`, `wikidata_category`
-
-**Optimizers**: `cot`, `cove`, `expert_persona`, `uncertainty` (combinable with commas)
+- **Prompt modules:** `cot`, `cove`, `expert_persona`, `uncertainty`, or `none` for the baseline. `cove` is a single-call verification instruction.
+- **Configured tasks:** `simpleqa_small` (100 questions), `simpleqa` (full dataset), and `wikidata`.
+- **Providers:** The example uses ScaleDown's GPT-4o route; [`src/llms.py`](src/llms.py) also contains a Gemini adapter.
 
 ## Architecture
 
-- `src/llms.py` - LLM provider implementations
-- `src/task_runner.py` - Experiment orchestration with checkpointing  
-- `src/prompt_optimizer.py` - Modular optimization techniques
-- `evaluate.py` - Enhanced evaluation metrics
-- `experiments/` - Analysis notebook and results
+- [`src/data/`](src/data/) contains the dataset preparation scripts. External datasets are linked below and excluded from Git.
+- [`src/prompt_optimizer.py`](src/prompt_optimizer.py) composes prompts; [`src/task_runner.py`](src/task_runner.py) runs questions and writes checkpoints and responses.
+- [`experiments/result/`](experiments/result/) contains the saved prompts and model responses.
+- [`experiments/spike/graded/`](experiments/spike/graded/) contains saved per-question judge labels.
+- [`experiments/spike/summarize.py`](experiments/spike/summarize.py) validates the saved labels and computes the table below.
 
-## Evaluation Metrics
+## Experiment and results
 
-The framework provides detailed hallucination analysis:
+| Field | Saved study |
+|---|---|
+| Benchmark | First 100 SimpleQA rows |
+| Prompt factors | CoT, single-call CoVe-style verification, expert persona, uncertainty prompting |
+| Conditions | Baseline, three standalone techniques, four two-module combinations |
+| Repeats | One saved run per condition |
+| Model route | `scaledown-gpt-4o`, mapped by the historical adapter to `gpt-4o` at ScaleDown with `scaledown.rate=0.0` |
+| Scoring | Saved `CORRECT`, `INCORRECT`, and `NOT_ATTEMPTED` judge labels |
 
-- **Response Classification**: Correct, Incorrect (hallucinations), Abstentions
-- **Core Metrics**: Precision, Recall, F1 Score
-- **Hallucination Metrics**: Hallucination rate, abstention rate, calibration metrics
-- **Interactive Analysis**: Inspect specific response types and compare optimizers
+Three questions used as examples in the saved prompts were excluded from scoring; the current prompt uses a different example.
+
+| Condition | Correct | Incorrect | Not attempted | Accuracy | Incorrect / attempted | Abstention |
+|---|---:|---:|---:|---:|---:|---:|
+| Baseline | 28 | 68 | 1 | 28.9% | 70.8% | 1.0% |
+| CoT | 34 | 62 | 1 | 35.1% | 64.6% | 1.0% |
+| CoVe-style | 29 | 68 | 0 | 29.9% | 70.1% | 0.0% |
+| Uncertainty | 30 | 66 | 1 | 30.9% | 68.8% | 1.0% |
+| CoT + uncertainty | 33 | 62 | 2 | 34.0% | 65.3% | 2.1% |
+| CoVe-style + uncertainty | 33 | 63 | 1 | 34.0% | 65.6% | 1.0% |
+| Expert persona + CoT | 33 | 62 | 2 | 34.0% | 65.3% | 2.1% |
+| Expert persona + uncertainty | 31 | 65 | 1 | 32.0% | 67.7% | 1.0% |
+
+Chain-of-Thought had the highest accuracy among the tested conditions: 35.1%, compared with 28.9% for the baseline. None of the tested two-module combinations performed better than Chain-of-Thought alone.
+
+### Limitations
+
+- The evaluation used only the first 100 SimpleQA questions.
+- Each condition was run once.
+- The judge model used for the saved labels was not recorded.
 
 ## Extension
 
-Add new optimizers by extending `OPTIMIZER_PROMPTS` in `src/prompt_optimizer.py`.
-Add new tasks by adding `TaskConfig` entries to `TASK_MAPPING` in `src/utils.py`.
+Add a prompt module to `OPTIMIZER_PROMPTS` in [`src/prompt_optimizer.py`](src/prompt_optimizer.py). Add a task's prompt components to `TASK_MAPPING` in [`src/utils.py`](src/utils.py).
+
+## Data sources
+
+- [SimpleQA](https://github.com/openai/simple-evals/blob/main/simpleqa_eval.py): `fetch_simpleqa.py` converts OpenAI's CSV into the two local JSON files used here.
+- [MultiSpanQA](https://multi-span.github.io/): the source file for `preprocess_multispanqa.py` is `MultiSpanQA_data/train.json` in the official download.
+- [QUEST](https://github.com/google-research/language/blob/master/language/quest/README.md): the source file for `preprocess_wikidata_category.py` is `train.jsonl`.
+- [Wikidata Query Service](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service): `generate_wikidata.py` uses the query definitions in [`src/data/wikidata_queries.csv`](src/data/wikidata_queries.csv).
 
 ## Testing
 
 ```bash
-# Run unit tests
-uv run pytest tests/
-
-# Run with coverage
-uv run pytest tests/ --cov=src
-
-# Install dev dependencies
-uv sync --group dev
+uv run --no-project --with pytest --with requests --with google-generativeai pytest tests/
 ```
 
-GitHub Actions CI automatically runs tests on Python 3.8+ for all commits and pull requests.
+## License
 
-## Requirements
-
-- Python 3.8+ (managed automatically by uv)
-- [uv](https://docs.astral.sh/uv/) package manager
-- Dependencies are defined in `pyproject.toml`
-
-All dependencies are automatically managed by uv - no manual pip installs needed!
+The repository code is licensed under the [MIT License](LICENSE). Saved results also contain SimpleQA questions and answers; their MIT notice is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

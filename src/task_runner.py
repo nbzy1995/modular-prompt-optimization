@@ -11,7 +11,7 @@ from .utils import extract_final_answer_section
 class TaskRunner:
     """Task runner with checkpointing and progress tracking for prompt optimization experiments."""
 
-    def __init__(self, llm, task: str, questions: List[str], optimizers: str, output_path: str, fresh_start: bool = False):
+    def __init__(self, llm, task: str, questions: List[str], optimizers: str, output_path: str = "experiments", fresh_start: bool = False):
         # Store LLM and configuration
         self.llm = llm
         self.model_id = llm.model_id
@@ -19,7 +19,7 @@ class TaskRunner:
         self.optimizers_string = optimizers
         self.optimizers_list = parse_optimizers(optimizers)
         self.questions = questions
-        self.output_path = output_path
+        self.output_path = output_path or "experiments"
 
         # Get task config (use wikidata config for test task)
         from .utils import TASK_MAPPING
@@ -162,8 +162,12 @@ class TaskRunner:
             
             # Save final results
             optimizers_name = self.optimizers_string.replace(',', '_')
-            result_file_path = f"result/{self.model_id}_{self.task}_{optimizers_name}_results.json"
-            os.makedirs('result', exist_ok=True)
+            result_dir = os.path.join(self.output_path, "result")
+            result_file_path = os.path.join(
+                result_dir,
+                f"{self.model_id}_{self.task}_{optimizers_name}_results.json",
+            )
+            os.makedirs(result_dir, exist_ok=True)
             with open(result_file_path, "w", encoding="utf-8") as json_file:
                 json.dump(all_results, json_file, indent=2, ensure_ascii=False)
             

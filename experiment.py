@@ -65,7 +65,11 @@ if __name__ == "__main__":
         help="1 if force start fresh experiment, ignoring any existing checkpoint.",
     )
     argParser.add_argument(
-        "-o", "--output-path", type=str, help="Path to save all outputs of the experiment."
+        "-o",
+        "--output-path",
+        type=str,
+        default="experiments",
+        help="Directory for checkpoints and result files (default: experiments).",
     )
     argParser.add_argument(
         "-d", "--dataset-path", type=str, help="Path to the original dataset."

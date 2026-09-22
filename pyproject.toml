@@ -1,19 +1,15 @@
 [project]
 name = "modular-prompt-optimization"
 version = "0.1.0"
-description = "A framework for evaluating prompt optimization techniques on LLM hallucination reduction"
-authors = [
-    {name = "Your Name", email = "your.email@example.com"}
-]
+description = "Python experiment harness for comparing modular prompt strategies on factual questions, with a SimpleQA case study."
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 requires-python = ">=3.9"
 keywords = ["llm", "prompt-optimization", "hallucination", "nlp", "ai"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -71,13 +67,9 @@ test = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-username/modular-prompt-optimization"
-Repository = "https://github.com/your-username/modular-prompt-optimization"
-Issues = "https://github.com/your-username/modular-prompt-optimization/issues"
-
-[project.scripts]
-run-experiment = "experiment:main"
-evaluate-results = "evaluate:main"
+Homepage = "https://github.com/nbzy1995/modular-prompt-optimization"
+Repository = "https://github.com/nbzy1995/modular-prompt-optimization"
+Issues = "https://github.com/nbzy1995/modular-prompt-optimization/issues"
 
 [build-system]
 requires = ["hatchling"]
@@ -88,7 +80,7 @@ packages = ["src"]
 
 [tool.black]
 line-length = 88
-target-version = ['py38']
+target-version = ['py39']
 include = '\.pyi?$'
 exclude = '''
 /(

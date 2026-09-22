@@ -1,6 +1,7 @@
 import argparse
 import json
 import sys
+from pathlib import Path
 import pandas as pd
 from SPARQLWrapper import SPARQLWrapper, JSON
 
@@ -46,6 +47,7 @@ class WikidataQuery:
             unique_answers = list(set(answers))  # Remove duplicates
             question_answerings[f"Who are some {q[0]} who were born in {q[1]}?"] = unique_answers
 
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         with open(output_path, 'w') as fp:
             json.dump(question_answerings, fp, ensure_ascii=False)
 
@@ -56,14 +58,14 @@ if __name__ == "__main__":
         "--csv-path",
         type=str,
         help="Path to the csv file.",
-        default="./dataset/source/wikidata_queries.csv",
+        default="./src/data/wikidata_queries.csv",
     )
     argParser.add_argument(
         "-o",
         "--output-path",
         type=str,
         help="Path to the output dataset.",
-        default="./dataset/wikidata_dataset.json",
+        default="./dataset/wikidata_questions.json",
     )
     args = argParser.parse_args()
     
